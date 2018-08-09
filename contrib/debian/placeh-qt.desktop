@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=placeh Core
+Comment=Connect to the placeh P2P Network
+Comment[de]=Verbinde mit dem placeh peer-to-peer Netzwerk
+Comment[fr]=placeh, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=placeh, eşten eşe kriptografik sanal para birimi
+Exec=placeh-qt %u
+Terminal=false
+Type=Application
+Icon=placeh128
+MimeType=x-scheme-handler/placeh;
+Categories=Office;Finance;
