@@ -4066,8 +4066,8 @@
     </message>
     <message>
         <location line="-384"/>
-        <source>placeh Core</source>
-        <translation type="unfinished">placeh Core</translation>
+        <source>placeh core</source>
+        <translation type="unfinished">placeh core</translation>
     </message>
     <message>
         <location line="+1"/>
