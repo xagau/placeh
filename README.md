@@ -1,9 +1,8 @@
-placeh Core integration/staging tree
+placeh core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/placeh/placeh.svg?branch=master)](https://travis-ci.org/placeh/placeh)
 
-https://placehcore.org
+https://placeh.io
 
 What is placeh?
 ----------------
@@ -11,17 +10,17 @@ What is placeh?
 placeh is an experimental digital currency that enables instant payments to
 anyone, anywhere in the world. placeh uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. placeh Core is the name of open source
+out collectively by the network. placeh core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the placeh Core software, see https://placeh.org/en/download, or read the
-[original whitepaper](https://placehcore.org/placeh.pdf).
+the placeh core software, see https://placeh.io/#download, or read the
+[original whitepaper](http://explore.placeh.io:8080/artifact/F9ddp3zXbNd5zwxBngvRBe4zQgmoViNuma.json).
 
 License
 -------
 
-placeh Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+placeh core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
@@ -37,7 +36,7 @@ The developer [mailing list](https://lists.linuxfoundation.org/mailman/listinfo/
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer IRC can be found on Freenode at #placeh-core-dev.
+Developer Discord can be found on #placeh.
 
 Testing
 -------
@@ -58,8 +57,6 @@ There are also [regression and integration tests](/test), written
 in Python, that are run automatically on the build server.
 These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
 
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
-
 ### Manual Quality Assurance (QA) Testing
 
 Changes should be tested by somebody other than the developer who wrote the
@@ -67,16 +64,3 @@ code. This is especially important for large or high-risk changes. It is useful
 to add a test plan to the pull request description if testing the changes is
 not straightforward.
 
-Translations
-------------
-
-Changes to translations as well as new translations can be submitted to
-[placeh Core's Transifex page](https://www.transifex.com/projects/p/placeh/).
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
-
-Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/placeh-translators).
