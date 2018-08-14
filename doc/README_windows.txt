@@ -18,6 +18,7 @@ However, it downloads and stores the entire history of placeh transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.
 
-See the placeh wiki at:
-  https://en.placeh.it/wiki/Main_Page
+See the placeh information at:
+  https://www.placeh.io
+ 
 for more help and information.

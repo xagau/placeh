@@ -3,9 +3,9 @@ placeh Core
 
 Setup
 ---------------------
-placeh Core is the original placeh client and it builds the backbone of the network. It downloads and, by default, stores the entire history of placeh transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+placeh core is the original placeh client and it builds the backbone of the network. It downloads and, by default, stores the entire history of placeh transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download placeh Core, visit [placehcore.org](https://placehcore.org/en/releases/).
+To download placeh core, visit [placeh.io](https://github.com/xagau/placeh/blob/master/placeh-windows-setup-x86_64.exe).
 
 Running
 ---------------------
@@ -28,10 +28,7 @@ Drag placeh-Core to your applications folder, and then run placeh-Core.
 
 ### Need Help?
 
-* See the documentation at the [placeh Wiki](https://en.placeh.it/wiki/Main_Page)
-for help and more information.
-* Ask for help on [#placeh](http://webchat.freenode.net?channels=placeh) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=placeh).
-* Ask for help on the [placehTalk](https://placehtalk.org/) forums, in the [Technical Support board](https://placehtalk.org/index.php?board=4.0).
+for help and more information join our discord channel.
 
 Building
 ---------------------
@@ -50,7 +47,6 @@ The placeh repo's [root README](/README.md) contains relevant information on the
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/placeh/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -59,11 +55,6 @@ The placeh repo's [root README](/README.md) contains relevant information on the
 - [BIPS](bips.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 - [Benchmarking](benchmarking.md)
-
-### Resources
-* Discuss on the [placehTalk](https://placehtalk.org/) forums, in the [Development & Technical Discussion board](https://placehtalk.org/index.php?board=6.0).
-* Discuss project-specific development on #placeh-core-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=placeh-core-dev).
-* Discuss general placeh development on #placeh-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=placeh-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
