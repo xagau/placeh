@@ -2963,7 +2963,7 @@ Zwróć uwagę, że poprawnie zweryfikowana wiadomość potwierdza to, że nadaw
         <translation>Uruchomienie serwera HTTP nie powiodło się. Zobacz dziennik debugowania, aby uzyskać więcej szczegółów.</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>Rdzeń placeha</translation>
     </message>
     <message>

@@ -1208,8 +1208,8 @@
         <translation>Демон сифатида орқа фонда ишга туширинг ва буйруқларга рози бўлинг</translation>
     </message>
     <message>
-        <source>placeh Core</source>
-        <translation>placeh Core</translation>
+        <source>placeh core</source>
+        <translation>placeh core</translation>
     </message>
     <message>
         <source>Connection options:</source>

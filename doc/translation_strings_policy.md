@@ -1,7 +1,7 @@
 Translation Strings Policy
 ===========================
 
-This document provides guidelines for internationalization of the placeh Core software.
+This document provides guidelines for internationalization of the placeh core software.
 
 How to translate?
 ------------------

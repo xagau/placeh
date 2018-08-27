@@ -1,6 +1,6 @@
-placeh Core version 0.13.2 is now available from:
+placeh core version 0.13.2 is now available from:
 
-  <https://placeh.org/bin/placeh-core-0.13.2/>
+  <https://placeh.io/bin/placeh-core-0.13.2/>
 
 This is a new minor version release, including various bugfixes and
 performance improvements, as well as updated translations.
@@ -21,7 +21,7 @@ an OS initially released in 2001. This means that not even critical security
 updates will be released anymore. Without security updates, using a placeh
 wallet on a XP machine is irresponsible at least.
 
-In addition to that, with 0.12.x there have been varied reports of placeh Core
+In addition to that, with 0.12.x there have been varied reports of placeh core
 randomly crashing on Windows XP. It is [not clear](https://github.com/placeh/placeh/issues/7681#issuecomment-217439891)
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.

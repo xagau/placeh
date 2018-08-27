@@ -1228,8 +1228,8 @@
         <translation>Darbināt fonā kā servisu un pieņemt komandas</translation>
     </message>
     <message>
-        <source>placeh Core</source>
-        <translation>placeh Core</translation>
+        <source>placeh core</source>
+        <translation>placeh core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

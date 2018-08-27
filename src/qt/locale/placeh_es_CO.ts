@@ -296,8 +296,8 @@
 <context>
     <name>placeh-core</name>
     <message>
-        <source>placeh Core</source>
-        <translation>placeh Core</translation>
+        <source>placeh core</source>
+        <translation>placeh core</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

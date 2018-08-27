@@ -1702,7 +1702,7 @@
         <translation>Rulează în fundal ca un demon şi acceptă comenzi</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>Nucleul placeh</translation>
     </message>
     <message>

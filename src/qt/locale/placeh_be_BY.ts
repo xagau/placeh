@@ -1258,8 +1258,8 @@
         <translation>Запусціць у фоне як дэман і прымаць каманды</translation>
     </message>
     <message>
-        <source>placeh Core</source>
-        <translation>placeh Core</translation>
+        <source>placeh core</source>
+        <translation>placeh core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

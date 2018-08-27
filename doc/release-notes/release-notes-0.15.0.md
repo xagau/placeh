@@ -1,6 +1,6 @@
-placeh Core version *0.15.0* is now available from:
+placeh core version *0.15.0* is now available from:
 
-  <https://placeh.org/bin/placeh-core-0.15.0/>
+  <https://placeh.io/bin/placeh-core-0.15.0/>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
@@ -48,10 +48,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-placeh Core is extensively tested on multiple operating systems using
+placeh core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-placeh Core should also work on most other Unix-like systems but is not
+placeh core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notes for 0.15.0
@@ -136,23 +136,23 @@ Fee estimation has been significantly improved in version 0.15, with more accura
     - The `nblocks` argument has been renamed to `conf_target` (to be consistent with other RPC methods).
     - An `estimate_mode` argument has been added. This argument takes one of the following strings: `CONSERVATIVE`, `ECONOMICAL` or `UNSET` (which defaults to `CONSERVATIVE`).
     - The RPC return object now contains an `errors` member, which returns errors encountered during processing.
-    - If placeh Core has not been running for long enough and has not seen enough blocks or transactions to produce an accurate fee estimation, an error will be returned (previously a value of -1 was used to indicate an error, which could be confused for a feerate).
+    - If placeh core has not been running for long enough and has not seen enough blocks or transactions to produce an accurate fee estimation, an error will be returned (previously a value of -1 was used to indicate an error, which could be confused for a feerate).
 - A new `estimaterawfee` RPC is added to provide raw fee data. External clients can query and use this data in their own fee estimation logic.
 
 Multi-wallet support
 --------------------
 
-placeh Core now supports loading multiple, separate wallets (See [PR 8694](https://github.com/placeh/placeh/pull/8694), [PR 10849](https://github.com/placeh/placeh/pull/10849)). The wallets are completely separated, with individual balances, keys and received transactions.
+placeh core now supports loading multiple, separate wallets (See [PR 8694](https://github.com/placeh/placeh/pull/8694), [PR 10849](https://github.com/placeh/placeh/pull/10849)). The wallets are completely separated, with individual balances, keys and received transactions.
 
 Multi-wallet is enabled by using more than one `-wallet` argument when starting placeh, either on the command line or in the placeh config file.
 
 **In placeh-Qt, only the first wallet will be displayed and accessible for creating and signing transactions.** GUI selectable multiple wallets will be supported in a future version. However, even in 0.15 other loaded wallets will remain synchronized to the node's current tip in the background. This can be useful if running a pruned node, since loading a wallet where the most recent sync is beyond the pruned height results in having to download and revalidate the whole blockchain. Continuing to synchronize all wallets in the background avoids this problem.
 
-placeh Core 0.15.0 contains the following changes to the RPC interface and `placeh-cli` for multi-wallet:
+placeh core 0.15.0 contains the following changes to the RPC interface and `placeh-cli` for multi-wallet:
 
-* When running placeh Core with a single wallet, there are **no** changes to the RPC interface or `placeh-cli`. All RPC calls and `placeh-cli` commands continue to work as before.
-* When running placeh Core with multi-wallet, all *node-level* RPC methods continue to work as before. HTTP RPC requests should be send to the normal `<RPC IP address>:<RPC port>/` endpoint, and `placeh-cli` commands should be run as before. A *node-level* RPC method is any method which does not require access to the wallet.
-* When running placeh Core with multi-wallet, *wallet-level* RPC methods must specify the wallet for which they're intended in every request. HTTP RPC requests should be send to the `<RPC IP address>:<RPC port>/wallet/<wallet name>/` endpoint, for example `127.0.0.1:8332/wallet/wallet1.dat/`. `placeh-cli` commands should be run with a `-rpcwallet` option, for example `placeh-cli -rpcwallet=wallet1.dat getbalance`.
+* When running placeh core with a single wallet, there are **no** changes to the RPC interface or `placeh-cli`. All RPC calls and `placeh-cli` commands continue to work as before.
+* When running placeh core with multi-wallet, all *node-level* RPC methods continue to work as before. HTTP RPC requests should be send to the normal `<RPC IP address>:<RPC port>/` endpoint, and `placeh-cli` commands should be run as before. A *node-level* RPC method is any method which does not require access to the wallet.
+* When running placeh core with multi-wallet, *wallet-level* RPC methods must specify the wallet for which they're intended in every request. HTTP RPC requests should be send to the `<RPC IP address>:<RPC port>/wallet/<wallet name>/` endpoint, for example `127.0.0.1:8332/wallet/wallet1.dat/`. `placeh-cli` commands should be run with a `-rpcwallet` option, for example `placeh-cli -rpcwallet=wallet1.dat getbalance`.
 * A new *node-level* `listwallets` RPC method is added to display which wallets are currently loaded. The names returned by this method are the same as those used in the HTTP endpoint and for the `rpcwallet` argument.
 
 Note that while multi-wallet is now fully supported, the RPC multi-wallet interface should be considered unstable for version 0.15.0, and there may backwards-incompatible changes in future versions.
@@ -160,7 +160,7 @@ Note that while multi-wallet is now fully supported, the RPC multi-wallet interf
 Replace-by-fee control in the GUI
 ---------------------------------
 
-placeh Core has supported creating opt-in replace-by-fee (RBF) transactions
+placeh core has supported creating opt-in replace-by-fee (RBF) transactions
 since version 0.12.0, and since version 0.14.0 has included a `bumpfee` RPC method to
 replace unconfirmed opt-in RBF transactions with a new transaction that pays
 a higher fee.
@@ -171,7 +171,7 @@ transaction with a higher-fee transaction are both supported in the GUI (See [PR
 Removal of Coin Age Priority
 ----------------------------
 
-In previous versions of placeh Core, a portion of each block could be reserved for transactions based on the age and value of UTXOs they spent. This concept (Coin Age Priority) is a policy choice by miners, and there are no consensus rules around the inclusion of Coin Age Priority transactions in blocks. In practice, only a few miners continue to use Coin Age Priority for transaction selection in blocks. placeh Core 0.15 removes all remaining support for Coin Age Priority (See [PR 9602](https://github.com/placeh/placeh/pull/9602)). This has the following implications:
+In previous versions of placeh core, a portion of each block could be reserved for transactions based on the age and value of UTXOs they spent. This concept (Coin Age Priority) is a policy choice by miners, and there are no consensus rules around the inclusion of Coin Age Priority transactions in blocks. In practice, only a few miners continue to use Coin Age Priority for transaction selection in blocks. placeh core 0.15 removes all remaining support for Coin Age Priority (See [PR 9602](https://github.com/placeh/placeh/pull/9602)). This has the following implications:
 
 - The concept of *free transactions* has been removed. High Coin Age Priority transactions would previously be allowed to be relayed even if they didn't attach a miner fee. This is no longer possible since there is no concept of Coin Age Priority. The `-limitfreerelay` and `-relaypriority` options which controlled relay of free transactions have therefore been removed.
 - The `-sendfreetransactions` option has been removed, since almost all miners do not include transactions which do not attach a transaction fee.
@@ -204,7 +204,7 @@ Version 0.15 introduces several new RPC methods:
 Low-level RPC changes
 ---------------------
 
-- When using placeh Core in multi-wallet mode, RPC requests for wallet methods must specify
+- When using placeh core in multi-wallet mode, RPC requests for wallet methods must specify
   the wallet that they're intended for. See [Multi-wallet support](#multi-wallet-support) for full details.
 
 - The new database model no longer stores information about transaction
@@ -246,7 +246,7 @@ Low-level RPC changes
 
 - The `disconnectnode` RPC can now disconnect a node specified by node ID (as well as by IP address/port). To disconnect a node based on node ID, call the RPC with the new `nodeid` argument (See [PR 10143](https://github.com/placeh/placeh/pull/10143)).
 
-- The second argument in `prioritisetransaction` has been renamed from `priority_delta` to `dummy` since placeh Core no longer has a concept of coin age priority. The `dummy` argument has no functional effect, but is retained for positional argument compatibility. See [Removal of Coin Age Priority](#removal-of-coin-age-priority).
+- The second argument in `prioritisetransaction` has been renamed from `priority_delta` to `dummy` since placeh core no longer has a concept of coin age priority. The `dummy` argument has no functional effect, but is retained for positional argument compatibility. See [Removal of Coin Age Priority](#removal-of-coin-age-priority).
 
 - The `resendwallettransactions` RPC throws an error if the `-walletbroadcast` option is set to false (See [PR 10995](https://github.com/placeh/placeh/pull/10995)).
 
@@ -740,7 +740,7 @@ Low-level RPC changes
 - #10728 `7397af9` fix typo in help text for removeprunedfunds (AkioNak)
 - #10193 `6dbcc74` scripted-diff: Remove #include <boost/foreach.hpp> (jtimon)
 - #10676 `379aed0` document script-based return fields for validateaddress (instagibbs)
-- #10651 `cef4b5c` Verify binaries from placehcore.org and placeh.org (TheBlueMatt)
+- #10651 `cef4b5c` Verify binaries from placehcore.org and placeh.io (TheBlueMatt)
 - #10786 `ca4c545` Add PR description to merge commit in github-merge.py (sipa)
 - #10812 `c5904e8` [utils] Allow placeh-cli's -rpcconnect option to be used with square brackets (jnewbery)
 - #10842 `3895e25` Fix incorrect Doxygen tag (@ince → @since). Doxygen parameter name matching (practicalswift)

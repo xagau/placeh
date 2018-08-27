@@ -1012,7 +1012,7 @@
 <context>
     <name>placeh-core</name>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>placeh Kern</translation>
     </message>
     <message>

@@ -1894,8 +1894,8 @@
         <translation>Unable to start HTTP server. See debug log for details.</translation>
     </message>
     <message>
-        <source>placeh Core</source>
-        <translation>placeh Core</translation>
+        <source>placeh core</source>
+        <translation>placeh core</translation>
     </message>
     <message>
         <source>The %s developers</source>

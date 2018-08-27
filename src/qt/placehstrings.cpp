@@ -9,7 +9,7 @@
 #define UNUSED
 #endif
 static const char UNUSED* placeh_strings[] = {
-    QT_TRANSLATE_NOOP("placeh-core", "placeh Core"),
+    QT_TRANSLATE_NOOP("placeh-core", "placeh core"),
     QT_TRANSLATE_NOOP("placeh-core", "The %s developers"),
     QT_TRANSLATE_NOOP("placeh-core", ""
                                       "(1 = keep tx meta data e.g. account owner and payment request information, 2 "

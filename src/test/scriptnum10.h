@@ -23,7 +23,7 @@ public:
 class CScriptNum10
 {
     /**
- * The ScriptNum implementation from placeh Core 0.10.0, for cross-comparison.
+ * The ScriptNum implementation from placeh core 0.10.0, for cross-comparison.
  */
 public:
     explicit CScriptNum10(const int64_t& n)

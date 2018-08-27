@@ -1,6 +1,6 @@
-placeh Core version 0.13.1 is now available from:
+placeh core version 0.13.1 is now available from:
 
-  <https://placeh.org/bin/placeh-core-0.13.1/>
+  <https://placeh.io/bin/placeh-core-0.13.1/>
 
 This is a new minor version release, including activation parameters for the
 segwit softfork, various bugfixes and performance improvements, as well as
@@ -22,7 +22,7 @@ an OS initially released in 2001. This means that not even critical security
 updates will be released anymore. Without security updates, using a placeh
 wallet on a XP machine is irresponsible at least.
 
-In addition to that, with 0.12.x there have been varied reports of placeh Core
+In addition to that, with 0.12.x there have been varied reports of placeh core
 randomly crashing on Windows XP. It is [not clear](https://github.com/placeh/placeh/issues/7681#issuecomment-217439891)
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.
@@ -131,13 +131,13 @@ covered by the txid. This provides several immediate benefits:
   (specifically, the segregated witnesses) while still ensuring that the node
   can build an accurate copy of the UTXO set for the block chain with the most
   proof of work.  Segwit enables this capability at the consensus layer, but
-  note that placeh Core does not provide an option to use this capability as
+  note that placeh core does not provide an option to use this capability as
   of this 0.13.1 release.
 
 - **Script versioning:** Segwit makes it easy for future soft forks to allow
   placeh users to individually opt-in to almost any change in the placeh
   Script language when those users receive new transactions.  Features
-  currently being researched by placeh Core contributors that may use this
+  currently being researched by placeh core contributors that may use this
   capability include support for Schnorr signatures, which can improve the
   privacy and efficiency of multisig transactions (or transactions with
   multiple inputs), and Merklized Abstract Syntax Trees (MAST), which can
@@ -183,7 +183,7 @@ a third-party to insert data into other people's transactions, changing
 the transaction's txid (called transaction malleability) and possibly
 causing other problems.
 
-Since placeh Core 0.10.0, nodes have defaulted to only relaying and
+Since placeh core 0.10.0, nodes have defaulted to only relaying and
 mining transactions whose dummy element was a null value (0x00, also
 called OP_0).  The null dummy soft fork turns this relay rule into a
 consensus rule both for non-segwit transactions and segwit transactions,

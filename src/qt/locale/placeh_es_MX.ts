@@ -608,7 +608,7 @@
         <translation>Opciones:</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>nucleo placeh</translation>
     </message>
     <message>

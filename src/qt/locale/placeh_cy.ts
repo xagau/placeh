@@ -640,7 +640,7 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>Craidd placeh</translation>
     </message>
     <message>

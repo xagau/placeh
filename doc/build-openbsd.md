@@ -18,7 +18,7 @@ pkg_add automake # (select highest version, e.g. 1.15)
 pkg_add python # (select highest version, e.g. 3.5)
 ```
 
-The default C++ compiler that comes with OpenBSD 5.9 is g++ 4.2. This version is old (from 2007), and is not able to compile the current version of placeh Core, primarily as it has no C++11 support, but even before there were issues. So here we will be installing a newer compiler.
+The default C++ compiler that comes with OpenBSD 5.9 is g++ 4.2. This version is old (from 2007), and is not able to compile the current version of placeh core, primarily as it has no C++11 support, but even before there were issues. So here we will be installing a newer compiler.
 
 GCC
 -------
@@ -39,7 +39,7 @@ Do not use `pkg_add boost`! The boost version installed thus is compiled using t
     ...
     Segmentation fault (core dumped)
 
-This makes it necessary to build boost, or at least the parts used by placeh Core, manually:
+This makes it necessary to build boost, or at least the parts used by placeh core, manually:
 
 ```
 # Pick some path to install boost to, here we create a directory within the placeh directory
@@ -108,7 +108,7 @@ The change will only affect the current shell and processes spawned by it. To
 make the change system-wide, change `datasize-cur` and `datasize-max` in
 `/etc/login.conf`, and reboot.
 
-### Building placeh Core
+### Building placeh core
 
 **Important**: use `gmake`, not `make`. The non-GNU `make` will exit with a horrible error.
 

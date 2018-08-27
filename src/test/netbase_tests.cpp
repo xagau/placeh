@@ -79,10 +79,10 @@ bool static TestSplitHost(std::string test, std::string host, int port)
 
 BOOST_AUTO_TEST_CASE(netbase_splithost)
 {
-    BOOST_CHECK(TestSplitHost("www.placeh.org", "www.placeh.org", -1));
-    BOOST_CHECK(TestSplitHost("[www.placeh.org]", "www.placeh.org", -1));
-    BOOST_CHECK(TestSplitHost("www.placeh.org:80", "www.placeh.org", 80));
-    BOOST_CHECK(TestSplitHost("[www.placeh.org]:80", "www.placeh.org", 80));
+    BOOST_CHECK(TestSplitHost("www.placeh.io", "www.placeh.io", -1));
+    BOOST_CHECK(TestSplitHost("[www.placeh.io]", "www.placeh.io", -1));
+    BOOST_CHECK(TestSplitHost("www.placeh.io:80", "www.placeh.io", 80));
+    BOOST_CHECK(TestSplitHost("[www.placeh.io]:80", "www.placeh.io", 80));
     BOOST_CHECK(TestSplitHost("127.0.0.1", "127.0.0.1", -1));
     BOOST_CHECK(TestSplitHost("127.0.0.1:8333", "127.0.0.1", 8333));
     BOOST_CHECK(TestSplitHost("[127.0.0.1]", "127.0.0.1", -1));

@@ -1,6 +1,6 @@
-placeh Core version 0.9.3 is now available from:
+placeh core version 0.9.3 is now available from:
 
-  https://placeh.org/bin/0.9.3/
+  https://placeh.io/bin/0.9.3/
 
 This is a new minor version release, bringing only bug fixes and updated
 translations. Upgrading to this release is recommended.
@@ -70,7 +70,7 @@ GUI:
 Miscellaneous:
 - key.cpp: fail with a friendlier message on missing ssl EC support
 - Remove bignum dependency for scripts
-- Upgrade OpenSSL to 1.0.1i (see https://www.openssl.org/news/secadv_20140806.txt - just to be sure, no critical issues for placeh Core)
+- Upgrade OpenSSL to 1.0.1i (see https://www.openssl.org/news/secadv_20140806.txt - just to be sure, no critical issues for placeh core)
 - Upgrade miniupnpc to 1.9.20140701
 - Fix boost detection in build system on some platforms
 

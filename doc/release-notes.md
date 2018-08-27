@@ -1,9 +1,9 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to
 release-notes at release time)
 
-placeh Core version *0.15.1* is now available from:
+placeh core version *0.15.1* is now available from:
 
-  <https://placeh.org/bin/placeh-core-0.15.1/>
+  <https://placeh.io/bin/placeh-core-0.15.1/>
 
 This is a new minor version release, including various bugfixes and
 performance improvements, as well as updated translations.
@@ -51,10 +51,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-placeh Core is extensively tested on multiple operating systems using
+placeh core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-placeh Core should also work on most other Unix-like systems but is not
+placeh core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes

@@ -1,6 +1,6 @@
-placeh Core version 0.9.0 is now available from:
+placeh core version 0.9.0 is now available from:
 
-  https://placeh.org/bin/0.9.0/
+  https://placeh.io/bin/0.9.0/
 
 This is a new major version release, bringing both new features and
 bug fixes.
@@ -59,11 +59,11 @@ Also, the first time you run a 0.8.x release on a 0.9 wallet it will rescan
 the blockchain for missing spent coins, which will take a long time (tens
 of minutes on a typical machine).
 
-Rebranding to placeh Core
+Rebranding to placeh core
 ---------------------------
 
 To reduce confusion between placeh-the-network and placeh-the-software we
-have renamed the reference client to placeh Core.
+have renamed the reference client to placeh core.
 
 
 OP_RETURN and data in the block chain
@@ -295,7 +295,7 @@ GUI:
 - Add Coin Control Features
 - Improve receive coins workflow: make the 'Receive' tab into a form to request
   payments, and move historical address list functionality to File menu.
-- Rebrand to `placeh Core`
+- Rebrand to `placeh core`
 - Move initialization/shutdown to a thread. This prevents "Not responding"
   messages during startup. Also show a window during shutdown.
 - Don't regenerate autostart link on every client startup

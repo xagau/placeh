@@ -1758,7 +1758,7 @@
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>placehi tuumik</translation>
     </message>
     <message>

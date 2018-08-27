@@ -1,4 +1,4 @@
-placeh Core
+placeh core
 =============
 
 Setup

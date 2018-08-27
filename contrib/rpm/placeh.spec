@@ -20,8 +20,8 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://placeh.org/
-Source0:	https://placeh.org/bin/placeh-core-%{version}/placeh-%{version}.tar.gz
+URL:		https://placeh.io/
+Source0:	https://placeh.io/bin/placeh-core-%{version}/placeh-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
 Source10:	https://raw.githubusercontent.com/placeh/placeh/v%{version}/contrib/debian/examples/placeh.conf

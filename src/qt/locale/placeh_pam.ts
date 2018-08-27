@@ -752,7 +752,7 @@
         <translation>Gumana king gulut bilang daemon at tumanggap commands</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>Kapilubluban ning placeh</translation>
     </message>
     <message>

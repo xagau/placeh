@@ -15,7 +15,7 @@ It is considered good form for all sources to reference a URL where the source
 can be downloaded.
 
 Sources 0-9 should be reserved for source code tarballs. `Source0` should
-reference the release tarball available from https://placeh.org/bin/ and
+reference the release tarball available from https://placeh.io/bin/ and
 `Source1` should reference the BerkeleyDB source.
 
 Sources 10-99 are for source files that are maintained in the
@@ -62,7 +62,7 @@ most likely to be the case with the Qt packages.
 
 The `build-unix.md` file recommends building against BerkeleyDB 4.8.30. Even if
 that is the version your Linux distribution ships with, it probably is a good
-idea to build placeh Core against a static version of that library compiled
+idea to build placeh core against a static version of that library compiled
 according to the instructions in the `build-unix.md` file so that any changes
 the distribution may make in the future will not result in a problem for users.
 

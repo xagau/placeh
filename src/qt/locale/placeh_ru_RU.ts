@@ -231,7 +231,7 @@
     </message>
     <message>
         <source>placeh</source>
-        <translation>placeh Core</translation>
+        <translation>placeh core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -832,8 +832,8 @@
 <context>
     <name>placeh-core</name>
     <message>
-        <source>placeh Core</source>
-        <translation>placeh Core</translation>
+        <source>placeh core</source>
+        <translation>placeh core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>

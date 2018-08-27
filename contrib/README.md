@@ -29,7 +29,7 @@ for Debian-based Linux systems. If you compile placehd/placeh-qt yourself, there
 Notes on getting Gitian builds up and running using KVM.
 
 ### [Gitian-keys](/contrib/gitian-keys)
-PGP keys used for signing placeh Core [Gitian release](/doc/release-process.md) results.
+PGP keys used for signing placeh core [Gitian release](/doc/release-process.md) results.
 
 ### [MacDeploy](/contrib/macdeploy) ###
 Scripts and notes for Mac builds. 
@@ -47,4 +47,4 @@ Test and Verify Tools
 Utilities to generate test vectors for the data-driven placeh tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
-This script attempts to download and verify the signature file SHA256SUMS.asc from placeh.org.
+This script attempts to download and verify the signature file SHA256SUMS.asc from placeh.io.

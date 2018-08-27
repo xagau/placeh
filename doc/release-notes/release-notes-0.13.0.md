@@ -1,6 +1,6 @@
-placeh Core version 0.13.0 is now available from:
+placeh core version 0.13.0 is now available from:
 
-  <https://placeh.org/bin/placeh-core-0.13.0/>
+  <https://placeh.io/bin/placeh-core-0.13.0/>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
@@ -21,7 +21,7 @@ an OS initially released in 2001. This means that not even critical security
 updates will be released anymore. Without security updates, using a placeh
 wallet on a XP machine is irresponsible at least.
 
-In addition to that, with 0.12.x there have been varied reports of placeh Core
+In addition to that, with 0.12.x there have been varied reports of placeh core
 randomly crashing on Windows XP. It is [not clear](https://github.com/placeh/placeh/issues/7681#issuecomment-217439891)
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.
@@ -76,7 +76,7 @@ table by any user on the system.
 C++11 and Python 3
 ------------------
 
-Various code modernizations have been done. The placeh Core code base has
+Various code modernizations have been done. The placeh core code base has
 started using C++11. This means that a C++11-capable compiler is now needed for
 building. Effectively this means GCC 4.7 or higher, or Clang 3.3 or higher.
 
@@ -156,7 +156,7 @@ You can't disable HD key generation once you have created a HD wallet.
 
 There is no distinction between internal (change) and external keys.
 
-HD wallets are incompatible with older versions of placeh Core.
+HD wallets are incompatible with older versions of placeh core.
 
 [Pull request](https://github.com/placeh/placeh/pull/8035/files), [BIP 32](https://github.com/placeh/bips/blob/master/bip-0032.mediawiki)
 
@@ -172,7 +172,7 @@ The code preparations for Segregated Witness ("segwit"), as described in [BIP
 finished and included in this release.  However, BIP 141 does not yet specify
 activation parameters on mainnet, and so this release does not support segwit
 use on mainnet.  Testnet use is supported, and after BIP 141 is updated with
-proposed parameters, a future release of placeh Core is expected that
+proposed parameters, a future release of placeh core is expected that
 implements those parameters for mainnet.
 
 Furthermore, because segwit activation is not yet specified for mainnet,

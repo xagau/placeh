@@ -1123,7 +1123,7 @@
 </translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>Núcleo de placeh</translation>
     </message>
     <message>

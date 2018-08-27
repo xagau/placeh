@@ -18,7 +18,7 @@ PLACEHD_BIN=${PLACEHD_BIN:-/usr/bin/placehd}
 PLACEHD_NICE=${PLACEHD_NICE:-${NICELEVEL:-0}}
 PLACEHD_OPTS="${PLACEHD_OPTS:-${PLACEH_OPTS}}"
 
-name="placeh Core Daemon"
+name="placeh core Daemon"
 description="placeh cryptocurrency P2P network daemon"
 
 command="/usr/bin/placehd"

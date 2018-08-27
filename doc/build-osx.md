@@ -24,7 +24,7 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build placeh Core
+Build placeh core
 ------------------------
 
 1. Clone the placeh source code and cd into `placeh`
@@ -53,7 +53,7 @@ Build placeh Core
 Running
 -------
 
-placeh Core is now available at `./src/placehd`
+placeh core is now available at `./src/placehd`
 
 Before running, it's recommended you create an RPC configuration file.
 

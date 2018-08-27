@@ -170,7 +170,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 }
 #endif
 
-/** Class encapsulating placeh Core startup and shutdown.
+/** Class encapsulating placeh core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class placehCore : public QObject

@@ -958,7 +958,7 @@
         <translation>Dirbti fone kaip šešėlyje ir priimti komandas</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>placeh branduolys</translation>
     </message>
     <message>

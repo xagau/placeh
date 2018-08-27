@@ -420,7 +420,7 @@
 <context>
     <name>placeh-core</name>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>Биткойн ядро</translation>
     </message>
     </context>

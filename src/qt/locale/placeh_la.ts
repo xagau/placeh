@@ -768,7 +768,7 @@
         <translation>Operare infere sicut daemon et mandata accipe</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>placeh Nucleus</translation>
     </message>
     <message>

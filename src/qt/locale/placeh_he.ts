@@ -2714,7 +2714,7 @@
         <translation>ריצה כסוכן ברקע וקבלת פקודות</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>ליבת ביטקוין</translation>
     </message>
     <message>

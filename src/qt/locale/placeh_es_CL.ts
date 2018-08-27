@@ -772,7 +772,7 @@
 </translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>placeh core</translation>
     </message>
     <message>

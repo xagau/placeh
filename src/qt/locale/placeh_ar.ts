@@ -1960,7 +1960,7 @@
         <translation>حدد مجلد المعلومات</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>جوهر البيت كوين</translation>
     </message>
     <message>

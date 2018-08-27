@@ -1,6 +1,6 @@
-placeh Core version 0.9.4 is now available from:
+placeh core version 0.9.4 is now available from:
 
-  https://placeh.org/bin/0.9.4/
+  https://placeh.io/bin/0.9.4/
 
 This is a new minor version release, bringing only bug fixes and updated
 translations. Upgrading to this release is recommended.
@@ -25,15 +25,15 @@ various operating system maintainers. Review by Gregory Maxwell determined that
 this update is incompatible with the placeh system and could lead to consensus
 forks.
 
-placeh Core released binaries from https://placeh.org are unaffected,
+placeh core released binaries from https://placeh.io are unaffected,
 as are any built with the gitian deterministic build system.
 
 However, if you are running either
 
 - The Ubuntu PPA from https://launchpad.net/~placeh/+archive/ubuntu/placeh
-- A third-party or self-compiled placeh Core
+- A third-party or self-compiled placeh core
 
-upgrade to placeh Core 0.9.4, which includes a workaround, **before** updating
+upgrade to placeh core 0.9.4, which includes a workaround, **before** updating
 OpenSSL.
 
 The incompatibility is due to the OpenSSL update changing the

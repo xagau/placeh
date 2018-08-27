@@ -1,6 +1,6 @@
-placeh Core version 0.9.2.1 is now available from:
+placeh core version 0.9.2.1 is now available from:
 
-  https://placeh.org/bin/0.9.2.1/
+  https://placeh.io/bin/0.9.2.1/
 
 This is a new minor version release, bringing mostly bug fixes and some minor
 improvements. OpenSSL has been updated because of a security issue (CVE-2014-0224).

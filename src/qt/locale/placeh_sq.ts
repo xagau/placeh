@@ -784,7 +784,7 @@
         <translation>Opsionet:</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>Berthama placeh</translation>
     </message>
     <message>

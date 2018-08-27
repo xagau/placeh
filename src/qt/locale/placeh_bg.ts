@@ -2370,7 +2370,7 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>placeh Core</source>
+        <source>placeh core</source>
         <translation>Биткойн ядро</translation>
     </message>
     <message>
