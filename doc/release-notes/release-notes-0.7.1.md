@@ -4,12 +4,12 @@ placeh version 0.7.1 is now available from:
 This is a bug-fix minor release.
 
 Please report bugs using the issue tracker at github:
-  https://github.com/placeh/placeh/issues
+  https://github.com/xagau/placeh/issues
 
 Project source code is hosted at github; you can get
 source-only tarballs/zipballs directly from there:
-  https://github.com/placeh/placeh/tarball/v0.7.1  # .tar.gz
-  https://github.com/placeh/placeh/zipball/v0.7.1  # .zip
+  https://github.com/xagau/placeh/tarball/v0.7.1  # .tar.gz
+  https://github.com/xagau/placeh/zipball/v0.7.1  # .zip
 
 Ubuntu Linux users can use the "Personal Package Archive" (PPA)
 maintained by Matt Corallo to automatically keep 

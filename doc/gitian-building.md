@@ -314,8 +314,8 @@ Clone the git repositories for placeh and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/placeh/placeh
-git clone https://github.com/placeh-core/gitian.sigs.git
+git clone https://github.com/xagau/placeh
+git clone https://github.com/xagau-core/gitian.sigs.git
 ```
 
 Setting up the Gitian image
@@ -372,7 +372,7 @@ Output from `gbuild` will look something like
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/placeh/placeh
+    From https://github.com/xagau/placeh
     ... (new tags, new branch etc)
     --- Building for trusty amd64 ---
     Stopping target if it is up
@@ -448,7 +448,7 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/placeh-core/placeh-detached-sigs.git
+git clone https://github.com/xagau-core/placeh-detached-sigs.git
 
 PHLPATH=/some/root/path/placeh
 SIGPATH=/some/root/path/placeh-detached-sigs
@@ -480,5 +480,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[placeh-core/gitian.sigs](https://github.com/placeh-core/gitian.sigs/) repository, or if that's not possible create a pull
+[placeh-core/gitian.sigs](https://github.com/xagau-core/gitian.sigs/) repository, or if that's not possible create a pull
 request. You can also mail the files to Wladimir (laanwj@gmail.com) and he will commit them.

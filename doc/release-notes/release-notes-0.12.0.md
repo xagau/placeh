@@ -6,7 +6,7 @@ This is a new major version release, bringing new features and other improvement
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/placeh/placeh/issues>
+  <https://github.com/xagau/placeh/issues>
 
 Upgrading and downgrading
 =========================
@@ -61,7 +61,7 @@ Signature validation using libsecp256k1
 ---------------------------------------
 
 ECDSA signatures inside placeh transactions now use validation using
-[libsecp256k1](https://github.com/placeh-core/secp256k1) instead of OpenSSL.
+[libsecp256k1](https://github.com/xagau-core/secp256k1) instead of OpenSSL.
 
 Depending on the platform, this means a significant speedup for raw signature
 validation speed. The advantage is largest on x86_64, where validation is over
@@ -98,7 +98,7 @@ Direct headers announcement (BIP 130)
 -------------------------------------
 
 Between compatible peers, [BIP 130]
-(https://github.com/placeh/bips/blob/master/bip-0130.mediawiki)
+(https://github.com/xagau/bips/blob/master/bip-0130.mediawiki)
 direct headers announcement is used. This means that blocks are advertised by
 announcing their headers directly, instead of just announcing the hash. In a
 reorganization, all new headers are sent, instead of just the new tip. This
@@ -138,7 +138,7 @@ placeh core 0.12 nodes. placeh core will only allow replacement of
 transactions which have any of their inputs' `nSequence` number set to less
 than `0xffffffff - 1`.  Moreover, a replacement transaction may only be
 accepted when it pays sufficient fee, as described in [BIP 125]
-(https://github.com/placeh/bips/blob/master/bip-0125.mediawiki).
+(https://github.com/xagau/bips/blob/master/bip-0125.mediawiki).
 
 Transaction replacement can be disabled with a new command line option,
 `-mempoolreplacement=0`.  Transactions signaling replacement under BIP125 will
@@ -331,13 +331,13 @@ practice. In future releases, a higher value may also help the network
 as a whole: stored blocks could be served to other nodes.
 
 For further information about pruning, you may also consult the [release
-notes of v0.11.0](https://github.com/placeh/placeh/blob/v0.11.0/doc/release-notes.md#block-file-pruning).
+notes of v0.11.0](https://github.com/xagau/placeh/blob/v0.11.0/doc/release-notes.md#block-file-pruning).
 
 `NODE_BLOOM` service bit
 ------------------------
 
 Support for the `NODE_BLOOM` service bit, as described in [BIP
-111](https://github.com/placeh/bips/blob/master/bip-0111.mediawiki), has been
+111](https://github.com/xagau/bips/blob/master/bip-0111.mediawiki), has been
 added to the P2P protocol code.
 
 BIP 111 defines a service bit to allow peers to advertise that they support
@@ -369,7 +369,7 @@ RPC: Low-level API changes
 * The `asm` property of each scriptSig now contains the decoded signature hash
   type for each signature that provides a valid defined hash type.
 
-* OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP 65](https://github.com/placeh/bips/blob/master/bip-0065.mediawiki)
+* OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP 65](https://github.com/xagau/bips/blob/master/bip-0065.mediawiki)
 
 The following items contain assembly representations of scriptSig signatures
 and are affected by this change:

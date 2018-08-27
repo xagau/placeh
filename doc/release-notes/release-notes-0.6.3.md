@@ -4,7 +4,7 @@ placeh version 0.6.3 is now available for download at:
 This is a bug-fix release, with no new features.
 
 Please report bugs using the issue tracker at github:
-  https://github.com/placeh/placeh/issues
+  https://github.com/xagau/placeh/issues
 
 CHANGE SUMMARY
 

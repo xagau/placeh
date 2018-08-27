@@ -7,7 +7,7 @@ bug fixes.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/placeh/placeh/issues
+  https://github.com/xagau/placeh/issues
 
 Upgrading and downgrading
 =========================
@@ -230,7 +230,7 @@ bindings such as [python-placehlib](https://pypi.python.org/pypi/python-placehli
 alternative node implementations.
 
 This library is called `libplacehconsensus.so` (or, `.dll` for Windows).
-Its interface is defined in the C header [placehconsensus.h](https://github.com/placeh/placeh/blob/0.10/src/script/placehconsensus.h).
+Its interface is defined in the C header [placehconsensus.h](https://github.com/xagau/placeh/blob/0.10/src/script/placehconsensus.h).
 
 In its initial version the API includes two functions:
 

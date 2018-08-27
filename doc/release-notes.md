@@ -10,11 +10,11 @@ performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/placeh/placeh/issues>
+  <https://github.com/xagau/placeh/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://placehcore.org/en/list/announcements/join/>
+  <https://placeh.io/en/list/announcements/join/>
 
 How to Upgrade
 ==============

@@ -8,11 +8,11 @@ updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/placeh/placeh/issues>
+  <https://github.com/xagau/placeh/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://placehcore.org/en/list/announcements/join/>
+  <https://placeh.io/en/list/announcements/join/>
 
 Compatibility
 ==============
@@ -23,7 +23,7 @@ updates will be released anymore. Without security updates, using a placeh
 wallet on a XP machine is irresponsible at least.
 
 In addition to that, with 0.12.x there have been varied reports of placeh core
-randomly crashing on Windows XP. It is [not clear](https://github.com/placeh/placeh/issues/7681#issuecomment-217439891)
+randomly crashing on Windows XP. It is [not clear](https://github.com/xagau/placeh/issues/7681#issuecomment-217439891)
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.
 
@@ -159,13 +159,13 @@ For more information about segwit, please see the [segwit FAQ][], the
 operator, please see the [versionbits FAQ][] for information about
 signaling support for a soft fork.
 
-[Segwit FAQ]: https://placehcore.org/en/2016/01/26/segwit-benefits/
-[segwit wallet developers guide]: https://placehcore.org/en/segwit_wallet_dev/
-[BIP141]: https://github.com/placeh/bips/blob/master/bip-0141.mediawiki
-[BIP143]: https://github.com/placeh/bips/blob/master/bip-0143.mediawiki
-[BIP144]: https://github.com/placeh/bips/blob/master/bip-0144.mediawiki
-[BIP145]: https://github.com/placeh/bips/blob/master/bip-0145.mediawiki
-[versionbits FAQ]: https://placehcore.org/en/2016/06/08/version-bits-miners-faq/
+[Segwit FAQ]: https://placeh.io/en/2016/01/26/segwit-benefits/
+[segwit wallet developers guide]: https://placeh.io/en/segwit_wallet_dev/
+[BIP141]: https://github.com/xagau/bips/blob/master/bip-0141.mediawiki
+[BIP143]: https://github.com/xagau/bips/blob/master/bip-0143.mediawiki
+[BIP144]: https://github.com/xagau/bips/blob/master/bip-0144.mediawiki
+[BIP145]: https://github.com/xagau/bips/blob/master/bip-0145.mediawiki
+[versionbits FAQ]: https://placeh.io/en/2016/06/08/version-bits-miners-faq/
 
 
 Null dummy soft fork
@@ -196,7 +196,7 @@ as segwit.
 
 For more information, please see [BIP147][].
 
-[BIP147]: https://github.com/placeh/bips/blob/master/bip-0147.mediawiki
+[BIP147]: https://github.com/xagau/bips/blob/master/bip-0147.mediawiki
 
 Low-level RPC changes
 ---------------------

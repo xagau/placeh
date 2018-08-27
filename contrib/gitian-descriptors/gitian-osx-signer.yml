@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/placeh-core/placeh-detached-sigs.git"
+- "url": "https://github.com/xagau-core/placeh-detached-sigs.git"
   "dir": "signature"
 files:
 - "placeh-osx-unsigned.tar.gz"

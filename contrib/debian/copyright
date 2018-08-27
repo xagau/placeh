@@ -2,7 +2,7 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: placeh
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
  irc://#placeh@freenode.net
-Source: https://github.com/placeh/placeh
+Source: https://github.com/xagau/placeh
 
 Files: *
 Copyright: 2009-2017, placeh core Developers

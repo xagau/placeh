@@ -7,11 +7,11 @@ and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/placeh/placeh/issues>
+  <https://github.com/xagau/placeh/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://placehcore.org/en/list/announcements/join/>
+  <https://placeh.io/en/list/announcements/join/>
 
 Compatibility
 ==============
@@ -96,7 +96,7 @@ ZMQ On Windows
 
 Previously the ZeroMQ notification system was unavailable on Windows
 due to various issues with ZMQ. These have been fixed upstream and
-now ZMQ can be used on Windows. Please see [this document](https://github.com/placeh/placeh/blob/master/doc/zmq.md) for
+now ZMQ can be used on Windows. Please see [this document](https://github.com/xagau/placeh/blob/master/doc/zmq.md) for
 help with using ZMQ in general.
 
 Nested RPC Commands in Debug Console
@@ -242,7 +242,7 @@ Low-level RPC changes
 
  - A new RPC command `getmemoryinfo` has been added which will return information
    about the memory usage of placeh core. This was added in conjunction with
-   optimizations to memory management. See [Pull #8753](https://github.com/placeh/placeh/pull/8753)
+   optimizations to memory management. See [Pull #8753](https://github.com/xagau/placeh/pull/8753)
    for more information.
 
  - A new RPC command `bumpfee` has been added which allows replacing an

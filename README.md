@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/placeh/placeh/tags) are created
+completely stable. [Tags](https://github.com/xagau/placeh/tags) are created
 regularly to indicate new official, stable release versions of placeh core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

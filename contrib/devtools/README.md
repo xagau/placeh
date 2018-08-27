@@ -93,10 +93,10 @@ the commit it claims to have been updated to.
 
 To use, make sure that you have fetched the upstream repository branch in which the subtree is
 maintained:
-* for `src/secp256k1`: https://github.com/placeh-core/secp256k1.git (branch master)
-* for `src/leveldb`: https://github.com/placeh-core/leveldb.git (branch placeh-fork)
-* for `src/univalue`: https://github.com/placeh-core/univalue.git (branch master)
-* for `src/crypto/ctaes`: https://github.com/placeh-core/ctaes.git (branch master)
+* for `src/secp256k1`: https://github.com/xagau-core/secp256k1.git (branch master)
+* for `src/leveldb`: https://github.com/xagau-core/leveldb.git (branch placeh-fork)
+* for `src/univalue`: https://github.com/xagau-core/univalue.git (branch master)
+* for `src/crypto/ctaes`: https://github.com/xagau-core/ctaes.git (branch master)
 
 Usage: `git-subtree-check.sh DIR (COMMIT)`
 

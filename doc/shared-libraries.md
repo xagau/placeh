@@ -28,12 +28,12 @@ The interface is defined in the C header `placehconsensus.h` located in  `src/sc
 
 ##### Script Flags
 - `placehconsensus_SCRIPT_FLAGS_VERIFY_NONE`
-- `placehconsensus_SCRIPT_FLAGS_VERIFY_P2SH` - Evaluate P2SH ([BIP16](https://github.com/placeh/bips/blob/master/bip-0016.mediawiki)) subscripts
-- `placehconsensus_SCRIPT_FLAGS_VERIFY_DERSIG` - Enforce strict DER ([BIP66](https://github.com/placeh/bips/blob/master/bip-0066.mediawiki)) compliance
-- `placehconsensus_SCRIPT_FLAGS_VERIFY_NULLDUMMY` - Enforce NULLDUMMY ([BIP147](https://github.com/placeh/bips/blob/master/bip-0147.mediawiki))
-- `placehconsensus_SCRIPT_FLAGS_VERIFY_CHECKLOCKTIMEVERIFY` - Enable CHECKLOCKTIMEVERIFY ([BIP65](https://github.com/placeh/bips/blob/master/bip-0065.mediawiki))
-- `placehconsensus_SCRIPT_FLAGS_VERIFY_CHECKSEQUENCEVERIFY` - Enable CHECKSEQUENCEVERIFY ([BIP112](https://github.com/placeh/bips/blob/master/bip-0112.mediawiki))
-- `placehconsensus_SCRIPT_FLAGS_VERIFY_WITNESS` - Enable WITNESS ([BIP141](https://github.com/placeh/bips/blob/master/bip-0141.mediawiki))
+- `placehconsensus_SCRIPT_FLAGS_VERIFY_P2SH` - Evaluate P2SH ([BIP16](https://github.com/xagau/bips/blob/master/bip-0016.mediawiki)) subscripts
+- `placehconsensus_SCRIPT_FLAGS_VERIFY_DERSIG` - Enforce strict DER ([BIP66](https://github.com/xagau/bips/blob/master/bip-0066.mediawiki)) compliance
+- `placehconsensus_SCRIPT_FLAGS_VERIFY_NULLDUMMY` - Enforce NULLDUMMY ([BIP147](https://github.com/xagau/bips/blob/master/bip-0147.mediawiki))
+- `placehconsensus_SCRIPT_FLAGS_VERIFY_CHECKLOCKTIMEVERIFY` - Enable CHECKLOCKTIMEVERIFY ([BIP65](https://github.com/xagau/bips/blob/master/bip-0065.mediawiki))
+- `placehconsensus_SCRIPT_FLAGS_VERIFY_CHECKSEQUENCEVERIFY` - Enable CHECKSEQUENCEVERIFY ([BIP112](https://github.com/xagau/bips/blob/master/bip-0112.mediawiki))
+- `placehconsensus_SCRIPT_FLAGS_VERIFY_WITNESS` - Enable WITNESS ([BIP141](https://github.com/xagau/bips/blob/master/bip-0141.mediawiki))
 
 ##### Errors
 - `placehconsensus_ERR_OK` - No errors with input parameters *(see the return value of `placehconsensus_verify_script` for the verification status)*

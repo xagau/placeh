@@ -3,9 +3,9 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/placeh/placeh/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/xagau/placeh/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/placeh/placeh/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/xagau/placeh/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -21,7 +21,7 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/placeh/placeh/pull/7415) for an example.
+* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/xagau/placeh/pull/7415) for an example.
 * Update [`BLOCK_CHAIN_SIZE`](/src/qt/intro.cpp) to the current size plus some overhead.
 * Update `src/chainparams.cpp` chainTxData with statistics about the transaction count and rate.
 * Update version of `contrib/gitian-descriptors/*.yml`: usually one'd want to do this on master after branching off the release - but be sure to at least do it before a new major release
@@ -33,10 +33,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/placeh-core/gitian.sigs.git
-    git clone https://github.com/placeh-core/placeh-detached-sigs.git
+    git clone https://github.com/xagau-core/gitian.sigs.git
+    git clone https://github.com/xagau-core/placeh-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/placeh/placeh.git
+    git clone https://github.com/xagau/placeh.git
 
 ### placeh maintainers/release engineers, suggestion for writing release notes
 
@@ -84,7 +84,7 @@ Ensure gitian-builder is up-to-date:
 
     pushd ./gitian-builder
     mkdir -p inputs
-    wget -P inputs https://placehcore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+    wget -P inputs https://placeh.io/cfields/osslsigncode-Backports-to-1.7.1.patch
     wget -P inputs http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
     popd
 
@@ -195,7 +195,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [placeh-detached-sigs](https://github.com/placeh-core/placeh-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [placeh-detached-sigs](https://github.com/xagau-core/placeh-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
@@ -276,14 +276,14 @@ placeh.io (see below for placeh.io update instructions).
 - Update placeh.io version
 
   - First, check to see if the placeh.io maintainers have prepared a
-    release: https://github.com/placeh-dot-org/placeh.io/labels/Releases
+    release: https://github.com/xagau-dot-org/placeh.io/labels/Releases
 
       - If they have, it will have previously failed their Travis CI
         checks because the final release files weren't uploaded.
         Trigger a Travis CI rebuild---if it passes, merge.
 
   - If they have not prepared a release, follow the placeh.io release
-    instructions: https://github.com/placeh-dot-org/placeh.io#release-notes
+    instructions: https://github.com/xagau-dot-org/placeh.io#release-notes
 
   - After the pull request is merged, the website will automatically show the newest version within 15 minutes, as well
     as update the OS download links. Ping @saivann/@harding (saivann/harding on Freenode) in case anything goes wrong
@@ -292,9 +292,9 @@ placeh.io (see below for placeh.io update instructions).
 
   - placeh-dev and placeh-core-dev mailing list
 
-  - placeh core announcements list https://placehcore.org/en/list/announcements/join/
+  - placeh core announcements list https://placeh.io/en/list/announcements/join/
 
-  - placehcore.org blog post
+  - placeh.io blog post
 
   - Update title of #placeh on Freenode IRC
 
@@ -304,6 +304,6 @@ placeh.io (see below for placeh.io update instructions).
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/placeh/placeh/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/xagau/placeh/releases/new) with a link to the archived release notes.
 
   - Celebrate

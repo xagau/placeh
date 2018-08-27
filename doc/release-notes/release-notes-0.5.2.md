@@ -4,7 +4,7 @@ http://sourceforge.net/projects/placeh/files/placeh/placeh-0.5.2/
 This is a bugfix-only release based on 0.5.1.
 
 Please report bugs using the issue tracker at github:
-https://github.com/placeh/placeh/issues
+https://github.com/xagau/placeh/issues
 
 Stable source code is hosted at Gitorious:
 http://gitorious.org/placeh/placehd-stable/archive-tarball/v0.5.2#.tar.gz

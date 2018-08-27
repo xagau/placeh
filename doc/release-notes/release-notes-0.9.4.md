@@ -7,7 +7,7 @@ translations. Upgrading to this release is recommended.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/placeh/placeh/issues
+  https://github.com/xagau/placeh/issues
 
 How to Upgrade
 ===============
