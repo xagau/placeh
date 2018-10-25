@@ -2595,9 +2595,9 @@ $as_echo "$as_me: WARNING: $2: see the Autoconf documentation" >&2;}
 $as_echo "$as_me: WARNING: $2:     section \"Present But Cannot Be Compiled\"" >&2;}
     { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: $2: proceeding with the compiler's result" >&5
 $as_echo "$as_me: WARNING: $2: proceeding with the compiler's result" >&2;}
-( $as_echo "## ------------------------------------------------------ ##
+( $as_echo "## ----------------------------------------------------- ##
 ## Report this to https://github.com/xagau/placeh/issues ##
-## ------------------------------------------------------ ##"
+## ----------------------------------------------------- ##"
      ) | sed "s/^/$as_me: WARNING:     /" >&2
     ;;
 esac

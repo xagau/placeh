@@ -1,0 +1,11 @@
+prefix=/
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: placeh core consensus library
+Description: Library for the placeh consensus protocol.
+Version: 0.15.0
+Libs: -L${libdir} -lplacehconsensus
+Cflags: -I${includedir}
+Requires.private: libcrypto

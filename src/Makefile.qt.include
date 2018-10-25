@@ -189,6 +189,7 @@ QT_MOC = \
   qt/rpcconsole.moc
 
 QT_QRC_CPP = qt/qrc_placeh.cpp
+
 QT_QRC = qt/placeh.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_placeh_locale.cpp
 QT_QRC_LOCALE = qt/placeh_locale.qrc
