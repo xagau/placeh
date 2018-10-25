@@ -27,7 +27,7 @@ Download
 -------
 
 placeh core is may be downloaded from the placeh.io website 
-http://www.placeh.io/files/placeh-rc2.0b.zip
+http://www.placeh.io/files/placeh-rc2.01b.zip
 
 or directly from the executables under /src/ on the github repo.
 Alternatively you can build the applicaiton from source.
