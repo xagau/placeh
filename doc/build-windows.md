@@ -48,6 +48,13 @@ After the bash shell is active, you can follow the instructions below, starting
 with the "Cross-compilation" section. Compiling the 64-bit version is
 recommended but it is possible to compile the 32-bit version.
 
+Github:
+-------------------
+Get a copy of the repo from github
+0. If you are cloning under WSL make sure you use git config --global core.autocrlf true
+1. git clone https://www.githu.com/xagau/placeh.git
+2. See further build instructions below.
+
 Cross-compilation
 -------------------
 
@@ -93,11 +100,11 @@ To build executables for Windows 32-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev
 
-Then build using:
+Then build (if you are using WSL you must be using from ROOT) using:
 
     PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
     cd depends
-    make HOST=i686-w64-mingw32
+    make HOST=x86_64-w64-mingw32 V=1 AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
@@ -106,6 +113,10 @@ Then build using:
 ## Depends system
 
 For further documentation on the depends system see [README.md](../depends/README.md) in the depends directory.
+
+Bundling
+-------------
+You will want to make sure you bundle up placeh-qt.exe, placeh-cli.exe, placeh-tx.exe, placehd.exe, placeh.conf with  your distribution.
 
 Installation
 -------------

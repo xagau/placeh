@@ -23,6 +23,15 @@ License
 placeh core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
+Download
+-------
+
+placeh core is may be downloaded from the placeh.io website 
+http://www.placeh.io/files/placeh-rc2.0b.zip
+
+or directly from the executables under /src/ on the github repo.
+Alternatively you can build the applicaiton from source.
+
 Development Process
 -------------------
 
