@@ -7,11 +7,13 @@ https://placeh.io
 What is placeh?
 ----------------
 
-placeh is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. placeh uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. placeh core is the name of open source
-software which enables the use of this currency.
+placeh is an experimental digital currency artifact storage system that enables 
+instant payments to anyone and transfer of arbitrary data to anyone, anywhere in the world. 
+
+placeh uses peer-to-peer technology to operate with no central authority: managing transactions 
+and issuing money are carried out collectively by the network. placeh core is the name of open source
+software which enables the use of this currency. placeh is based on the cryptocurrency bitcoin 
+and has not changed any of its consensus rules, coin issuance limits or blocktimes.
 
 For more information, as well as an immediately useable, binary version of
 the placeh core software, see https://placeh.io/#download, or read the
