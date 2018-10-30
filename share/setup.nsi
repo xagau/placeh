@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.15.0
+!define VERSION 2.0.25
 !define COMPANY "placeh core project"
 !define URL https://placeh.io/
 

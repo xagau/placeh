@@ -15,13 +15,13 @@
 #define CLIENT_VERSION_IS_RELEASE true
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 0
+#define CLIENT_VERSION_MAJOR 2
 
 /* Minor version */
-#define CLIENT_VERSION_MINOR 15
+#define CLIENT_VERSION_MINOR 0
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 0
+#define CLIENT_VERSION_REVISION 25
 
 /* Copyright holder(s) before %s replacement */
 #define COPYRIGHT_HOLDERS "The %s developers"
@@ -33,7 +33,7 @@
 #define COPYRIGHT_HOLDERS_SUBSTITUTION "placeh core"
 
 /* Copyright year */
-#define COPYRIGHT_YEAR 2017
+#define COPYRIGHT_YEAR 2018
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
@@ -353,7 +353,7 @@
 #define PACKAGE_NAME "placeh core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "placeh core 0.15.0"
+#define PACKAGE_STRING "placeh core 2.0.25"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "placeh"
@@ -362,7 +362,7 @@
 #define PACKAGE_URL "https://placeh.io/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.15.0"
+#define PACKAGE_VERSION "2.0.25"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
