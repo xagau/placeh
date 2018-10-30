@@ -279,14 +279,14 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = @ACLOCAL@
+ACLOCAL = aclocal-1.15                                                                                                                                    
 AMTAR = @AMTAR@
 AM_DEFAULT_VERBOSITY = @AM_DEFAULT_VERBOSITY@
 AR = @AR@
 ARFLAGS = @ARFLAGS@
 AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
-AUTOMAKE = @AUTOMAKE@
+AUTOMAKE = automake-1.15    
 AWK = @AWK@
 BDB_CFLAGS = @BDB_CFLAGS@
 BDB_CPPFLAGS = @BDB_CPPFLAGS@

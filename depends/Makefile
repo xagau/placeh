@@ -1,3 +1,6 @@
+ACLOCAL = aclocal-1.15                                                                                                                                    
+AUTOMAKE = automake-1.15    
+
 .NOTPARALLEL :
 
 SOURCES_PATH ?= $(BASEDIR)/sources

@@ -1216,7 +1216,7 @@ configure: failed program was:
 configure:21966: result: no
 configure:21979: checking for strerror_r
 configure:21979: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
-/tmp/ccLenyp7.o:conftest.cpp:(.text.startup+0xa): undefined reference to `strerror_r'
+/tmp/ccfx3BdH.o:conftest.cpp:(.text.startup+0xa): undefined reference to `strerror_r'
 collect2: error: ld returned 1 exit status
 configure:21979: $? = 1
 configure: failed program was:
@@ -6482,7 +6482,7 @@ configure:24568: $? = 0
 configure:24578: result: yes
 configure:24600: checking for library containing png_error 
 configure:24631: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtCore -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtGui -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtTest -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lz  -limm32  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib >&5
-/tmp/ccm1eG5u.o:conftest.cpp:(.text.startup+0xa): undefined reference to `png_error'
+/tmp/cc0MNkZD.o:conftest.cpp:(.text.startup+0xa): undefined reference to `png_error'
 collect2: error: ld returned 1 exit status
 configure:24631: $? = 1
 configure: failed program was:
@@ -6586,7 +6586,7 @@ configure:24631: $? = 0
 configure:24648: result: -lqtpng
 configure:24667: checking for library containing jpeg_create_decompress 
 configure:24698: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtCore -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtGui -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtTest -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lqtpng -lz  -limm32  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib >&5
-/tmp/ccvhpi2T.o:conftest.cpp:(.text.startup+0xa): undefined reference to `jpeg_create_decompress'
+/tmp/cc2BuVw9.o:conftest.cpp:(.text.startup+0xa): undefined reference to `jpeg_create_decompress'
 collect2: error: ld returned 1 exit status
 configure:24698: $? = 1
 configure: failed program was:
@@ -6889,7 +6889,7 @@ configure:24715: result: no
 configure:24722: WARNING: libjpeg not found. Assuming qt has it built-in
 configure:24734: checking for library containing pcre16_exec
 configure:24765: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtCore -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtGui -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtTest -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lqtpng -lz  -limm32  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib >&5
-/tmp/ccrVrcHw.o:conftest.cpp:(.text.startup+0xa): undefined reference to `pcre16_exec'
+/tmp/cchdb5h0.o:conftest.cpp:(.text.startup+0xa): undefined reference to `pcre16_exec'
 collect2: error: ld returned 1 exit status
 configure:24765: $? = 1
 configure: failed program was:
@@ -6993,7 +6993,7 @@ configure:24765: $? = 0
 configure:24782: result: -lqtpcre
 configure:24801: checking for library containing hb_ot_tags_from_script 
 configure:24832: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtCore -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtGui -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtTest -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lqtpcre -lqtpng -lz  -limm32  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib >&5
-/tmp/ccSbYisT.o:conftest.cpp:(.text.startup+0xa): undefined reference to `hb_ot_tags_from_script'
+/tmp/ccbZVmzt.o:conftest.cpp:(.text.startup+0xa): undefined reference to `hb_ot_tags_from_script'
 collect2: error: ld returned 1 exit status
 configure:24832: $? = 1
 configure: failed program was:
@@ -7394,8 +7394,8 @@ configure:28648: $? = 0
 configure:28662: result: yes
 configure:28774: checking for dynamic linked boost test
 configure:28789: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -lboost_unit_test_framework-mt-s >&5
-/tmp/cc2RDU75.o:conftest.cpp:(.text.startup+0x25): undefined reference to `__imp__ZN5boost9unit_test14unit_test_mainEPFbvEiPPc'
-/tmp/cc2RDU75.o:conftest.cpp:(.text.startup+0x57): undefined reference to `__imp__ZTVN5boost9unit_test15unit_test_log_tE'
+/tmp/ccbcBzJf.o:conftest.cpp:(.text.startup+0x25): undefined reference to `__imp__ZN5boost9unit_test14unit_test_mainEPFbvEiPPc'
+/tmp/ccbcBzJf.o:conftest.cpp:(.text.startup+0x57): undefined reference to `__imp__ZTVN5boost9unit_test15unit_test_log_tE'
 collect2: error: ld returned 1 exit status
 configure:28789: $? = 1
 configure: failed program was:

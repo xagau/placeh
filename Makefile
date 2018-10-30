@@ -279,14 +279,14 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing aclocal-1.15
+ACLOCAL = aclocal-1.15                                                                                                                                    
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/x86_64-w64-mingw32-ar
 ARFLAGS = cr
 AUTOCONF = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing autoconf
 AUTOHEADER = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing automake-1.15
+AUTOMAKE = automake-1.15    
 AWK = gawk
 BDB_CFLAGS = 
 BDB_CPPFLAGS = 
