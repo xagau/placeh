@@ -116,7 +116,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     }
 
 	// IS DGW active?
-	if(isDGWActive(pindexLast->nHeight)) {
+	if(IsDGWActive(pindexLast->nHeight)) {
 		return DarkGravityWave3( pindexLast, pblock, params );
 	} 
 	

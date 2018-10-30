@@ -345,6 +345,10 @@ bool TestLockPointValidity(const LockPoints* lp);
  */
 bool CheckSequenceLocks(const CTransaction& tx, int flags, LockPoints* lp = nullptr, bool useExistingLockPoints = false);
 
+/* Check to see if DGW is active */
+
+bool IsDGWActive(unsigned int nBlockNumber);
+
 /**
  * Closure representing one script verification
  * Note that this stores references to the spending transaction 

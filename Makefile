@@ -305,13 +305,13 @@ CC = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccach
 CCACHE = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccache
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
-CLIENT_VERSION_BUILD = 1
+CLIENT_VERSION_BUILD = 2
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 0
-CLIENT_VERSION_MINOR = 15
+CLIENT_VERSION_MINOR = 2
 CLIENT_VERSION_REVISION = 0
 COPYRIGHT_HOLDERS = The %s developers
-COPYRIGHT_HOLDERS_FINAL = The placeh core developers
+COPYRIGHT_HOLDERS_FINAL = The placeh core developer
 COPYRIGHT_HOLDERS_SUBSTITUTION = placeh core
 COPYRIGHT_YEAR = 2017
 CPP = x86_64-w64-mingw32-gcc -E
