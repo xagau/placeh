@@ -7276,3 +7276,1540 @@ configure:25883: $? = 0
 configure:25884: result: yes
 configure:25910: checking for static Qt plugins: -lqwindows
 configure:25928: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe  -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtCore -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtGui -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtTest -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lqwindows -lqminimal -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../plugins/platforms -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+conftest.cpp:91:0: warning: "QT_STATICPLUGIN" redefined
+     #define QT_STATICPLUGIN
+ 
+conftest.cpp:87:0: note: this is the location of the previous definition
+ #define QT_STATICPLUGIN 1
+ 
+configure:25928: $? = 0
+configure:25929: result: yes
+configure:26154: checking whether -fPIE can be used with this Qt config
+configure:26175: x86_64-w64-mingw32-g++ -std=c++11 -c  -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtCore -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtGui -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtTest -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp >&5
+configure:26175: $? = 0
+configure:26176: result: yes
+configure:26244: checking for moc-qt5
+configure:26277: result: no
+configure:26244: checking for moc5
+configure:26277: result: no
+configure:26244: checking for moc
+configure:26262: found /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/moc
+configure:26274: result: /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/moc
+configure:26363: checking for uic-qt5
+configure:26396: result: no
+configure:26363: checking for uic5
+configure:26396: result: no
+configure:26363: checking for uic
+configure:26381: found /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/uic
+configure:26393: result: /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/uic
+configure:26482: checking for rcc-qt5
+configure:26515: result: no
+configure:26482: checking for rcc5
+configure:26515: result: no
+configure:26482: checking for rcc
+configure:26500: found /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/rcc
+configure:26512: result: /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/rcc
+configure:26601: checking for lrelease-qt5
+configure:26634: result: no
+configure:26601: checking for lrelease5
+configure:26634: result: no
+configure:26601: checking for lrelease
+configure:26619: found /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
+configure:26631: result: /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
+configure:26720: checking for lupdate-qt5
+configure:26753: result: no
+configure:26720: checking for lupdate5
+configure:26753: result: no
+configure:26720: checking for lupdate
+configure:26753: result: no
+configure:26889: checking whether the linker accepts -mwindows
+configure:26908: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib   -mwindows conftest.cpp -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+configure:26908: $? = 0
+configure:26917: result: yes
+configure:26935: checking whether to build placeh core GUI
+configure:26954: WARNING: "lupdate is required to update qt translations"
+configure:26965: result: yes (Qt5)
+configure:27039: checking for boostlib >= 1.47.0
+configure:27124: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include conftest.cpp >&5
+configure:27124: $? = 0
+configure:27126: result: yes
+configure:27313: checking whether the Boost::System library is available
+configure:27338: x86_64-w64-mingw32-g++ -std=c++11 -c  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include conftest.cpp >&5
+configure:27338: $? = 0
+configure:27353: result: yes
+configure:27369: checking for exit in -lboost_system-mt-s
+configure:27394: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib conftest.cpp -lboost_system-mt-s  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+conftest.cpp:100:6: warning: declaration of 'char exit()' conflicts with built-in declaration 'void exit(int)' [-Wbuiltin-declaration-mismatch]
+ char exit ();
+      ^~~~
+configure:27394: $? = 0
+configure:27404: result: yes
+configure:27559: checking whether the Boost::Filesystem library is available
+configure:27583: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include conftest.cpp >&5
+configure:27583: $? = 0
+configure:27597: result: yes
+configure:27609: checking for exit in -lboost_filesystem-mt-s
+configure:27634: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib conftest.cpp -lboost_filesystem-mt-s  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  -lboost_system-mt-s >&5
+conftest.cpp:101:6: warning: declaration of 'char exit()' conflicts with built-in declaration 'void exit(int)' [-Wbuiltin-declaration-mismatch]
+ char exit ();
+      ^~~~
+configure:27634: $? = 0
+configure:27644: result: yes
+configure:27794: checking whether the Boost::Program_Options library is available
+configure:27818: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include conftest.cpp >&5
+configure:27818: $? = 0
+configure:27832: result: yes
+configure:27843: checking for exit in -lboost_program_options-mt-s
+configure:27868: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib conftest.cpp -lboost_program_options-mt-s  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+conftest.cpp:102:6: warning: declaration of 'char exit()' conflicts with built-in declaration 'void exit(int)' [-Wbuiltin-declaration-mismatch]
+ char exit ();
+      ^~~~
+configure:27868: $? = 0
+configure:27878: result: yes
+configure:28021: checking whether the Boost::Thread library is available
+configure:28053: x86_64-w64-mingw32-g++ -std=c++11 -c -mthreads -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include conftest.cpp >&5
+configure:28053: $? = 0
+configure:28068: result: yes
+configure:28098: checking for exit in -lboost_thread_win32-mt-s
+configure:28123: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib conftest.cpp -lboost_thread_win32-mt-s  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+conftest.cpp:103:6: warning: declaration of 'char exit()' conflicts with built-in declaration 'void exit(int)' [-Wbuiltin-declaration-mismatch]
+ char exit ();
+      ^~~~
+configure:28123: $? = 0
+configure:28133: result: yes
+configure:28293: checking whether the Boost::Chrono library is available
+configure:28317: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include conftest.cpp >&5
+configure:28317: $? = 0
+configure:28332: result: yes
+configure:28348: checking for exit in -lboost_chrono-mt-s
+configure:28373: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib conftest.cpp -lboost_chrono-mt-s  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+conftest.cpp:104:6: warning: declaration of 'char exit()' conflicts with built-in declaration 'void exit(int)' [-Wbuiltin-declaration-mismatch]
+ char exit ();
+      ^~~~
+configure:28373: $? = 0
+configure:28383: result: yes
+configure:28625: checking whether the Boost::Unit_Test_Framework library is available
+configure:28648: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include conftest.cpp >&5
+configure:28648: $? = 0
+configure:28662: result: yes
+configure:28774: checking for dynamic linked boost test
+configure:28789: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -lboost_unit_test_framework-mt-s >&5
+/tmp/cc5zU4dj.o:conftest.cpp:(.text.startup+0x25): undefined reference to `__imp__ZN5boost9unit_test14unit_test_mainEPFbvEiPPc'
+/tmp/cc5zU4dj.o:conftest.cpp:(.text.startup+0x57): undefined reference to `__imp__ZTVN5boost9unit_test15unit_test_log_tE'
+collect2: error: ld returned 1 exit status
+configure:28789: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "placeh core"
+| #define PACKAGE_TARNAME "placeh"
+| #define PACKAGE_VERSION "0.15.0"
+| #define PACKAGE_STRING "placeh core 0.15.0"
+| #define PACKAGE_BUGREPORT "https://github.com/xagau/placeh/issues"
+| #define PACKAGE_URL "https://placeh.io/"
+| #define HAVE_CXX11 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define LT_OBJDIR ".libs/"
+| #define HAVE_LIBMINGWTHRD 1
+| #define HAVE_LIBKERNEL32 1
+| #define HAVE_LIBUSER32 1
+| #define HAVE_LIBGDI32 1
+| #define HAVE_LIBCOMDLG32 1
+| #define HAVE_LIBWINSPOOL 1
+| #define HAVE_LIBWINMM 1
+| #define HAVE_LIBSHELL32 1
+| #define HAVE_LIBCOMCTL32 1
+| #define HAVE_LIBOLE32 1
+| #define HAVE_LIBOLEAUT32 1
+| #define HAVE_LIBUUID 1
+| #define HAVE_LIBRPCRT4 1
+| #define HAVE_LIBADVAPI32 1
+| #define HAVE_LIBWS2_32 1
+| #define HAVE_LIBMSWSOCK 1
+| #define HAVE_LIBSHLWAPI 1
+| #define HAVE_LIBIPHLPAPI 1
+| #define HAVE_LIBCRYPT32 1
+| #define HAVE_PTHREAD_PRIO_INHERIT 1
+| #define HAVE_PTHREAD 1
+| #define _FILE_OFFSET_BITS 64
+| #define HAVE_DECL_STRERROR_R 0
+| #define HAVE_FUNC_ATTRIBUTE_VISIBILITY 1
+| #define HAVE_FUNC_ATTRIBUTE_DLLEXPORT 1
+| #define HAVE_FUNC_ATTRIBUTE_DLLIMPORT 1
+| #define HAVE_LIBSSP 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_DECL_STRNLEN 1
+| #define HAVE_DECL_DAEMON 0
+| #define HAVE_DECL_LE16TOH 0
+| #define HAVE_DECL_LE32TOH 0
+| #define HAVE_DECL_LE64TOH 0
+| #define HAVE_DECL_HTOLE16 0
+| #define HAVE_DECL_HTOLE32 0
+| #define HAVE_DECL_HTOLE64 0
+| #define HAVE_DECL_BE16TOH 0
+| #define HAVE_DECL_BE32TOH 0
+| #define HAVE_DECL_BE64TOH 0
+| #define HAVE_DECL_HTOBE16 0
+| #define HAVE_DECL_HTOBE32 0
+| #define HAVE_DECL_HTOBE64 0
+| #define HAVE_DECL_BSWAP_16 0
+| #define HAVE_DECL_BSWAP_32 0
+| #define HAVE_DECL_BSWAP_64 0
+| #define HAVE_DECL___BUILTIN_CLZ 1
+| #define HAVE_DECL___BUILTIN_CLZL 1
+| #define HAVE_DECL___BUILTIN_CLZLL 1
+| #define HAVE_VISIBILITY_ATTRIBUTE 1
+| #define HAVE_MINIUPNPC_MINIWGET_H 1
+| #define HAVE_MINIUPNPC_MINIUPNPC_H 1
+| #define HAVE_MINIUPNPC_UPNPCOMMANDS_H 1
+| #define HAVE_MINIUPNPC_UPNPERRORS_H 1
+| #define HAVE_LIBIMM32 1
+| #define HAVE_LIBZ_ 1
+| #define HAVE_LIBQT5CORE___ 1
+| #define HAVE_LIBQT5GUI____ 1
+| #define HAVE_LIBQT5NETWORK 1
+| #define HAVE_LIBQT5WIDGETS 1
+| #define HAVE_LIBQT5TEST 1
+| #define HAVE_LIBQT5DBUS 1
+| #define HAVE_LIBQT5PLATFORMSUPPORT 1
+| #define QT_STATICPLUGIN 1
+| #define QT_QPA_PLATFORM_MINIMAL 1
+| #define QT_QPA_PLATFORM_WINDOWS 1
+| #define HAVE_BOOST /**/
+| #define HAVE_BOOST_SYSTEM /**/
+| #define HAVE_BOOST_FILESYSTEM /**/
+| #define HAVE_BOOST_PROGRAM_OPTIONS /**/
+| #define HAVE_BOOST_THREAD /**/
+| #define HAVE_BOOST_CHRONO /**/
+| #define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
+| /* end confdefs.h.  */
+| 
+|        #define BOOST_TEST_DYN_LINK
+|        #define BOOST_TEST_MAIN
+|         #include <boost/test/unit_test.hpp>
+| 
+| 
+configure:28794: result: no
+configure:28816: checking for mismatched boost c++11 scoped enums
+configure:28844: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+conftest.cpp: In function 'int main()':
+conftest.cpp:115:5: error: 'choke' was not declared in this scope
+     choke;
+     ^~~~~
+configure:28844: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "placeh core"
+| #define PACKAGE_TARNAME "placeh"
+| #define PACKAGE_VERSION "0.15.0"
+| #define PACKAGE_STRING "placeh core 0.15.0"
+| #define PACKAGE_BUGREPORT "https://github.com/xagau/placeh/issues"
+| #define PACKAGE_URL "https://placeh.io/"
+| #define HAVE_CXX11 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define LT_OBJDIR ".libs/"
+| #define HAVE_LIBMINGWTHRD 1
+| #define HAVE_LIBKERNEL32 1
+| #define HAVE_LIBUSER32 1
+| #define HAVE_LIBGDI32 1
+| #define HAVE_LIBCOMDLG32 1
+| #define HAVE_LIBWINSPOOL 1
+| #define HAVE_LIBWINMM 1
+| #define HAVE_LIBSHELL32 1
+| #define HAVE_LIBCOMCTL32 1
+| #define HAVE_LIBOLE32 1
+| #define HAVE_LIBOLEAUT32 1
+| #define HAVE_LIBUUID 1
+| #define HAVE_LIBRPCRT4 1
+| #define HAVE_LIBADVAPI32 1
+| #define HAVE_LIBWS2_32 1
+| #define HAVE_LIBMSWSOCK 1
+| #define HAVE_LIBSHLWAPI 1
+| #define HAVE_LIBIPHLPAPI 1
+| #define HAVE_LIBCRYPT32 1
+| #define HAVE_PTHREAD_PRIO_INHERIT 1
+| #define HAVE_PTHREAD 1
+| #define _FILE_OFFSET_BITS 64
+| #define HAVE_DECL_STRERROR_R 0
+| #define HAVE_FUNC_ATTRIBUTE_VISIBILITY 1
+| #define HAVE_FUNC_ATTRIBUTE_DLLEXPORT 1
+| #define HAVE_FUNC_ATTRIBUTE_DLLIMPORT 1
+| #define HAVE_LIBSSP 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_DECL_STRNLEN 1
+| #define HAVE_DECL_DAEMON 0
+| #define HAVE_DECL_LE16TOH 0
+| #define HAVE_DECL_LE32TOH 0
+| #define HAVE_DECL_LE64TOH 0
+| #define HAVE_DECL_HTOLE16 0
+| #define HAVE_DECL_HTOLE32 0
+| #define HAVE_DECL_HTOLE64 0
+| #define HAVE_DECL_BE16TOH 0
+| #define HAVE_DECL_BE32TOH 0
+| #define HAVE_DECL_BE64TOH 0
+| #define HAVE_DECL_HTOBE16 0
+| #define HAVE_DECL_HTOBE32 0
+| #define HAVE_DECL_HTOBE64 0
+| #define HAVE_DECL_BSWAP_16 0
+| #define HAVE_DECL_BSWAP_32 0
+| #define HAVE_DECL_BSWAP_64 0
+| #define HAVE_DECL___BUILTIN_CLZ 1
+| #define HAVE_DECL___BUILTIN_CLZL 1
+| #define HAVE_DECL___BUILTIN_CLZLL 1
+| #define HAVE_VISIBILITY_ATTRIBUTE 1
+| #define HAVE_MINIUPNPC_MINIWGET_H 1
+| #define HAVE_MINIUPNPC_MINIUPNPC_H 1
+| #define HAVE_MINIUPNPC_UPNPCOMMANDS_H 1
+| #define HAVE_MINIUPNPC_UPNPERRORS_H 1
+| #define HAVE_LIBIMM32 1
+| #define HAVE_LIBZ_ 1
+| #define HAVE_LIBQT5CORE___ 1
+| #define HAVE_LIBQT5GUI____ 1
+| #define HAVE_LIBQT5NETWORK 1
+| #define HAVE_LIBQT5WIDGETS 1
+| #define HAVE_LIBQT5TEST 1
+| #define HAVE_LIBQT5DBUS 1
+| #define HAVE_LIBQT5PLATFORMSUPPORT 1
+| #define QT_STATICPLUGIN 1
+| #define QT_QPA_PLATFORM_MINIMAL 1
+| #define QT_QPA_PLATFORM_WINDOWS 1
+| #define HAVE_BOOST /**/
+| #define HAVE_BOOST_SYSTEM /**/
+| #define HAVE_BOOST_FILESYSTEM /**/
+| #define HAVE_BOOST_PROGRAM_OPTIONS /**/
+| #define HAVE_BOOST_THREAD /**/
+| #define HAVE_BOOST_CHRONO /**/
+| #define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
+| /* end confdefs.h.  */
+| 
+|   #include "boost/config.hpp"
+|   #include "boost/version.hpp"
+|   #if !defined(BOOST_NO_SCOPED_ENUMS) && !defined(BOOST_NO_CXX11_SCOPED_ENUMS) && BOOST_VERSION < 105700
+|   #define BOOST_NO_SCOPED_ENUMS
+|   #define BOOST_NO_CXX11_SCOPED_ENUMS
+|   #define CHECK
+|   #endif
+|   #include "boost/filesystem.hpp"
+| 
+| int
+| main ()
+| {
+| 
+|   #if defined(CHECK)
+|     boost::filesystem::copy_file("foo", "bar");
+|   #else
+|     choke;
+|   #endif
+| 
+|   ;
+|   return 0;
+| }
+configure:28848: result: ok
+configure:28880: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+configure:28880: $? = 0
+configure:29505: checking openssl/crypto.h usability
+configure:29505: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp >&5
+configure:29505: $? = 0
+configure:29505: result: yes
+configure:29505: checking openssl/crypto.h presence
+configure:29505: x86_64-w64-mingw32-g++ -std=c++11 -E -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp
+configure:29505: $? = 0
+configure:29505: result: yes
+configure:29505: checking for openssl/crypto.h
+configure:29505: result: yes
+configure:29513: checking for main in -lcrypto
+configure:29532: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lcrypto  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+configure:29532: $? = 0
+configure:29541: result: yes
+configure:29550: checking openssl/ssl.h usability
+configure:29550: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp >&5
+configure:29550: $? = 0
+configure:29550: result: yes
+configure:29550: checking openssl/ssl.h presence
+configure:29550: x86_64-w64-mingw32-g++ -std=c++11 -E -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp
+configure:29550: $? = 0
+configure:29550: result: yes
+configure:29550: checking for openssl/ssl.h
+configure:29550: result: yes
+configure:29558: checking for main in -lssl
+configure:29577: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lssl  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+configure:29577: $? = 0
+configure:29586: result: yes
+configure:29596: checking event2/event.h usability
+configure:29596: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp >&5
+configure:29596: $? = 0
+configure:29596: result: yes
+configure:29596: checking event2/event.h presence
+configure:29596: x86_64-w64-mingw32-g++ -std=c++11 -E -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp
+configure:29596: $? = 0
+configure:29596: result: yes
+configure:29596: checking for event2/event.h
+configure:29596: result: yes
+configure:29604: checking for main in -levent
+configure:29623: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -levent  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+configure:29623: $? = 0
+configure:29632: result: yes
+configure:29681: checking zmq.h usability
+configure:29681: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp >&5
+configure:29681: $? = 0
+configure:29681: result: yes
+configure:29681: checking zmq.h presence
+configure:29681: x86_64-w64-mingw32-g++ -std=c++11 -E -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp
+configure:29681: $? = 0
+configure:29681: result: yes
+configure:29681: checking for zmq.h
+configure:29681: result: yes
+configure:29696: checking for zmq_ctx_shutdown in -lzmq
+configure:29721: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lzmq  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+configure:29721: $? = 0
+configure:29730: result: yes
+configure:29763: checking for main in -lprotobuf 
+configure:29782: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lprotobuf   -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+configure:29782: $? = 0
+configure:29792: result: yes
+configure:29820: checking for main in -lqrencode
+configure:29839: x86_64-w64-mingw32-g++ -std=c++11 -o conftest.exe -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib  conftest.cpp -lqrencode  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
+configure:29839: $? = 0
+configure:29848: result: yes
+configure:29864: checking qrencode.h usability
+configure:29864: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2  -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp >&5
+configure:29864: $? = 0
+configure:29864: result: yes
+configure:29864: checking qrencode.h presence
+configure:29864: x86_64-w64-mingw32-g++ -std=c++11 -E -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp
+configure:29864: $? = 0
+configure:29864: result: yes
+configure:29864: checking for qrencode.h
+configure:29864: result: yes
+configure:29882: checking whether EVP_MD_CTX_new is declared
+configure:29882: x86_64-w64-mingw32-g++ -std=c++11 -c -pipe -O2    -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64 conftest.cpp >&5
+conftest.cpp: In function 'int main()':
+conftest.cpp:141:10: error: 'EVP_MD_CTX_new' was not declared in this scope
+   (void) EVP_MD_CTX_new;
+          ^~~~~~~~~~~~~~
+conftest.cpp:141:10: note: suggested alternative: 'EVP_MD_CTX_init'
+   (void) EVP_MD_CTX_new;
+          ^~~~~~~~~~~~~~
+          EVP_MD_CTX_init
+configure:29882: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "placeh core"
+| #define PACKAGE_TARNAME "placeh"
+| #define PACKAGE_VERSION "0.15.0"
+| #define PACKAGE_STRING "placeh core 0.15.0"
+| #define PACKAGE_BUGREPORT "https://github.com/xagau/placeh/issues"
+| #define PACKAGE_URL "https://placeh.io/"
+| #define HAVE_CXX11 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define LT_OBJDIR ".libs/"
+| #define HAVE_LIBMINGWTHRD 1
+| #define HAVE_LIBKERNEL32 1
+| #define HAVE_LIBUSER32 1
+| #define HAVE_LIBGDI32 1
+| #define HAVE_LIBCOMDLG32 1
+| #define HAVE_LIBWINSPOOL 1
+| #define HAVE_LIBWINMM 1
+| #define HAVE_LIBSHELL32 1
+| #define HAVE_LIBCOMCTL32 1
+| #define HAVE_LIBOLE32 1
+| #define HAVE_LIBOLEAUT32 1
+| #define HAVE_LIBUUID 1
+| #define HAVE_LIBRPCRT4 1
+| #define HAVE_LIBADVAPI32 1
+| #define HAVE_LIBWS2_32 1
+| #define HAVE_LIBMSWSOCK 1
+| #define HAVE_LIBSHLWAPI 1
+| #define HAVE_LIBIPHLPAPI 1
+| #define HAVE_LIBCRYPT32 1
+| #define HAVE_PTHREAD_PRIO_INHERIT 1
+| #define HAVE_PTHREAD 1
+| #define _FILE_OFFSET_BITS 64
+| #define HAVE_DECL_STRERROR_R 0
+| #define HAVE_FUNC_ATTRIBUTE_VISIBILITY 1
+| #define HAVE_FUNC_ATTRIBUTE_DLLEXPORT 1
+| #define HAVE_FUNC_ATTRIBUTE_DLLIMPORT 1
+| #define HAVE_LIBSSP 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_DECL_STRNLEN 1
+| #define HAVE_DECL_DAEMON 0
+| #define HAVE_DECL_LE16TOH 0
+| #define HAVE_DECL_LE32TOH 0
+| #define HAVE_DECL_LE64TOH 0
+| #define HAVE_DECL_HTOLE16 0
+| #define HAVE_DECL_HTOLE32 0
+| #define HAVE_DECL_HTOLE64 0
+| #define HAVE_DECL_BE16TOH 0
+| #define HAVE_DECL_BE32TOH 0
+| #define HAVE_DECL_BE64TOH 0
+| #define HAVE_DECL_HTOBE16 0
+| #define HAVE_DECL_HTOBE32 0
+| #define HAVE_DECL_HTOBE64 0
+| #define HAVE_DECL_BSWAP_16 0
+| #define HAVE_DECL_BSWAP_32 0
+| #define HAVE_DECL_BSWAP_64 0
+| #define HAVE_DECL___BUILTIN_CLZ 1
+| #define HAVE_DECL___BUILTIN_CLZL 1
+| #define HAVE_DECL___BUILTIN_CLZLL 1
+| #define HAVE_VISIBILITY_ATTRIBUTE 1
+| #define HAVE_MINIUPNPC_MINIWGET_H 1
+| #define HAVE_MINIUPNPC_MINIUPNPC_H 1
+| #define HAVE_MINIUPNPC_UPNPCOMMANDS_H 1
+| #define HAVE_MINIUPNPC_UPNPERRORS_H 1
+| #define HAVE_LIBIMM32 1
+| #define HAVE_LIBZ_ 1
+| #define HAVE_LIBQT5CORE___ 1
+| #define HAVE_LIBQT5GUI____ 1
+| #define HAVE_LIBQT5NETWORK 1
+| #define HAVE_LIBQT5WIDGETS 1
+| #define HAVE_LIBQT5TEST 1
+| #define HAVE_LIBQT5DBUS 1
+| #define HAVE_LIBQT5PLATFORMSUPPORT 1
+| #define QT_STATICPLUGIN 1
+| #define QT_QPA_PLATFORM_MINIMAL 1
+| #define QT_QPA_PLATFORM_WINDOWS 1
+| #define HAVE_BOOST /**/
+| #define HAVE_BOOST_SYSTEM /**/
+| #define HAVE_BOOST_FILESYSTEM /**/
+| #define HAVE_BOOST_PROGRAM_OPTIONS /**/
+| #define HAVE_BOOST_THREAD /**/
+| #define HAVE_BOOST_CHRONO /**/
+| #define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
+| #define HAVE_WORKING_BOOST_SLEEP_FOR 1
+| #define ENABLE_ZMQ 1
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| #include <openssl/x509_vfy.h>
+| 
+| 
+| int
+| main ()
+| {
+| #ifndef EVP_MD_CTX_new
+| #ifdef __cplusplus
+|   (void) EVP_MD_CTX_new;
+| #else
+|   (void) EVP_MD_CTX_new;
+| #endif
+| #endif
+| 
+|   ;
+|   return 0;
+| }
+configure:29882: result: no
+configure:30072: checking for protoc
+configure:30090: found /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/protoc
+configure:30102: result: /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/protoc
+configure:30182: checking whether to build placehd
+configure:30192: result: yes
+configure:30195: checking whether to build utils (placeh-cli placeh-tx)
+configure:30205: result: yes
+configure:30208: checking whether to build libraries
+configure:30225: result: yes
+configure:30236: checking if ccache should be used
+configure:30249: result: yes
+configure:30253: checking whether C preprocessor accepts -Qunused-arguments
+configure:30272: x86_64-w64-mingw32-gcc -E -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -Qunused-arguments conftest.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-Qunused-arguments'; did you mean '-Wunused-parameter'?
+configure:30272: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "placeh core"
+| #define PACKAGE_TARNAME "placeh"
+| #define PACKAGE_VERSION "0.15.0"
+| #define PACKAGE_STRING "placeh core 0.15.0"
+| #define PACKAGE_BUGREPORT "https://github.com/xagau/placeh/issues"
+| #define PACKAGE_URL "https://placeh.io/"
+| #define HAVE_CXX11 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define LT_OBJDIR ".libs/"
+| #define HAVE_LIBMINGWTHRD 1
+| #define HAVE_LIBKERNEL32 1
+| #define HAVE_LIBUSER32 1
+| #define HAVE_LIBGDI32 1
+| #define HAVE_LIBCOMDLG32 1
+| #define HAVE_LIBWINSPOOL 1
+| #define HAVE_LIBWINMM 1
+| #define HAVE_LIBSHELL32 1
+| #define HAVE_LIBCOMCTL32 1
+| #define HAVE_LIBOLE32 1
+| #define HAVE_LIBOLEAUT32 1
+| #define HAVE_LIBUUID 1
+| #define HAVE_LIBRPCRT4 1
+| #define HAVE_LIBADVAPI32 1
+| #define HAVE_LIBWS2_32 1
+| #define HAVE_LIBMSWSOCK 1
+| #define HAVE_LIBSHLWAPI 1
+| #define HAVE_LIBIPHLPAPI 1
+| #define HAVE_LIBCRYPT32 1
+| #define HAVE_PTHREAD_PRIO_INHERIT 1
+| #define HAVE_PTHREAD 1
+| #define _FILE_OFFSET_BITS 64
+| #define HAVE_DECL_STRERROR_R 0
+| #define HAVE_FUNC_ATTRIBUTE_VISIBILITY 1
+| #define HAVE_FUNC_ATTRIBUTE_DLLEXPORT 1
+| #define HAVE_FUNC_ATTRIBUTE_DLLIMPORT 1
+| #define HAVE_LIBSSP 1
+| #define HAVE_STDIO_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_DECL_STRNLEN 1
+| #define HAVE_DECL_DAEMON 0
+| #define HAVE_DECL_LE16TOH 0
+| #define HAVE_DECL_LE32TOH 0
+| #define HAVE_DECL_LE64TOH 0
+| #define HAVE_DECL_HTOLE16 0
+| #define HAVE_DECL_HTOLE32 0
+| #define HAVE_DECL_HTOLE64 0
+| #define HAVE_DECL_BE16TOH 0
+| #define HAVE_DECL_BE32TOH 0
+| #define HAVE_DECL_BE64TOH 0
+| #define HAVE_DECL_HTOBE16 0
+| #define HAVE_DECL_HTOBE32 0
+| #define HAVE_DECL_HTOBE64 0
+| #define HAVE_DECL_BSWAP_16 0
+| #define HAVE_DECL_BSWAP_32 0
+| #define HAVE_DECL_BSWAP_64 0
+| #define HAVE_DECL___BUILTIN_CLZ 1
+| #define HAVE_DECL___BUILTIN_CLZL 1
+| #define HAVE_DECL___BUILTIN_CLZLL 1
+| #define HAVE_VISIBILITY_ATTRIBUTE 1
+| #define HAVE_MINIUPNPC_MINIWGET_H 1
+| #define HAVE_MINIUPNPC_MINIUPNPC_H 1
+| #define HAVE_MINIUPNPC_UPNPCOMMANDS_H 1
+| #define HAVE_MINIUPNPC_UPNPERRORS_H 1
+| #define HAVE_LIBIMM32 1
+| #define HAVE_LIBZ_ 1
+| #define HAVE_LIBQT5CORE___ 1
+| #define HAVE_LIBQT5GUI____ 1
+| #define HAVE_LIBQT5NETWORK 1
+| #define HAVE_LIBQT5WIDGETS 1
+| #define HAVE_LIBQT5TEST 1
+| #define HAVE_LIBQT5DBUS 1
+| #define HAVE_LIBQT5PLATFORMSUPPORT 1
+| #define QT_STATICPLUGIN 1
+| #define QT_QPA_PLATFORM_MINIMAL 1
+| #define QT_QPA_PLATFORM_WINDOWS 1
+| #define HAVE_BOOST /**/
+| #define HAVE_BOOST_SYSTEM /**/
+| #define HAVE_BOOST_FILESYSTEM /**/
+| #define HAVE_BOOST_PROGRAM_OPTIONS /**/
+| #define HAVE_BOOST_THREAD /**/
+| #define HAVE_BOOST_CHRONO /**/
+| #define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
+| #define HAVE_WORKING_BOOST_SLEEP_FOR 1
+| #define ENABLE_ZMQ 1
+| #define HAVE_DECL_EVP_MD_CTX_NEW 0
+| #define HAVE_CONSENSUS_LIB 1
+| /* end confdefs.h.  */
+| 
+| int
+| main ()
+| {
+| 
+|   ;
+|   return 0;
+| }
+configure:30280: result: no
+configure:30290: checking if wallet should be enabled
+configure:30293: result: yes
+configure:30306: checking whether to build with support for UPnP
+configure:30316: result: yes
+configure:30318: checking whether to build with UPnP enabled by default
+configure:30326: result: no
+configure:30344: checking whether to build GUI with support for D-Bus
+configure:30351: result: no
+configure:30354: checking whether to build GUI with support for QR codes
+configure:30364: result: yes
+configure:30377: WARNING: "xgettext is required to update qt translations"
+configure:30381: checking whether to build test_placeh-qt
+configure:30384: result: yes
+configure:30402: checking whether to build test_placeh
+configure:30405: result: yes
+configure:30414: checking whether to reduce exports
+configure:30420: result: no
+configure:30768: checking that generated files are newer than configure
+configure:30774: result: done
+configure:30894: creating ./config.status
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by placeh core config.status 0.15.0, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status 
+
+on DESKTOP-M1AB62M
+
+config.status:1456: creating libplacehconsensus.pc
+config.status:1456: creating Makefile
+config.status:1456: creating src/Makefile
+config.status:1456: creating doc/man/Makefile
+config.status:1456: creating share/setup.nsi
+config.status:1456: creating share/qt/Info.plist
+config.status:1456: creating test/config.ini
+config.status:1456: creating contrib/devtools/split-debug.sh
+config.status:1456: creating doc/Doxyfile
+config.status:1456: creating src/config/placeh-config.h
+config.status:1637: src/config/placeh-config.h is unchanged
+config.status:1716: executing depfiles commands
+config.status:1716: executing libtool commands
+configure:33416: === configuring in src/univalue (/mnt/c/git/repo/placeh/src/univalue)
+configure:33479: running /bin/bash ./configure --disable-option-checking '--prefix=/'  '--disable-shared' '--with-pic' '--with-bignum=no' '--enable-module-recovery' '--disable-jni' --cache-file=/dev/null --srcdir=.
+configure:33416: === configuring in src/secp256k1 (/mnt/c/git/repo/placeh/src/secp256k1)
+configure:33479: running /bin/bash ./configure --disable-option-checking '--prefix=/'  '--disable-shared' '--with-pic' '--with-bignum=no' '--enable-module-recovery' '--disable-jni' --cache-file=/dev/null --srcdir=.
+
+## ---------------- ##
+## Cache variables. ##
+## ---------------- ##
+
+ac_cv_build=x86_64-pc-linux-gnu
+ac_cv_c_bigendian=no
+ac_cv_c_compiler_gnu=yes
+ac_cv_cxx_compiler_gnu=yes
+ac_cv_env_ARFLAGS_set=
+ac_cv_env_ARFLAGS_value=
+ac_cv_env_BDB_CFLAGS_set=
+ac_cv_env_BDB_CFLAGS_value=
+ac_cv_env_BDB_LIBS_set=
+ac_cv_env_BDB_LIBS_value=
+ac_cv_env_CCC_set=
+ac_cv_env_CCC_value=
+ac_cv_env_CC_set=
+ac_cv_env_CC_value=
+ac_cv_env_CFLAGS_set=
+ac_cv_env_CFLAGS_value=
+ac_cv_env_CPPFLAGS_set=
+ac_cv_env_CPPFLAGS_value=
+ac_cv_env_CPP_set=
+ac_cv_env_CPP_value=
+ac_cv_env_CRYPTO_CFLAGS_set=
+ac_cv_env_CRYPTO_CFLAGS_value=
+ac_cv_env_CRYPTO_LIBS_set=
+ac_cv_env_CRYPTO_LIBS_value=
+ac_cv_env_CXXCPP_set=
+ac_cv_env_CXXCPP_value=
+ac_cv_env_CXXFLAGS_set=
+ac_cv_env_CXXFLAGS_value=
+ac_cv_env_CXX_set=
+ac_cv_env_CXX_value=
+ac_cv_env_EVENT_CFLAGS_set=
+ac_cv_env_EVENT_CFLAGS_value=
+ac_cv_env_EVENT_LIBS_set=
+ac_cv_env_EVENT_LIBS_value=
+ac_cv_env_EVENT_PTHREADS_CFLAGS_set=
+ac_cv_env_EVENT_PTHREADS_CFLAGS_value=
+ac_cv_env_EVENT_PTHREADS_LIBS_set=
+ac_cv_env_EVENT_PTHREADS_LIBS_value=
+ac_cv_env_LDFLAGS_set=
+ac_cv_env_LDFLAGS_value=
+ac_cv_env_LIBS_set=
+ac_cv_env_LIBS_value=
+ac_cv_env_LT_SYS_LIBRARY_PATH_set=
+ac_cv_env_LT_SYS_LIBRARY_PATH_value=
+ac_cv_env_OBJCXXFLAGS_set=
+ac_cv_env_OBJCXXFLAGS_value=
+ac_cv_env_OBJCXX_set=
+ac_cv_env_OBJCXX_value=
+ac_cv_env_PKG_CONFIG_LIBDIR_set=
+ac_cv_env_PKG_CONFIG_LIBDIR_value=
+ac_cv_env_PKG_CONFIG_PATH_set=
+ac_cv_env_PKG_CONFIG_PATH_value=
+ac_cv_env_PKG_CONFIG_set=
+ac_cv_env_PKG_CONFIG_value=
+ac_cv_env_PROTOBUF_CFLAGS_set=
+ac_cv_env_PROTOBUF_CFLAGS_value=
+ac_cv_env_PROTOBUF_LIBS_set=
+ac_cv_env_PROTOBUF_LIBS_value=
+ac_cv_env_PYTHONPATH_set=
+ac_cv_env_PYTHONPATH_value=
+ac_cv_env_QR_CFLAGS_set=
+ac_cv_env_QR_CFLAGS_value=
+ac_cv_env_QR_LIBS_set=
+ac_cv_env_QR_LIBS_value=
+ac_cv_env_QT4_CFLAGS_set=
+ac_cv_env_QT4_CFLAGS_value=
+ac_cv_env_QT4_LIBS_set=
+ac_cv_env_QT4_LIBS_value=
+ac_cv_env_QT5_CFLAGS_set=
+ac_cv_env_QT5_CFLAGS_value=
+ac_cv_env_QT5_LIBS_set=
+ac_cv_env_QT5_LIBS_value=
+ac_cv_env_QTPLATFORM_CFLAGS_set=
+ac_cv_env_QTPLATFORM_CFLAGS_value=
+ac_cv_env_QTPLATFORM_LIBS_set=
+ac_cv_env_QTPLATFORM_LIBS_value=
+ac_cv_env_QTPRINT_CFLAGS_set=
+ac_cv_env_QTPRINT_CFLAGS_value=
+ac_cv_env_QTPRINT_LIBS_set=
+ac_cv_env_QTPRINT_LIBS_value=
+ac_cv_env_QTXCBQPA_CFLAGS_set=
+ac_cv_env_QTXCBQPA_CFLAGS_value=
+ac_cv_env_QTXCBQPA_LIBS_set=
+ac_cv_env_QTXCBQPA_LIBS_value=
+ac_cv_env_QT_DBUS_CFLAGS_set=
+ac_cv_env_QT_DBUS_CFLAGS_value=
+ac_cv_env_QT_DBUS_LIBS_set=
+ac_cv_env_QT_DBUS_LIBS_value=
+ac_cv_env_QT_TEST_CFLAGS_set=
+ac_cv_env_QT_TEST_CFLAGS_value=
+ac_cv_env_QT_TEST_LIBS_set=
+ac_cv_env_QT_TEST_LIBS_value=
+ac_cv_env_SSL_CFLAGS_set=
+ac_cv_env_SSL_CFLAGS_value=
+ac_cv_env_SSL_LIBS_set=
+ac_cv_env_SSL_LIBS_value=
+ac_cv_env_UNIVALUE_CFLAGS_set=
+ac_cv_env_UNIVALUE_CFLAGS_value=
+ac_cv_env_UNIVALUE_LIBS_set=
+ac_cv_env_UNIVALUE_LIBS_value=
+ac_cv_env_X11XCB_CFLAGS_set=
+ac_cv_env_X11XCB_CFLAGS_value=
+ac_cv_env_X11XCB_LIBS_set=
+ac_cv_env_X11XCB_LIBS_value=
+ac_cv_env_ZMQ_CFLAGS_set=
+ac_cv_env_ZMQ_CFLAGS_value=
+ac_cv_env_ZMQ_LIBS_set=
+ac_cv_env_ZMQ_LIBS_value=
+ac_cv_env_build_alias_set=
+ac_cv_env_build_alias_value=
+ac_cv_env_host_alias_set=
+ac_cv_env_host_alias_value=
+ac_cv_env_target_alias_set=
+ac_cv_env_target_alias_value=
+ac_cv_exeext=.exe
+ac_cv_func_strerror_r=no
+ac_cv_func_strerror_r_char_p=no
+ac_cv_have_decl_EVP_MD_CTX_new=no
+ac_cv_have_decl___builtin_clz=yes
+ac_cv_have_decl___builtin_clzl=yes
+ac_cv_have_decl___builtin_clzll=yes
+ac_cv_have_decl_be16toh=no
+ac_cv_have_decl_be32toh=no
+ac_cv_have_decl_be64toh=no
+ac_cv_have_decl_bswap_16=no
+ac_cv_have_decl_bswap_32=no
+ac_cv_have_decl_bswap_64=no
+ac_cv_have_decl_daemon=no
+ac_cv_have_decl_htobe16=no
+ac_cv_have_decl_htobe32=no
+ac_cv_have_decl_htobe64=no
+ac_cv_have_decl_htole16=no
+ac_cv_have_decl_htole32=no
+ac_cv_have_decl_htole64=no
+ac_cv_have_decl_le16toh=no
+ac_cv_have_decl_le32toh=no
+ac_cv_have_decl_le64toh=no
+ac_cv_have_decl_strerror_r=no
+ac_cv_have_decl_strnlen=yes
+ac_cv_header_QApplication=yes
+ac_cv_header_QLocalSocket=yes
+ac_cv_header_QTest=yes
+ac_cv_header_QtDBus=yes
+ac_cv_header_QtPlugin=yes
+ac_cv_header_byteswap_h=no
+ac_cv_header_dlfcn_h=no
+ac_cv_header_endian_h=no
+ac_cv_header_event2_event_h=yes
+ac_cv_header_inttypes_h=yes
+ac_cv_header_memory_h=yes
+ac_cv_header_miniupnpc_miniupnpc_h=yes
+ac_cv_header_miniupnpc_miniwget_h=yes
+ac_cv_header_miniupnpc_upnpcommands_h=yes
+ac_cv_header_miniupnpc_upnperrors_h=yes
+ac_cv_header_openssl_crypto_h=yes
+ac_cv_header_openssl_ssl_h=yes
+ac_cv_header_qrencode_h=yes
+ac_cv_header_stdc=yes
+ac_cv_header_stdint_h=yes
+ac_cv_header_stdio_h=yes
+ac_cv_header_stdlib_h=yes
+ac_cv_header_string_h=yes
+ac_cv_header_strings_h=yes
+ac_cv_header_sys_endian_h=no
+ac_cv_header_sys_prctl_h=no
+ac_cv_header_sys_select_h=no
+ac_cv_header_sys_stat_h=yes
+ac_cv_header_sys_types_h=yes
+ac_cv_header_unistd_h=yes
+ac_cv_header_zmq_h=yes
+ac_cv_host=x86_64-w64-mingw32
+ac_cv_lib_Qt5Core______main=yes
+ac_cv_lib_Qt5DBus___main=yes
+ac_cv_lib_Qt5Gui_______main=yes
+ac_cv_lib_Qt5Network___main=yes
+ac_cv_lib_Qt5PlatformSupport___main=yes
+ac_cv_lib_Qt5Test___main=yes
+ac_cv_lib_Qt5Widgets___main=yes
+ac_cv_lib_advapi32_main=yes
+ac_cv_lib_boost_chrono_mt_s___exit=yes
+ac_cv_lib_boost_filesystem_mt_s___exit=yes
+ac_cv_lib_boost_program_options_mt_s___exit=yes
+ac_cv_lib_boost_system_mt_s___exit=yes
+ac_cv_lib_boost_thread_win32_mt_s___exit=yes
+ac_cv_lib_comctl32_main=yes
+ac_cv_lib_comdlg32_main=yes
+ac_cv_lib_crypt32_main=yes
+ac_cv_lib_crypto_main=yes
+ac_cv_lib_db_cxx_4_8___main=yes
+ac_cv_lib_event_main=yes
+ac_cv_lib_gdi32_main=yes
+ac_cv_lib_imm32_main=yes
+ac_cv_lib_iphlpapi_main=yes
+ac_cv_lib_kernel32_main=yes
+ac_cv_lib_mingwthrd_main=yes
+ac_cv_lib_miniupnpc_main=yes
+ac_cv_lib_mswsock_main=yes
+ac_cv_lib_ole32_main=yes
+ac_cv_lib_oleaut32_main=yes
+ac_cv_lib_protobuf____main=yes
+ac_cv_lib_qrencode_main=yes
+ac_cv_lib_rpcrt4_main=yes
+ac_cv_lib_shell32_main=yes
+ac_cv_lib_shlwapi_main=yes
+ac_cv_lib_ssl_main=yes
+ac_cv_lib_ssp_main=yes
+ac_cv_lib_user32_main=yes
+ac_cv_lib_uuid_main=yes
+ac_cv_lib_winmm_main=yes
+ac_cv_lib_winspool_main=yes
+ac_cv_lib_ws2_32_main=yes
+ac_cv_lib_z____main=yes
+ac_cv_lib_zmq_zmq_ctx_shutdown=yes
+ac_cv_objcxx_compiler_gnu=no
+ac_cv_objext=o
+ac_cv_path_AR=/usr/bin/x86_64-w64-mingw32-ar
+ac_cv_path_CCACHE=/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccache
+ac_cv_path_CPPFILT=/usr/bin/x86_64-w64-mingw32-c++filt
+ac_cv_path_EGREP='/bin/grep -E'
+ac_cv_path_FGREP='/bin/grep -F'
+ac_cv_path_GCOV=/usr/bin/x86_64-w64-mingw32-gcov
+ac_cv_path_GIT=/usr/bin/git
+ac_cv_path_GREP=/bin/grep
+ac_cv_path_HEXDUMP=/usr/bin/hexdump
+ac_cv_path_LRELEASE=/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
+ac_cv_path_MAKENSIS=none
+ac_cv_path_MOC=/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/moc
+ac_cv_path_OBJCOPY=/usr/bin/x86_64-w64-mingw32-objcopy
+ac_cv_path_PROTOC=/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/protoc
+ac_cv_path_PYTHON=/usr/bin/python3.6
+ac_cv_path_RANLIB=/usr/bin/x86_64-w64-mingw32-ranlib
+ac_cv_path_RCC=/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/rcc
+ac_cv_path_READELF=/usr/bin/x86_64-w64-mingw32-readelf
+ac_cv_path_SED=/bin/sed
+ac_cv_path_STRIP=/usr/bin/x86_64-w64-mingw32-strip
+ac_cv_path_UIC=/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/uic
+ac_cv_path_WINDRES=/usr/bin/x86_64-w64-mingw32-windres
+ac_cv_path_ac_pt_AR=x86_64-w64-mingw32-ar
+ac_cv_path_ac_pt_NM=x86_64-w64-mingw32-nm
+ac_cv_path_ac_pt_RANLIB=x86_64-w64-mingw32-ranlib
+ac_cv_path_install='/usr/bin/install -c'
+ac_cv_path_lt_DD=/bin/dd
+ac_cv_path_mkdir=/bin/mkdir
+ac_cv_prog_AR=x86_64-w64-mingw32-ar
+ac_cv_prog_AWK=gawk
+ac_cv_prog_CC=x86_64-w64-mingw32-gcc
+ac_cv_prog_CPP='x86_64-w64-mingw32-gcc -E'
+ac_cv_prog_CXXCPP='x86_64-w64-mingw32-g++ -std=c++11 -E'
+ac_cv_prog_DLLTOOL=x86_64-w64-mingw32-dlltool
+ac_cv_prog_OBJCXX='x86_64-w64-mingw32-g++ -std=c++11'
+ac_cv_prog_OBJDUMP=x86_64-w64-mingw32-objdump
+ac_cv_prog_RANLIB=x86_64-w64-mingw32-ranlib
+ac_cv_prog_STRIP=x86_64-w64-mingw32-strip
+ac_cv_prog_ac_ct_MANIFEST_TOOL=mt
+ac_cv_prog_cc_c89=
+ac_cv_prog_cc_g=yes
+ac_cv_prog_cxx_g=yes
+ac_cv_prog_make_make_set=yes
+ac_cv_prog_objcxx_g=no
+ac_cv_search_clock_gettime='none required'
+ac_cv_search_hb_ot_tags_from_script_=-lqtharfbuzzng
+ac_cv_search_jpeg_create_decompress_=no
+ac_cv_search_pcre16_exec=-lqtpcre
+ac_cv_search_png_error_=-lqtpng
+ac_cv_sys_file_offset_bits=64
+ac_cv_sys_largefile_CC=no
+am_cv_CC_dependencies_compiler_type=gcc3
+am_cv_CXX_dependencies_compiler_type=gcc3
+am_cv_OBJCXX_dependencies_compiler_type=gcc3
+am_cv_make_support_nested_variables=yes
+am_cv_prog_cc_c_o=yes
+ax_cv_PTHREAD_CLANG=no
+ax_cv_PTHREAD_JOINABLE_ATTR=PTHREAD_CREATE_JOINABLE
+ax_cv_PTHREAD_PRIO_INHERIT=yes
+ax_cv_PTHREAD_SPECIAL_FLAGS=no
+ax_cv_boost_chrono=yes
+ax_cv_boost_filesystem=yes
+ax_cv_boost_program_options=yes
+ax_cv_boost_system=yes
+ax_cv_boost_thread=yes
+ax_cv_boost_unit_test_framework=yes
+ax_cv_check_ccppflags___Qunused_arguments=no
+ax_cv_check_cxxcppflags___D_FORTIFY_SOURCE_2=yes
+ax_cv_check_cxxcppflags___U_FORTIFY_SOURCE=yes
+ax_cv_check_cxxflags___Werror=yes
+ax_cv_check_cxxflags___Wstack_protector=yes
+ax_cv_check_cxxflags___fstack_protector_all=yes
+ax_cv_check_cxxflags__msse4_2=yes
+ax_cv_check_ldflags___Wl___dynamicbase=yes
+ax_cv_check_ldflags___Wl___high_entropy_va=yes
+ax_cv_check_ldflags___Wl___large_address_aware=no
+ax_cv_check_ldflags___Wl___nxcompat=yes
+ax_cv_check_ldflags___Wl__z_now=no
+ax_cv_check_ldflags___Wl__z_relro=no
+ax_cv_check_ldflags___mwindows=yes
+ax_cv_check_ldflags___static=yes
+ax_cv_cxx_compile_cxx11__std_cpp11=yes
+ax_cv_have_func_attribute_dllexport=yes
+ax_cv_have_func_attribute_dllimport=yes
+ax_cv_have_func_attribute_visibility=yes
+lt_cv_ar_at_file=@
+lt_cv_archive_cmds_need_lc=yes
+lt_cv_deplibs_check_method=pass_all
+lt_cv_ld_reload_flag=-r
+lt_cv_nm_interface='BSD nm'
+lt_cv_objdir=.libs
+lt_cv_path_LD=/usr/bin/x86_64-w64-mingw32-ld
+lt_cv_path_LDCXX=/usr/bin/x86_64-w64-mingw32-ld
+lt_cv_path_NM=x86_64-w64-mingw32-nm
+lt_cv_path_mainfest_tool=no
+lt_cv_prog_compiler_c_o=yes
+lt_cv_prog_compiler_c_o_CXX=yes
+lt_cv_prog_compiler_pic='-DDLL_EXPORT -DPIC'
+lt_cv_prog_compiler_pic_CXX='-DDLL_EXPORT -DPIC'
+lt_cv_prog_compiler_pic_works=yes
+lt_cv_prog_compiler_pic_works_CXX=yes
+lt_cv_prog_compiler_rtti_exceptions=no
+lt_cv_prog_compiler_static_works=yes
+lt_cv_prog_compiler_static_works_CXX=yes
+lt_cv_prog_gnu_ld=yes
+lt_cv_prog_gnu_ldcxx=yes
+lt_cv_sharedlib_from_linklib_cmd=func_cygming_dll_for_implib
+lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''
+lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/  {"\1", (void *) \&\1},/p'\'''
+lt_cv_sys_global_symbol_to_c_name_address_lib_prefix='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(lib.*\)$/  {"\1", (void *) \&\1},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/  {"lib\1", (void *) \&\1},/p'\'''
+lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^T .* \(.*\)$/extern int \1();/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/extern char \1;/p'\'''
+lt_cv_sys_global_symbol_to_import=
+lt_cv_sys_max_cmd_len=1572864
+lt_cv_to_host_file_cmd=func_convert_file_nix_to_w32
+lt_cv_to_tool_file_cmd=func_convert_file_noop
+lt_cv_truncate_bin='/bin/dd bs=4096 count=1'
+placeh_cv_need_acc_widget=no
+placeh_cv_need_platformsupport=yes
+placeh_cv_qt5=yes
+placeh_cv_static_qt=yes
+
+## ----------------- ##
+## Output variables. ##
+## ----------------- ##
+
+ACLOCAL='${SHELL} /mnt/c/git/repo/placeh/build-aux/missing aclocal-1.15'
+AMDEPBACKSLASH='\'
+AMDEP_FALSE='#'
+AMDEP_TRUE=''
+AMTAR='$${TAR-tar}'
+AM_BACKSLASH='\'
+AM_DEFAULT_V='$(AM_DEFAULT_VERBOSITY)'
+AM_DEFAULT_VERBOSITY='0'
+AM_V='$(V)'
+AR='/usr/bin/x86_64-w64-mingw32-ar'
+ARFLAGS='cr'
+AUTOCONF='${SHELL} /mnt/c/git/repo/placeh/build-aux/missing autoconf'
+AUTOHEADER='${SHELL} /mnt/c/git/repo/placeh/build-aux/missing autoheader'
+AUTOMAKE='${SHELL} /mnt/c/git/repo/placeh/build-aux/missing automake-1.15'
+AWK='gawk'
+BDB_CFLAGS=''
+BDB_CPPFLAGS=''
+BDB_LIBS='-ldb_cxx-4.8'
+BOOST_CHRONO_LIB='-lboost_chrono-mt-s'
+BOOST_CPPFLAGS='-DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include'
+BOOST_FILESYSTEM_LIB='-lboost_filesystem-mt-s'
+BOOST_LDFLAGS='-L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib'
+BOOST_LIBS='-L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s'
+BOOST_PROGRAM_OPTIONS_LIB='-lboost_program_options-mt-s'
+BOOST_SYSTEM_LIB='-lboost_system-mt-s'
+BOOST_THREAD_LIB='-lboost_thread_win32-mt-s'
+BOOST_UNIT_TEST_FRAMEWORK_LIB='-lboost_unit_test_framework-mt-s'
+BREW=''
+BUILD_DARWIN_FALSE=''
+BUILD_DARWIN_TRUE='#'
+BUILD_PLACEHD_FALSE='#'
+BUILD_PLACEHD_TRUE=''
+BUILD_PLACEH_LIBS_FALSE='#'
+BUILD_PLACEH_LIBS_TRUE=''
+BUILD_PLACEH_UTILS_FALSE='#'
+BUILD_PLACEH_UTILS_TRUE=''
+CC='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccache x86_64-w64-mingw32-gcc'
+CCACHE='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccache'
+CCDEPMODE='depmode=gcc3'
+CFLAGS='-pipe -O2 '
+CLIENT_VERSION_BUILD='1'
+CLIENT_VERSION_IS_RELEASE='true'
+CLIENT_VERSION_MAJOR='0'
+CLIENT_VERSION_MINOR='15'
+CLIENT_VERSION_REVISION='0'
+COPYRIGHT_HOLDERS='The %s developers'
+COPYRIGHT_HOLDERS_FINAL='The placeh core developers'
+COPYRIGHT_HOLDERS_SUBSTITUTION='placeh core'
+COPYRIGHT_YEAR='2017'
+CPP='x86_64-w64-mingw32-gcc -E'
+CPPFILT='/usr/bin/x86_64-w64-mingw32-c++filt'
+CPPFLAGS='-I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64'
+CRYPTO_CFLAGS=''
+CRYPTO_LIBS='-lcrypto'
+CXX='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccache x86_64-w64-mingw32-g++ -std=c++11'
+CXXCPP='x86_64-w64-mingw32-g++ -std=c++11 -E'
+CXXDEPMODE='depmode=gcc3'
+CXXFLAGS='-pipe -O2 '
+CYGPATH_W='echo'
+DEFS='-DHAVE_CONFIG_H'
+DEPDIR='.deps'
+DLLTOOL='x86_64-w64-mingw32-dlltool'
+DSYMUTIL=''
+DUMPBIN=''
+ECHO_C=''
+ECHO_N='-n'
+ECHO_T=''
+EGREP='/bin/grep -E'
+EMBEDDED_LEVELDB_FALSE='#'
+EMBEDDED_LEVELDB_TRUE=''
+EMBEDDED_UNIVALUE_FALSE='#'
+EMBEDDED_UNIVALUE_TRUE=''
+ENABLE_BENCH_FALSE='#'
+ENABLE_BENCH_TRUE=''
+ENABLE_HWCRC32_FALSE='#'
+ENABLE_HWCRC32_TRUE=''
+ENABLE_MAN_FALSE='#'
+ENABLE_MAN_TRUE=''
+ENABLE_QT_FALSE='#'
+ENABLE_QT_TESTS_FALSE='#'
+ENABLE_QT_TESTS_TRUE=''
+ENABLE_QT_TRUE=''
+ENABLE_TESTS_FALSE='#'
+ENABLE_TESTS_TRUE=''
+ENABLE_WALLET_FALSE='#'
+ENABLE_WALLET_TRUE=''
+ENABLE_ZMQ_FALSE='#'
+ENABLE_ZMQ_TRUE=''
+ERROR_CXXFLAGS=''
+EVENT_CFLAGS=''
+EVENT_LIBS='-levent'
+EVENT_PTHREADS_CFLAGS=''
+EVENT_PTHREADS_LIBS=''
+EXEEXT='.exe'
+EXPERIMENTAL_ASM_FALSE=''
+EXPERIMENTAL_ASM_TRUE='#'
+EXTENDED_FUNCTIONAL_TESTS=''
+FGREP='/bin/grep -F'
+GCOV='/usr/bin/x86_64-w64-mingw32-gcov'
+GENHTML=''
+GENISOIMAGE=''
+GIT='/usr/bin/git'
+GLIBC_BACK_COMPAT_FALSE=''
+GLIBC_BACK_COMPAT_TRUE='#'
+GREP='/bin/grep'
+HARDENED_CPPFLAGS=' -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2'
+HARDENED_CXXFLAGS=' -Wstack-protector -fstack-protector-all'
+HARDENED_LDFLAGS=' -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va'
+HARDEN_FALSE='#'
+HARDEN_TRUE=''
+HAVE_CXX11='1'
+HEXDUMP='/usr/bin/hexdump'
+IMAGEMAGICK_CONVERT=''
+INSTALLNAMETOOL=''
+INSTALL_DATA='${INSTALL} -m 644'
+INSTALL_PROGRAM='${INSTALL}'
+INSTALL_SCRIPT='${INSTALL}'
+INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
+LCOV=''
+LCOV_OPTS=''
+LD='/usr/bin/x86_64-w64-mingw32-ld'
+LDFLAGS='-L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib '
+LEVELDB_CPPFLAGS=''
+LEVELDB_TARGET_FLAGS='-DOS_WINDOWS'
+LIBLEVELDB=''
+LIBMEMENV=''
+LIBOBJS=''
+LIBS='-lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd '
+LIBTOOL='$(SHELL) $(top_builddir)/libtool'
+LIBTOOL_APP_LDFLAGS=' -all-static'
+LIPO=''
+LN_S='ln -s'
+LRELEASE='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/lrelease'
+LTLIBOBJS=''
+LT_SYS_LIBRARY_PATH=''
+LUPDATE=''
+MAINT=''
+MAINTAINER_MODE_FALSE='#'
+MAINTAINER_MODE_TRUE=''
+MAKEINFO='${SHELL} /mnt/c/git/repo/placeh/build-aux/missing makeinfo'
+MAKENSIS='none'
+MANIFEST_TOOL=':'
+MINIUPNPC_CPPFLAGS='-DSTATICLIB -DMINIUPNP_STATICLIB'
+MINIUPNPC_LIBS='-lminiupnpc'
+MKDIR_P='/bin/mkdir -p'
+MOC='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/moc'
+MOC_DEFS='-DHAVE_CONFIG_H -I$(srcdir)'
+NM='x86_64-w64-mingw32-nm'
+NMEDIT=''
+OBJCOPY='/usr/bin/x86_64-w64-mingw32-objcopy'
+OBJCXX='x86_64-w64-mingw32-g++ -std=c++11'
+OBJCXXDEPMODE='depmode=gcc3'
+OBJCXXFLAGS=''
+OBJDUMP='x86_64-w64-mingw32-objdump'
+OBJEXT='o'
+OTOOL64=''
+OTOOL=''
+PACKAGE='placeh'
+PACKAGE_BUGREPORT='https://github.com/xagau/placeh/issues'
+PACKAGE_NAME='placeh core'
+PACKAGE_STRING='placeh core 0.15.0'
+PACKAGE_TARNAME='placeh'
+PACKAGE_URL='https://placeh.io/'
+PACKAGE_VERSION='0.15.0'
+PATH_SEPARATOR=':'
+PIC_FLAGS=''
+PIE_FLAGS=''
+PKG_CONFIG='/usr/bin/pkg-config --static'
+PKG_CONFIG_LIBDIR=''
+PKG_CONFIG_PATH='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../share/pkgconfig:/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib/pkgconfig'
+PLACEH_CLI_NAME='placeh-cli'
+PLACEH_DAEMON_NAME='placehd'
+PLACEH_GUI_NAME='placeh-qt'
+PLACEH_TX_NAME='placeh-tx'
+PORT=''
+PROTOBUF_CFLAGS=''
+PROTOBUF_LIBS='-lprotobuf'
+PROTOC='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/protoc'
+PTHREAD_CC='x86_64-w64-mingw32-gcc'
+PTHREAD_CFLAGS='-pthread'
+PTHREAD_LIBS=''
+PYTHON='/usr/bin/python3.6'
+PYTHONPATH='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/lib/python/dist-packages:'
+QR_CFLAGS=''
+QR_LIBS='-lqrencode'
+QT4_CFLAGS=''
+QT4_LIBS=''
+QT5_CFLAGS=''
+QT5_LIBS=''
+QTPLATFORM_CFLAGS=''
+QTPLATFORM_LIBS=''
+QTPRINT_CFLAGS=''
+QTPRINT_LIBS=''
+QTXCBQPA_CFLAGS=''
+QTXCBQPA_LIBS=''
+QT_DBUS_CFLAGS=''
+QT_DBUS_INCLUDES=''
+QT_DBUS_LIBS='-lQt5DBus -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib'
+QT_INCLUDES='-I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtCore -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtGui -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtTest -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtDBus'
+QT_LDFLAGS=' -mwindows'
+QT_LIBS='-lqwindows -lqminimal -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../plugins/platforms'
+QT_PIE_FLAGS=''
+QT_SELECT='qt5'
+QT_TEST_CFLAGS=''
+QT_TEST_INCLUDES=''
+QT_TEST_LIBS='-lQt5Test -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib'
+QT_TRANSLATION_DIR='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../translations'
+RANLIB='/usr/bin/x86_64-w64-mingw32-ranlib'
+RCC='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/rcc'
+READELF='/usr/bin/x86_64-w64-mingw32-readelf'
+RELDFLAGS=''
+RSVG_CONVERT=''
+SED='/bin/sed'
+SET_MAKE=''
+SHELL='/bin/bash'
+SSE42_CXXFLAGS='-msse4.2'
+SSL_CFLAGS=''
+SSL_LIBS='-lssl'
+STRIP='/usr/bin/x86_64-w64-mingw32-strip'
+TARGET_DARWIN_FALSE=''
+TARGET_DARWIN_TRUE='#'
+TARGET_WINDOWS_FALSE='#'
+TARGET_WINDOWS_TRUE=''
+TESTDEFS=''
+TIFFCP=''
+UIC='/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/uic'
+UNIVALUE_CFLAGS='-I$(srcdir)/univalue/include'
+UNIVALUE_LIBS='univalue/libunivalue.la'
+USE_LCOV_FALSE=''
+USE_LCOV_TRUE='#'
+USE_QRCODE=''
+USE_QRCODE_FALSE='#'
+USE_QRCODE_TRUE=''
+USE_UPNP=''
+VERSION='0.15.0'
+WINDOWS_BITS='64'
+WINDRES='/usr/bin/x86_64-w64-mingw32-windres'
+X11XCB_CFLAGS=''
+X11XCB_LIBS=''
+XGETTEXT=''
+ZMQ_CFLAGS=' -DZMQ_STATIC'
+ZMQ_LIBS='-lzmq'
+ac_ct_AR=''
+ac_ct_CC=''
+ac_ct_CXX=''
+ac_ct_DUMPBIN=''
+ac_ct_OBJCXX=''
+am__EXEEXT_FALSE='#'
+am__EXEEXT_TRUE=''
+am__fastdepCC_FALSE='#'
+am__fastdepCC_TRUE=''
+am__fastdepCXX_FALSE='#'
+am__fastdepCXX_TRUE=''
+am__fastdepOBJCXX_FALSE='#'
+am__fastdepOBJCXX_TRUE=''
+am__include='include'
+am__isrc=''
+am__leading_dot='.'
+am__nodep='_no'
+am__quote=''
+am__tar='$${TAR-tar} chof - "$$tardir"'
+am__untar='$${TAR-tar} xf -'
+ax_pthread_config=''
+bindir='${exec_prefix}/bin'
+build='x86_64-pc-linux-gnu'
+build_alias=''
+build_cpu='x86_64'
+build_os='linux-gnu'
+build_vendor='pc'
+datadir='${datarootdir}'
+datarootdir='${prefix}/share'
+docdir='${datarootdir}/doc/${PACKAGE_TARNAME}'
+dvidir='${docdir}'
+exec_prefix='${prefix}'
+host='x86_64-w64-mingw32'
+host_alias='x86_64-w64-mingw32'
+host_cpu='x86_64'
+host_os='mingw32'
+host_vendor='w64'
+htmldir='${docdir}'
+includedir='${prefix}/include'
+infodir='${datarootdir}/info'
+install_sh='${SHELL} /mnt/c/git/repo/placeh/build-aux/install-sh'
+libdir='${exec_prefix}/lib'
+libexecdir='${exec_prefix}/libexec'
+localedir='${datarootdir}/locale'
+localstatedir='${prefix}/var'
+mandir='${datarootdir}/man'
+mkdir_p='$(MKDIR_P)'
+oldincludedir='/usr/include'
+pdfdir='${docdir}'
+prefix='/'
+program_transform_name='s,x,x,'
+psdir='${docdir}'
+runstatedir='${localstatedir}/run'
+sbindir='${exec_prefix}/sbin'
+sharedstatedir='${prefix}/com'
+subdirs=' src/univalue src/secp256k1'
+sysconfdir='${prefix}/etc'
+target_alias=''
+
+## ----------- ##
+## confdefs.h. ##
+## ----------- ##
+
+/* confdefs.h */
+#define PACKAGE_NAME "placeh core"
+#define PACKAGE_TARNAME "placeh"
+#define PACKAGE_VERSION "0.15.0"
+#define PACKAGE_STRING "placeh core 0.15.0"
+#define PACKAGE_BUGREPORT "https://github.com/xagau/placeh/issues"
+#define PACKAGE_URL "https://placeh.io/"
+#define HAVE_CXX11 1
+#define STDC_HEADERS 1
+#define HAVE_SYS_TYPES_H 1
+#define HAVE_SYS_STAT_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_MEMORY_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_INTTYPES_H 1
+#define HAVE_STDINT_H 1
+#define HAVE_UNISTD_H 1
+#define LT_OBJDIR ".libs/"
+#define HAVE_LIBMINGWTHRD 1
+#define HAVE_LIBKERNEL32 1
+#define HAVE_LIBUSER32 1
+#define HAVE_LIBGDI32 1
+#define HAVE_LIBCOMDLG32 1
+#define HAVE_LIBWINSPOOL 1
+#define HAVE_LIBWINMM 1
+#define HAVE_LIBSHELL32 1
+#define HAVE_LIBCOMCTL32 1
+#define HAVE_LIBOLE32 1
+#define HAVE_LIBOLEAUT32 1
+#define HAVE_LIBUUID 1
+#define HAVE_LIBRPCRT4 1
+#define HAVE_LIBADVAPI32 1
+#define HAVE_LIBWS2_32 1
+#define HAVE_LIBMSWSOCK 1
+#define HAVE_LIBSHLWAPI 1
+#define HAVE_LIBIPHLPAPI 1
+#define HAVE_LIBCRYPT32 1
+#define HAVE_PTHREAD_PRIO_INHERIT 1
+#define HAVE_PTHREAD 1
+#define _FILE_OFFSET_BITS 64
+#define HAVE_DECL_STRERROR_R 0
+#define HAVE_FUNC_ATTRIBUTE_VISIBILITY 1
+#define HAVE_FUNC_ATTRIBUTE_DLLEXPORT 1
+#define HAVE_FUNC_ATTRIBUTE_DLLIMPORT 1
+#define HAVE_LIBSSP 1
+#define HAVE_STDIO_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_UNISTD_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_SYS_TYPES_H 1
+#define HAVE_SYS_STAT_H 1
+#define HAVE_DECL_STRNLEN 1
+#define HAVE_DECL_DAEMON 0
+#define HAVE_DECL_LE16TOH 0
+#define HAVE_DECL_LE32TOH 0
+#define HAVE_DECL_LE64TOH 0
+#define HAVE_DECL_HTOLE16 0
+#define HAVE_DECL_HTOLE32 0
+#define HAVE_DECL_HTOLE64 0
+#define HAVE_DECL_BE16TOH 0
+#define HAVE_DECL_BE32TOH 0
+#define HAVE_DECL_BE64TOH 0
+#define HAVE_DECL_HTOBE16 0
+#define HAVE_DECL_HTOBE32 0
+#define HAVE_DECL_HTOBE64 0
+#define HAVE_DECL_BSWAP_16 0
+#define HAVE_DECL_BSWAP_32 0
+#define HAVE_DECL_BSWAP_64 0
+#define HAVE_DECL___BUILTIN_CLZ 1
+#define HAVE_DECL___BUILTIN_CLZL 1
+#define HAVE_DECL___BUILTIN_CLZLL 1
+#define HAVE_VISIBILITY_ATTRIBUTE 1
+#define HAVE_MINIUPNPC_MINIWGET_H 1
+#define HAVE_MINIUPNPC_MINIUPNPC_H 1
+#define HAVE_MINIUPNPC_UPNPCOMMANDS_H 1
+#define HAVE_MINIUPNPC_UPNPERRORS_H 1
+#define HAVE_LIBIMM32 1
+#define HAVE_LIBZ_ 1
+#define HAVE_LIBQT5CORE___ 1
+#define HAVE_LIBQT5GUI____ 1
+#define HAVE_LIBQT5NETWORK 1
+#define HAVE_LIBQT5WIDGETS 1
+#define HAVE_LIBQT5TEST 1
+#define HAVE_LIBQT5DBUS 1
+#define HAVE_LIBQT5PLATFORMSUPPORT 1
+#define QT_STATICPLUGIN 1
+#define QT_QPA_PLATFORM_MINIMAL 1
+#define QT_QPA_PLATFORM_WINDOWS 1
+#define HAVE_BOOST /**/
+#define HAVE_BOOST_SYSTEM /**/
+#define HAVE_BOOST_FILESYSTEM /**/
+#define HAVE_BOOST_PROGRAM_OPTIONS /**/
+#define HAVE_BOOST_THREAD /**/
+#define HAVE_BOOST_CHRONO /**/
+#define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
+#define HAVE_WORKING_BOOST_SLEEP_FOR 1
+#define ENABLE_ZMQ 1
+#define HAVE_DECL_EVP_MD_CTX_NEW 0
+#define HAVE_CONSENSUS_LIB 1
+#define ENABLE_WALLET 1
+#define USE_UPNP 0
+#define USE_QRCODE 1
+#define CLIENT_VERSION_MAJOR 0
+#define CLIENT_VERSION_MINOR 15
+#define CLIENT_VERSION_REVISION 0
+#define CLIENT_VERSION_BUILD 1
+#define CLIENT_VERSION_IS_RELEASE true
+#define COPYRIGHT_YEAR 2017
+#define COPYRIGHT_HOLDERS "The %s developers"
+#define COPYRIGHT_HOLDERS_SUBSTITUTION "placeh core"
+#define COPYRIGHT_HOLDERS_FINAL "The placeh core developers"
+
+configure: exit 0
