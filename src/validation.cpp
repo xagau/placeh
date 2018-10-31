@@ -2952,7 +2952,7 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationSta
 }
 
 bool IsDGWActive(unsigned int blockNumber){
-	if( blockNumber >= 39550 ) {
+	if( blockNumber >= 39505 ) {
 		return true;
 	}
 	return false;	
