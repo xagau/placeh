@@ -34,6 +34,12 @@
 # define QT_NO_ALSA
 #endif
 
+#if defined(QT_NO_CLOCK_MONOTONIC) && defined(QT_CLOCK_MONOTONIC)
+# undef QT_NO_CLOCK_MONOTONIC
+#elif !defined(QT_NO_CLOCK_MONOTONIC) && !defined(QT_CLOCK_MONOTONIC)
+# define QT_NO_CLOCK_MONOTONIC
+#endif
+
 #if defined(QT_NO_CUPS) && defined(QT_CUPS)
 # undef QT_NO_CUPS
 #elif !defined(QT_NO_CUPS) && !defined(QT_CUPS)

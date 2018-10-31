@@ -2936,7 +2936,8 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationSta
         if (block.GetBlockTime() > nAdjustedTime + MAX_FUTURE_BLOCK_TIME_DGW)
             return state.Invalid(false, REJECT_INVALID, "time-too-new", "block timestamp too far in the future (DGW)");
     }
-	else if (block.GetBlockTime() > nAdjustedTime + MAX_FUTURE_BLOCK_TIME)
+	
+	if (block.GetBlockTime() > nAdjustedTime + MAX_FUTURE_BLOCK_TIME)
         return state.Invalid(false, REJECT_INVALID, "time-too-new", "block timestamp too far in the future");
 
     // Reject outdated version blocks when 95% (75% on testnet) of the network has upgraded:
@@ -2948,6 +2949,13 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationSta
             strprintf("rejected nVersion=0x%08x block", block.nVersion));
 
     return true;
+}
+
+bool IsDGWActive(unsigned int blockNumber){
+	if( blockNumber >= 39550 ) {
+		return true;
+	}
+	return false;	
 }
 
 static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, const Consensus::Params& consensusParams, const CBlockIndex* pindexPrev)

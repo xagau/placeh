@@ -113,7 +113,7 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-pc-linux-gnu
-host_triplet = x86_64-w64-mingw32
+host_triplet = x86_64-pc-linux-gnu
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5) $(am__EXEEXT_6)
 noinst_PROGRAMS = $(am__EXEEXT_7)
@@ -122,9 +122,9 @@ am__append_1 = placehd
 am__append_2 = placeh-cli placeh-tx
 #am__append_3 = crypto/sha256_sse4.cpp
 #am__append_4 = compat/glibc_compat.cpp
-am__append_5 = placehd-res.rc
-am__append_6 = placeh-cli-res.rc
-am__append_7 = placeh-tx-res.rc
+#am__append_5 = placehd-res.rc
+#am__append_6 = placeh-cli-res.rc
+#am__append_7 = placeh-tx-res.rc
 #am__append_8 = compat/glibc_compat.cpp
 am__append_9 = $(LIBLEVELDB_INT) \
 	$(LIBMEMENV_INT) \
@@ -133,11 +133,11 @@ am__append_10 = $(LIBLEVELDB_INT)
 am__append_11 = $(LIBMEMENV_INT)
 am__append_12 = -I$(srcdir)/leveldb/include \
 	-I$(srcdir)/leveldb/helpers/memenv
-am__append_13 = -DLEVELDB_PLATFORM_WINDOWS -DWINVER=0x0500 -D__USE_MINGW_ANSI_STDIO=1
-#am__append_14 = -DLEVELDB_PLATFORM_POSIX
-am__append_15 = leveldb/util/env_win.cc \
-	leveldb/port/port_win.cc
-#am__append_16 = leveldb/port/port_posix.cc
+#am__append_13 = -DLEVELDB_PLATFORM_WINDOWS -DWINVER=0x0500 -D__USE_MINGW_ANSI_STDIO=1
+am__append_14 = -DLEVELDB_PLATFORM_POSIX
+#am__append_15 = leveldb/util/env_win.cc \
+#	leveldb/port/port_win.cc
+am__append_16 = leveldb/port/port_posix.cc
 am__append_17 = -DLEVELDB_PLATFORM_POSIX_SSE
 am__append_18 = $(SSE42_CXXFLAGS)
 am__append_19 = test/test_placeh
@@ -151,36 +151,36 @@ am__append_22 = \
   wallet/test/crypto_tests.cpp
 
 am__append_23 = $(LIBPLACEH_WALLET)
-am__append_24 = $(ZMQ_LIBS)
+#am__append_24 = $(ZMQ_LIBS)
 am__append_25 = $(CLEAN_PLACEH_TEST)
 am__append_26 = bench/bench_placeh
-am__append_27 = $(LIBPLACEH_ZMQ) $(ZMQ_LIBS)
+#am__append_27 = $(LIBPLACEH_ZMQ) $(ZMQ_LIBS)
 am__append_28 = bench/coin_selection.cpp
 am__append_29 = $(LIBPLACEH_WALLET) $(LIBPLACEH_CRYPTO)
 am__append_30 = $(CLEAN_PLACEH_BENCH)
-am__append_31 = qt/placeh-qt
-am__append_32 = qt/libplacehqt.a
-am__append_33 = $(PLACEH_QT_WINDOWS_CPP)
-am__append_34 = $(PLACEH_QT_WALLET_CPP)
-#am__append_35 = $(PLACEH_MM)
-am__append_36 = $(PLACEH_RC)
-am__append_37 = $(LIBPLACEH_WALLET)
-am__append_38 = $(LIBPLACEH_ZMQ) $(ZMQ_LIBS)
-am__append_39 = $(CLEAN_QT)
-am__append_40 = qt/test/test_placeh-qt
-am__append_41 = qt/test/test_placeh-qt
-am__append_42 = \
-  qt/test/moc_paymentservertests.cpp \
-  qt/test/moc_wallettests.cpp
+#am__append_31 = qt/placeh-qt
+#am__append_32 = qt/libplacehqt.a
+##am__append_33 = $(PLACEH_QT_WINDOWS_CPP)
+#am__append_34 = $(PLACEH_QT_WALLET_CPP)
+##am__append_35 = $(PLACEH_MM)
+##am__append_36 = $(PLACEH_RC)
+#am__append_37 = $(LIBPLACEH_WALLET)
+##am__append_38 = $(LIBPLACEH_ZMQ) $(ZMQ_LIBS)
+#am__append_39 = $(CLEAN_QT)
+#am__append_40 = qt/test/test_placeh-qt
+#am__append_41 = qt/test/test_placeh-qt
+#am__append_42 = \
+#  qt/test/moc_paymentservertests.cpp \
+#  qt/test/moc_wallettests.cpp
 
-am__append_43 = \
-  qt/test/paymentservertests.cpp \
-  qt/test/wallettests.cpp \
-  wallet/test/wallet_test_fixture.cpp
+#am__append_43 = \
+#  qt/test/paymentservertests.cpp \
+#  qt/test/wallettests.cpp \
+#  wallet/test/wallet_test_fixture.cpp
 
-am__append_44 = $(LIBPLACEH_WALLET)
-am__append_45 = $(LIBPLACEH_ZMQ) $(ZMQ_LIBS)
-am__append_46 = $(CLEAN_PLACEH_QT_TEST)
+#am__append_44 = $(LIBPLACEH_WALLET)
+##am__append_45 = $(LIBPLACEH_ZMQ) $(ZMQ_LIBS)
+#am__append_46 = $(CLEAN_PLACEH_QT_TEST)
 subdir = src
 SUBDIRS =
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -297,9 +297,9 @@ am__leveldb_libleveldb_a_SOURCES_DIST = leveldb/port/atomic_pointer.h \
 	leveldb/util/options.cc leveldb/util/status.cc \
 	leveldb/util/env_win.cc leveldb/port/port_win.cc \
 	leveldb/port/port_posix.cc
-am__objects_2 = leveldb/util/leveldb_libleveldb_a-env_win.$(OBJEXT) \
-	leveldb/port/leveldb_libleveldb_a-port_win.$(OBJEXT)
-#am__objects_3 = leveldb/port/leveldb_libleveldb_a-port_posix.$(OBJEXT)
+#am__objects_2 = leveldb/util/leveldb_libleveldb_a-env_win.$(OBJEXT) \
+#	leveldb/port/leveldb_libleveldb_a-port_win.$(OBJEXT)
+am__objects_3 = leveldb/port/leveldb_libleveldb_a-port_posix.$(OBJEXT)
 am_leveldb_libleveldb_a_OBJECTS = leveldb/db/leveldb_libleveldb_a-builder.$(OBJEXT) \
 	leveldb/db/leveldb_libleveldb_a-c.$(OBJEXT) \
 	leveldb/db/leveldb_libleveldb_a-dbformat.$(OBJEXT) \
@@ -505,9 +505,9 @@ libplaceh_zmq_a_AR = $(AR) $(ARFLAGS)
 libplaceh_zmq_a_LIBADD =
 am__libplaceh_zmq_a_SOURCES_DIST = zmq/zmqabstractnotifier.cpp \
 	zmq/zmqnotificationinterface.cpp zmq/zmqpublishnotifier.cpp
-am_libplaceh_zmq_a_OBJECTS = zmq/libplaceh_zmq_a-zmqabstractnotifier.$(OBJEXT) \
-	zmq/libplaceh_zmq_a-zmqnotificationinterface.$(OBJEXT) \
-	zmq/libplaceh_zmq_a-zmqpublishnotifier.$(OBJEXT)
+#am_libplaceh_zmq_a_OBJECTS = zmq/libplaceh_zmq_a-zmqabstractnotifier.$(OBJEXT) \
+#	zmq/libplaceh_zmq_a-zmqnotificationinterface.$(OBJEXT) \
+#	zmq/libplaceh_zmq_a-zmqpublishnotifier.$(OBJEXT)
 libplaceh_zmq_a_OBJECTS = $(am_libplaceh_zmq_a_OBJECTS)
 qt_libplacehqt_a_AR = $(AR) $(ARFLAGS)
 qt_libplacehqt_a_LIBADD =
@@ -645,121 +645,121 @@ am__qt_libplacehqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/res/icons/tx_output.png qt/res/icons/tx_mined.png \
 	qt/res/icons/warning.png qt/res/icons/verify.png $(wildcard \
 	$(srcdir)/qt/res/movies/spinner-*.png)
-am__objects_6 =  \
-	qt/qt_libplacehqt_a-bantablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-placehaddressvalidator.$(OBJEXT) \
-	qt/qt_libplacehqt_a-placehamountfield.$(OBJEXT) \
-	qt/qt_libplacehqt_a-placehgui.$(OBJEXT) \
-	qt/qt_libplacehqt_a-placehunits.$(OBJEXT) \
-	qt/qt_libplacehqt_a-clientmodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-csvmodelwriter.$(OBJEXT) \
-	qt/qt_libplacehqt_a-guiutil.$(OBJEXT) \
-	qt/qt_libplacehqt_a-intro.$(OBJEXT) \
-	qt/qt_libplacehqt_a-modaloverlay.$(OBJEXT) \
-	qt/qt_libplacehqt_a-networkstyle.$(OBJEXT) \
-	qt/qt_libplacehqt_a-notificator.$(OBJEXT) \
-	qt/qt_libplacehqt_a-optionsdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-optionsmodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-peertablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-platformstyle.$(OBJEXT) \
-	qt/qt_libplacehqt_a-qvalidatedlineedit.$(OBJEXT) \
-	qt/qt_libplacehqt_a-qvaluecombobox.$(OBJEXT) \
-	qt/qt_libplacehqt_a-rpcconsole.$(OBJEXT) \
-	qt/qt_libplacehqt_a-splashscreen.$(OBJEXT) \
-	qt/qt_libplacehqt_a-trafficgraphwidget.$(OBJEXT) \
-	qt/qt_libplacehqt_a-utilitydialog.$(OBJEXT)
-am__objects_7 = qt/qt_libplacehqt_a-winshutdownmonitor.$(OBJEXT)
-am__objects_8 = $(am__objects_7)
-am__objects_9 =  \
-	qt/qt_libplacehqt_a-addressbookpage.$(OBJEXT) \
-	qt/qt_libplacehqt_a-addresstablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-askpassphrasedialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-coincontroldialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-coincontroltreewidget.$(OBJEXT) \
-	qt/qt_libplacehqt_a-editaddressdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-openuridialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-overviewpage.$(OBJEXT) \
-	qt/qt_libplacehqt_a-paymentrequestplus.$(OBJEXT) \
-	qt/qt_libplacehqt_a-paymentserver.$(OBJEXT) \
-	qt/qt_libplacehqt_a-receivecoinsdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-receiverequestdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-recentrequeststablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-sendcoinsdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-sendcoinsentry.$(OBJEXT) \
-	qt/qt_libplacehqt_a-signverifymessagedialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-transactiondesc.$(OBJEXT) \
-	qt/qt_libplacehqt_a-transactiondescdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-transactionfilterproxy.$(OBJEXT) \
-	qt/qt_libplacehqt_a-transactionrecord.$(OBJEXT) \
-	qt/qt_libplacehqt_a-transactiontablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-transactionview.$(OBJEXT) \
-	qt/qt_libplacehqt_a-walletframe.$(OBJEXT) \
-	qt/qt_libplacehqt_a-walletmodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-walletmodeltransaction.$(OBJEXT) \
-	qt/qt_libplacehqt_a-walletview.$(OBJEXT)
-am__objects_10 = $(am__objects_9)
-am__objects_11 = $(am__objects_6) $(am__objects_8) \
-	$(am__objects_10)
-am_qt_libplacehqt_a_OBJECTS = $(am__objects_11) \
-	$(am__objects_4) $(am__objects_4) \
-	$(am__objects_4) $(am__objects_4) \
-	$(am__objects_4) $(am__objects_4) \
-	$(am__objects_4) $(am__objects_4) \
-	$(am__objects_4)
-am__objects_12 = qt/qt_libplacehqt_a-moc_addressbookpage.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_addresstablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_askpassphrasedialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_bantablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_placehaddressvalidator.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_placehamountfield.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_placehgui.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_placehunits.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_callback.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_clientmodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_coincontroldialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_coincontroltreewidget.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_csvmodelwriter.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_editaddressdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_guiutil.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_intro.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_macdockiconhandler.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_macnotificationhandler.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_modaloverlay.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_notificator.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_openuridialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_optionsdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_optionsmodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_overviewpage.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_peertablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_paymentserver.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_qvalidatedlineedit.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_qvaluecombobox.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_receivecoinsdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_receiverequestdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_recentrequeststablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_rpcconsole.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_sendcoinsdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_sendcoinsentry.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_signverifymessagedialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_splashscreen.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_trafficgraphwidget.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_transactiondesc.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_transactiondescdialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_transactionfilterproxy.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_transactiontablemodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_transactionview.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_utilitydialog.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_walletframe.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_walletmodel.$(OBJEXT) \
-	qt/qt_libplacehqt_a-moc_walletview.$(OBJEXT)
-am__objects_13 = qt/qt_libplacehqt_a-paymentrequest.pb.$(OBJEXT)
-am__objects_14 =  \
-	qt/qt_libplacehqt_a-qrc_placeh.$(OBJEXT)
-am__objects_15 = qt/qt_libplacehqt_a-qrc_placeh_locale.$(OBJEXT)
-nodist_qt_libplacehqt_a_OBJECTS = $(am__objects_12) \
-	$(am__objects_4) $(am__objects_13) \
-	$(am__objects_4) $(am__objects_14) \
-	$(am__objects_15)
+#am__objects_6 =  \
+#	qt/qt_libplacehqt_a-bantablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-placehaddressvalidator.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-placehamountfield.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-placehgui.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-placehunits.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-clientmodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-csvmodelwriter.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-guiutil.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-intro.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-modaloverlay.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-networkstyle.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-notificator.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-optionsdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-optionsmodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-peertablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-platformstyle.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-qvalidatedlineedit.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-qvaluecombobox.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-rpcconsole.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-splashscreen.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-trafficgraphwidget.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-utilitydialog.$(OBJEXT)
+#am__objects_7 = qt/qt_libplacehqt_a-winshutdownmonitor.$(OBJEXT)
+##am__objects_8 = $(am__objects_7)
+#am__objects_9 =  \
+#	qt/qt_libplacehqt_a-addressbookpage.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-addresstablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-askpassphrasedialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-coincontroldialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-coincontroltreewidget.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-editaddressdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-openuridialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-overviewpage.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-paymentrequestplus.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-paymentserver.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-receivecoinsdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-receiverequestdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-recentrequeststablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-sendcoinsdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-sendcoinsentry.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-signverifymessagedialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-transactiondesc.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-transactiondescdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-transactionfilterproxy.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-transactionrecord.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-transactiontablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-transactionview.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-walletframe.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-walletmodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-walletmodeltransaction.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-walletview.$(OBJEXT)
+#am__objects_10 = $(am__objects_9)
+#am__objects_11 = $(am__objects_6) $(am__objects_8) \
+#	$(am__objects_10)
+#am_qt_libplacehqt_a_OBJECTS = $(am__objects_11) \
+#	$(am__objects_4) $(am__objects_4) \
+#	$(am__objects_4) $(am__objects_4) \
+#	$(am__objects_4) $(am__objects_4) \
+#	$(am__objects_4) $(am__objects_4) \
+#	$(am__objects_4)
+#am__objects_12 = qt/qt_libplacehqt_a-moc_addressbookpage.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_addresstablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_askpassphrasedialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_bantablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_placehaddressvalidator.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_placehamountfield.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_placehgui.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_placehunits.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_callback.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_clientmodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_coincontroldialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_coincontroltreewidget.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_csvmodelwriter.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_editaddressdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_guiutil.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_intro.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_macdockiconhandler.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_macnotificationhandler.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_modaloverlay.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_notificator.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_openuridialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_optionsdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_optionsmodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_overviewpage.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_peertablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_paymentserver.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_qvalidatedlineedit.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_qvaluecombobox.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_receivecoinsdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_receiverequestdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_recentrequeststablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_rpcconsole.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_sendcoinsdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_sendcoinsentry.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_signverifymessagedialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_splashscreen.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_trafficgraphwidget.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_transactiondesc.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_transactiondescdialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_transactionfilterproxy.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_transactiontablemodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_transactionview.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_utilitydialog.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_walletframe.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_walletmodel.$(OBJEXT) \
+#	qt/qt_libplacehqt_a-moc_walletview.$(OBJEXT)
+#am__objects_13 = qt/qt_libplacehqt_a-paymentrequest.pb.$(OBJEXT)
+#am__objects_14 =  \
+#	qt/qt_libplacehqt_a-qrc_placeh.$(OBJEXT)
+#am__objects_15 = qt/qt_libplacehqt_a-qrc_placeh_locale.$(OBJEXT)
+#nodist_qt_libplacehqt_a_OBJECTS = $(am__objects_12) \
+#	$(am__objects_4) $(am__objects_13) \
+#	$(am__objects_4) $(am__objects_14) \
+#	$(am__objects_15)
 qt_libplacehqt_a_OBJECTS = $(am_qt_libplacehqt_a_OBJECTS) \
 	$(nodist_qt_libplacehqt_a_OBJECTS)
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
@@ -854,8 +854,8 @@ am__EXEEXT_2 = placeh-cli$(EXEEXT) \
 	placeh-tx$(EXEEXT)
 am__EXEEXT_3 = test/test_placeh$(EXEEXT)
 am__EXEEXT_4 = bench/bench_placeh$(EXEEXT)
-am__EXEEXT_5 = qt/placeh-qt$(EXEEXT)
-am__EXEEXT_6 = qt/test/test_placeh-qt$(EXEEXT)
+#am__EXEEXT_5 = qt/placeh-qt$(EXEEXT)
+#am__EXEEXT_6 = qt/test/test_placeh-qt$(EXEEXT)
 am__EXEEXT_7 = test/test_placeh_fuzzy$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
 am__bench_bench_placeh_SOURCES_DIST = bench/bench_placeh.cpp \
@@ -895,9 +895,9 @@ am__DEPENDENCIES_2 = $(am__append_11)
 am__DEPENDENCIES_3 =
 #am__DEPENDENCIES_4 = $(am__DEPENDENCIES_3)
 am__DEPENDENCIES_4 = univalue/libunivalue.la
-am__DEPENDENCIES_5 =  \
-	$(LIBPLACEH_ZMQ) \
-	$(am__DEPENDENCIES_3)
+#am__DEPENDENCIES_5 =  \
+#	$(LIBPLACEH_ZMQ) \
+#	$(am__DEPENDENCIES_3)
 bench_bench_placeh_DEPENDENCIES =  \
 	$(LIBPLACEH_SERVER) $(LIBPLACEH_COMMON) \
 	$(LIBPLACEH_UTIL) $(LIBPLACEH_CONSENSUS) \
@@ -914,7 +914,7 @@ bench_bench_placeh_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(bench_bench_placeh_CXXFLAGS) $(CXXFLAGS) \
 	$(bench_bench_placeh_LDFLAGS) $(LDFLAGS) -o $@
 am__placeh_cli_SOURCES_DIST = placeh-cli.cpp placeh-cli-res.rc
-am__objects_22 = placeh-cli-res.$(OBJEXT)
+#am__objects_22 = placeh-cli-res.$(OBJEXT)
 am_placeh_cli_OBJECTS = placeh_cli-placeh-cli.$(OBJEXT) \
 	$(am__objects_22)
 placeh_cli_OBJECTS = $(am_placeh_cli_OBJECTS)
@@ -926,7 +926,7 @@ placeh_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(placeh_cli_CXXFLAGS) \
 	$(CXXFLAGS) $(placeh_cli_LDFLAGS) $(LDFLAGS) -o $@
 am__placeh_tx_SOURCES_DIST = placeh-tx.cpp placeh-tx-res.rc
-am__objects_23 = placeh-tx-res.$(OBJEXT)
+#am__objects_23 = placeh-tx-res.$(OBJEXT)
 am_placeh_tx_OBJECTS = placeh_tx-placeh-tx.$(OBJEXT) $(am__objects_23)
 placeh_tx_OBJECTS = $(am_placeh_tx_OBJECTS)
 placeh_tx_DEPENDENCIES = $(am__DEPENDENCIES_4) $(LIBPLACEH_COMMON) \
@@ -936,7 +936,7 @@ placeh_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(placeh_tx_CXXFLAGS) \
 	$(CXXFLAGS) $(placeh_tx_LDFLAGS) $(LDFLAGS) -o $@
 am__placehd_SOURCES_DIST = placehd.cpp placehd-res.rc
-am__objects_24 = placehd-res.$(OBJEXT)
+#am__objects_24 = placehd-res.$(OBJEXT)
 am_placehd_OBJECTS = placehd-placehd.$(OBJEXT) $(am__objects_24)
 placehd_OBJECTS = $(am_placehd_OBJECTS)
 placehd_DEPENDENCIES = $(LIBPLACEH_SERVER) $(LIBPLACEH_COMMON) \
@@ -953,34 +953,34 @@ placehd_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(CXXFLAGS) $(placehd_LDFLAGS) $(LDFLAGS) -o $@
 am__qt_placeh_qt_SOURCES_DIST = qt/placeh.cpp qt/macdockiconhandler.mm \
 	qt/macnotificationhandler.mm qt/res/placeh-qt-res.rc
-am__objects_25 =  \
-	qt/qt_placeh_qt-macdockiconhandler.$(OBJEXT) \
-	qt/qt_placeh_qt-macnotificationhandler.$(OBJEXT)
-#am__objects_26 =  \
-#	$(am__objects_25)
-am__objects_27 = qt/res/placeh-qt-res.$(OBJEXT)
-am__objects_28 =  \
-	$(am__objects_27)
-am_qt_placeh_qt_OBJECTS =  \
-	qt/qt_placeh_qt-placeh.$(OBJEXT) \
-	$(am__objects_26) $(am__objects_28)
+#am__objects_25 =  \
+#	qt/qt_placeh_qt-macdockiconhandler.$(OBJEXT) \
+#	qt/qt_placeh_qt-macnotificationhandler.$(OBJEXT)
+##am__objects_26 =  \
+##	$(am__objects_25)
+#am__objects_27 = qt/res/placeh-qt-res.$(OBJEXT)
+##am__objects_28 =  \
+##	$(am__objects_27)
+#am_qt_placeh_qt_OBJECTS =  \
+#	qt/qt_placeh_qt-placeh.$(OBJEXT) \
+#	$(am__objects_26) $(am__objects_28)
 qt_placeh_qt_OBJECTS = $(am_qt_placeh_qt_OBJECTS)
-am__DEPENDENCIES_6 =  \
-	$(LIBPLACEH_ZMQ) \
-	$(am__DEPENDENCIES_3)
-qt_placeh_qt_DEPENDENCIES = qt/libplacehqt.a \
-	$(LIBPLACEH_SERVER) $(am__append_37) \
-	$(am__DEPENDENCIES_6) $(LIBPLACEH_CLI) \
-	$(LIBPLACEH_COMMON) $(LIBPLACEH_UTIL) \
-	$(LIBPLACEH_CONSENSUS) $(LIBPLACEH_CRYPTO) \
-	$(am__DEPENDENCIES_4) $(am__DEPENDENCIES_1) \
-	$(LIBLEVELDB_SSE42) $(am__DEPENDENCIES_2) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_6 =  \
+##	$(LIBPLACEH_ZMQ) \
+##	$(am__DEPENDENCIES_3)
+#qt_placeh_qt_DEPENDENCIES = qt/libplacehqt.a \
+#	$(LIBPLACEH_SERVER) $(am__append_37) \
+#	$(am__DEPENDENCIES_6) $(LIBPLACEH_CLI) \
+#	$(LIBPLACEH_COMMON) $(LIBPLACEH_UTIL) \
+#	$(LIBPLACEH_CONSENSUS) $(LIBPLACEH_CRYPTO) \
+#	$(am__DEPENDENCIES_4) $(am__DEPENDENCIES_1) \
+#	$(LIBLEVELDB_SSE42) $(am__DEPENDENCIES_2) \
+#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
+#	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
 qt_placeh_qt_LINK = $(LIBTOOL) $(AM_V_lt) $(qt_placeh_qt_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(OBJCXXLD) $(AM_OBJCXXFLAGS) \
 	$(OBJCXXFLAGS) $(qt_placeh_qt_LDFLAGS) $(LDFLAGS) -o $@
@@ -992,51 +992,51 @@ am__qt_test_test_placeh_qt_SOURCES_DIST = qt/test/compattests.cpp \
 	qt/test/wallettests.h test/test_placeh.cpp test/test_placeh.h \
 	qt/test/paymentservertests.cpp qt/test/wallettests.cpp \
 	wallet/test/wallet_test_fixture.cpp
-am__objects_29 = test/qt_test_test_placeh_qt-test_placeh.$(OBJEXT)
-am__objects_30 = qt/test/qt_test_test_placeh_qt-paymentservertests.$(OBJEXT) \
-	qt/test/qt_test_test_placeh_qt-wallettests.$(OBJEXT) \
-	wallet/test/qt_test_test_placeh_qt-wallet_test_fixture.$(OBJEXT)
-am_qt_test_test_placeh_qt_OBJECTS = qt/test/qt_test_test_placeh_qt-compattests.$(OBJEXT) \
-	qt/test/qt_test_test_placeh_qt-rpcnestedtests.$(OBJEXT) \
-	qt/test/qt_test_test_placeh_qt-test_main.$(OBJEXT) \
-	qt/test/qt_test_test_placeh_qt-uritests.$(OBJEXT) \
-	$(am__objects_4) $(am__objects_29) \
-	$(am__objects_4) $(am__objects_30)
-am__objects_31 = qt/test/qt_test_test_placeh_qt-moc_paymentservertests.$(OBJEXT) \
-	qt/test/qt_test_test_placeh_qt-moc_wallettests.$(OBJEXT)
-am__objects_32 = qt/test/qt_test_test_placeh_qt-moc_compattests.$(OBJEXT) \
-	qt/test/qt_test_test_placeh_qt-moc_rpcnestedtests.$(OBJEXT) \
-	qt/test/qt_test_test_placeh_qt-moc_uritests.$(OBJEXT) \
-	$(am__objects_31)
-nodist_qt_test_test_placeh_qt_OBJECTS =  \
-	$(am__objects_32)
+#am__objects_29 = test/qt_test_test_placeh_qt-test_placeh.$(OBJEXT)
+#am__objects_30 = qt/test/qt_test_test_placeh_qt-paymentservertests.$(OBJEXT) \
+#	qt/test/qt_test_test_placeh_qt-wallettests.$(OBJEXT) \
+#	wallet/test/qt_test_test_placeh_qt-wallet_test_fixture.$(OBJEXT)
+#am_qt_test_test_placeh_qt_OBJECTS = qt/test/qt_test_test_placeh_qt-compattests.$(OBJEXT) \
+#	qt/test/qt_test_test_placeh_qt-rpcnestedtests.$(OBJEXT) \
+#	qt/test/qt_test_test_placeh_qt-test_main.$(OBJEXT) \
+#	qt/test/qt_test_test_placeh_qt-uritests.$(OBJEXT) \
+#	$(am__objects_4) $(am__objects_29) \
+#	$(am__objects_4) $(am__objects_30)
+#am__objects_31 = qt/test/qt_test_test_placeh_qt-moc_paymentservertests.$(OBJEXT) \
+#	qt/test/qt_test_test_placeh_qt-moc_wallettests.$(OBJEXT)
+#am__objects_32 = qt/test/qt_test_test_placeh_qt-moc_compattests.$(OBJEXT) \
+#	qt/test/qt_test_test_placeh_qt-moc_rpcnestedtests.$(OBJEXT) \
+#	qt/test/qt_test_test_placeh_qt-moc_uritests.$(OBJEXT) \
+#	$(am__objects_31)
+#nodist_qt_test_test_placeh_qt_OBJECTS =  \
+#	$(am__objects_32)
 qt_test_test_placeh_qt_OBJECTS = $(am_qt_test_test_placeh_qt_OBJECTS) \
 	$(nodist_qt_test_test_placeh_qt_OBJECTS)
-am__DEPENDENCIES_7 =  \
-	$(LIBPLACEH_ZMQ) \
-	$(am__DEPENDENCIES_3)
-qt_test_test_placeh_qt_DEPENDENCIES =  \
-	$(LIBPLACEHQT) $(LIBPLACEH_SERVER) \
-	$(am__append_44) $(am__DEPENDENCIES_7) \
-	$(LIBPLACEH_CLI) $(LIBPLACEH_COMMON) \
-	$(LIBPLACEH_UTIL) $(LIBPLACEH_CONSENSUS) \
-	$(LIBPLACEH_CRYPTO) \
-	$(am__DEPENDENCIES_4) \
-	$(am__DEPENDENCIES_1) \
-	$(LIBLEVELDB_SSE42) \
-	$(am__DEPENDENCIES_2) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
-	$(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3)
+##am__DEPENDENCIES_7 =  \
+##	$(LIBPLACEH_ZMQ) \
+##	$(am__DEPENDENCIES_3)
+#qt_test_test_placeh_qt_DEPENDENCIES =  \
+#	$(LIBPLACEHQT) $(LIBPLACEH_SERVER) \
+#	$(am__append_44) $(am__DEPENDENCIES_7) \
+#	$(LIBPLACEH_CLI) $(LIBPLACEH_COMMON) \
+#	$(LIBPLACEH_UTIL) $(LIBPLACEH_CONSENSUS) \
+#	$(LIBPLACEH_CRYPTO) \
+#	$(am__DEPENDENCIES_4) \
+#	$(am__DEPENDENCIES_1) \
+#	$(LIBLEVELDB_SSE42) \
+#	$(am__DEPENDENCIES_2) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3) $(LIBSECP256K1) \
+#	$(am__DEPENDENCIES_3) \
+#	$(am__DEPENDENCIES_3)
 qt_test_test_placeh_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(qt_test_test_placeh_qt_CXXFLAGS) $(CXXFLAGS) \
@@ -1148,8 +1148,8 @@ nodist_test_test_placeh_OBJECTS =  \
 	$(am__objects_21)
 test_test_placeh_OBJECTS = $(am_test_test_placeh_OBJECTS) \
 	$(nodist_test_test_placeh_OBJECTS)
-am__DEPENDENCIES_8 =  \
-	$(am__DEPENDENCIES_3)
+#am__DEPENDENCIES_8 =  \
+#	$(am__DEPENDENCIES_3)
 test_test_placeh_DEPENDENCIES = $(am__append_23) \
 	$(LIBPLACEH_SERVER) $(LIBPLACEH_CLI) \
 	$(LIBPLACEH_COMMON) $(LIBPLACEH_UTIL) \
@@ -1482,7 +1482,7 @@ am__set_TESTS_bases = \
   bases=`echo $$bases`
 RECHECK_LOGS = $(TEST_LOGS)
 TEST_SUITE_LOG = test-suite.log
-TEST_EXTENSIONS = .exe .test
+TEST_EXTENSIONS =  .test
 LOG_DRIVER = $(SHELL) $(top_srcdir)/build-aux/test-driver
 LOG_COMPILE = $(LOG_COMPILER) $(AM_LOG_FLAGS) $(LOG_FLAGS)
 am__set_b = \
@@ -1496,7 +1496,7 @@ am__set_b = \
       b='$*';; \
   esac
 am__test_logs1 = $(TESTS:=.log)
-am__test_logs2 = $(am__test_logs1:.exe.log=.log)
+am__test_logs2 = $(am__test_logs1:.log=.log)
 TEST_LOGS = $(am__test_logs2:.test.log=.log)
 TEST_LOG_DRIVER = $(SHELL) $(top_srcdir)/build-aux/test-driver
 TEST_LOG_COMPILE = $(TEST_LOG_COMPILER) $(AM_TEST_LOG_FLAGS) \
@@ -1534,54 +1534,54 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing aclocal-1.15
+ACLOCAL = aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AR = /usr/bin/x86_64-w64-mingw32-ar
+AR = /usr/bin/ar
 ARFLAGS = cr
 AUTOCONF = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing autoconf
 AUTOHEADER = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing automake-1.15
+AUTOMAKE = automake-1.15
 AWK = gawk
 BDB_CFLAGS = 
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
-BOOST_CHRONO_LIB = -lboost_chrono-mt-s
-BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include
-BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-s
-BOOST_LDFLAGS = -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib
-BOOST_LIBS = -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
-BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s
-BOOST_SYSTEM_LIB = -lboost_system-mt-s
-BOOST_THREAD_LIB = -lboost_thread_win32-mt-s
-BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework-mt-s
+BOOST_CHRONO_LIB = -lboost_chrono
+BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -pthread -I/usr/include
+BOOST_FILESYSTEM_LIB = -lboost_filesystem
+BOOST_LDFLAGS = -L/usr/lib/x86_64-linux-gnu
+BOOST_LIBS = -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_chrono
+BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options
+BOOST_SYSTEM_LIB = -lboost_system
+BOOST_THREAD_LIB = -lboost_thread
+BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework
 BREW = 
-CC = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccache x86_64-w64-mingw32-gcc
-CCACHE = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccache
+CC = gcc
+CCACHE = 
 CCDEPMODE = depmode=gcc3
-CFLAGS = -pipe -O2 
+CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 1
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 2
 CLIENT_VERSION_MINOR = 0
-CLIENT_VERSION_REVISION = 25
+CLIENT_VERSION_REVISION = 26
 COPYRIGHT_HOLDERS = The %s developers
 COPYRIGHT_HOLDERS_FINAL = The placeh core developers
 COPYRIGHT_HOLDERS_SUBSTITUTION = placeh core
 COPYRIGHT_YEAR = 2018
-CPP = x86_64-w64-mingw32-gcc -E
-CPPFILT = /usr/bin/x86_64-w64-mingw32-c++filt
-CPPFLAGS = -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64
+CPP = gcc -E
+CPPFILT = /usr/bin/c++filt
+CPPFLAGS =  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS
 CRYPTO_CFLAGS = 
 CRYPTO_LIBS = -lcrypto
-CXX = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/ccache x86_64-w64-mingw32-g++ -std=c++11
-CXXCPP = x86_64-w64-mingw32-g++ -std=c++11 -E
+CXX = g++ -std=c++11
+CXXCPP = g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -pipe -O2 
+CXXFLAGS = --param ggc-min-expand=1 --param ggc-min-heapsize=32768
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
-DLLTOOL = x86_64-w64-mingw32-dlltool
+DLLTOOL = false
 DSYMUTIL = 
 DUMPBIN = 
 ECHO_C = 
@@ -1591,19 +1591,19 @@ EGREP = /bin/grep -E
 ERROR_CXXFLAGS = 
 EVENT_CFLAGS = 
 EVENT_LIBS = -levent
-EVENT_PTHREADS_CFLAGS = 
-EVENT_PTHREADS_LIBS = 
-EXEEXT = .exe
+EVENT_PTHREADS_CFLAGS = -pthread
+EVENT_PTHREADS_LIBS = -levent_pthreads -levent
+EXEEXT = 
 EXTENDED_FUNCTIONAL_TESTS = 
 FGREP = /bin/grep -F
-GCOV = /usr/bin/x86_64-w64-mingw32-gcov
+GCOV = /usr/bin/gcov
 GENHTML = 
 GENISOIMAGE = 
 GIT = /usr/bin/git
 GREP = /bin/grep
 HARDENED_CPPFLAGS =  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
 HARDENED_CXXFLAGS =  -Wstack-protector -fstack-protector-all
-HARDENED_LDFLAGS =  -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va
+HARDENED_LDFLAGS =  -Wl,-z,relro -Wl,-z,now -pie
 HAVE_CXX11 = 1
 HEXDUMP = /usr/bin/hexdump
 IMAGEMAGICK_CONVERT = 
@@ -1615,69 +1615,69 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LCOV = 
 LCOV_OPTS = 
-LD = /usr/bin/x86_64-w64-mingw32-ld
-LDFLAGS = -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib 
+LD = /usr/bin/ld -m elf_x86_64
+LDFLAGS = 
 LEVELDB_CPPFLAGS =  $(am__append_12)
-LEVELDB_TARGET_FLAGS = -DOS_WINDOWS
+LEVELDB_TARGET_FLAGS = -DOS_LINUX
 LIBLEVELDB =  $(am__append_10)
 LIBMEMENV =  $(am__append_11)
 LIBOBJS = 
-LIBS = -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd 
+LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
-LIBTOOL_APP_LDFLAGS =  -all-static
+LIBTOOL_APP_LDFLAGS = 
 LIPO = 
 LN_S = ln -s
-LRELEASE = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
+LRELEASE = 
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = 
 MAINT = 
 MAKEINFO = ${SHELL} /mnt/c/git/repo/placeh/build-aux/missing makeinfo
-MAKENSIS = none
+MAKENSIS = 
 MANIFEST_TOOL = :
-MINIUPNPC_CPPFLAGS = -DSTATICLIB -DMINIUPNP_STATICLIB
-MINIUPNPC_LIBS = -lminiupnpc
+MINIUPNPC_CPPFLAGS = 
+MINIUPNPC_LIBS = 
 MKDIR_P = /bin/mkdir -p
-MOC = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/moc
+MOC = 
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
-NM = x86_64-w64-mingw32-nm
+NM = /usr/bin/nm -B
 NMEDIT = 
-OBJCOPY = /usr/bin/x86_64-w64-mingw32-objcopy
-OBJCXX = x86_64-w64-mingw32-g++ -std=c++11
+OBJCOPY = /usr/bin/objcopy
+OBJCXX = g++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
 OBJCXXFLAGS = 
-OBJDUMP = x86_64-w64-mingw32-objdump
+OBJDUMP = objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
 PACKAGE = placeh
 PACKAGE_BUGREPORT = https://github.com/xagau/placeh/issues
 PACKAGE_NAME = placeh core
-PACKAGE_STRING = placeh core 2.0.25
+PACKAGE_STRING = placeh core 2.0.26
 PACKAGE_TARNAME = placeh
 PACKAGE_URL = https://placeh.io/
-PACKAGE_VERSION = 2.0.25
+PACKAGE_VERSION = 2.0.26
 PATH_SEPARATOR = :
-PIC_FLAGS = 
-PIE_FLAGS = 
-PKG_CONFIG = /usr/bin/pkg-config --static
+PIC_FLAGS = -fPIC
+PIE_FLAGS = -fPIE
+PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../share/pkgconfig:/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib/pkgconfig
+PKG_CONFIG_PATH = 
 PLACEH_CLI_NAME = placeh-cli
 PLACEH_DAEMON_NAME = placehd
 PLACEH_GUI_NAME = placeh-qt
 PLACEH_TX_NAME = placeh-tx
 PORT = 
 PROTOBUF_CFLAGS = 
-PROTOBUF_LIBS = -lprotobuf
-PROTOC = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/protoc
-PTHREAD_CC = x86_64-w64-mingw32-gcc
+PROTOBUF_LIBS = 
+PROTOC = 
+PTHREAD_CC = gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3.6
-PYTHONPATH = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/lib/python/dist-packages:
+PYTHONPATH = 
 QR_CFLAGS = 
-QR_LIBS = -lqrencode
+QR_LIBS = 
 QT4_CFLAGS = 
 QT4_LIBS = 
 QT5_CFLAGS = 
@@ -1690,19 +1690,19 @@ QTXCBQPA_CFLAGS =
 QTXCBQPA_LIBS = 
 QT_DBUS_CFLAGS = 
 QT_DBUS_INCLUDES = 
-QT_DBUS_LIBS = -lQt5DBus -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib
-QT_INCLUDES = -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtCore -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtGui -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtTest -I/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../include/QtDBus
-QT_LDFLAGS =  -mwindows
-QT_LIBS = -lqwindows -lqminimal -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../plugins/platforms
+QT_DBUS_LIBS = 
+QT_INCLUDES = 
+QT_LDFLAGS = 
+QT_LIBS = 
 QT_PIE_FLAGS = 
 QT_SELECT = qt5
 QT_TEST_CFLAGS = 
 QT_TEST_INCLUDES = 
-QT_TEST_LIBS = -lQt5Test -L/mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../lib
-QT_TRANSLATION_DIR = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../translations
-RANLIB = /usr/bin/x86_64-w64-mingw32-ranlib
-RCC = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/rcc
-READELF = /usr/bin/x86_64-w64-mingw32-readelf
+QT_TEST_LIBS = 
+QT_TRANSLATION_DIR = 
+RANLIB = /usr/bin/ranlib
+RCC = 
+READELF = /usr/bin/readelf
 RELDFLAGS = 
 RSVG_CONVERT = 
 SED = /bin/sed
@@ -1711,29 +1711,29 @@ SHELL = /bin/bash
 SSE42_CXXFLAGS = -msse4.2
 SSL_CFLAGS = 
 SSL_LIBS = -lssl
-STRIP = /usr/bin/x86_64-w64-mingw32-strip
-TESTDEFS = 
+STRIP = /usr/bin/strip
+TESTDEFS =  -DBOOST_TEST_DYN_LINK
 TIFFCP = 
-UIC = /mnt/c/git/repo/placeh/depends/x86_64-w64-mingw32/share/../native/bin/uic
+UIC = 
 UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 2.0.25
-WINDOWS_BITS = 64
-WINDRES = /usr/bin/x86_64-w64-mingw32-windres
+VERSION = 2.0.26
+WINDOWS_BITS = 
+WINDRES = 
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
 XGETTEXT = 
-ZMQ_CFLAGS =  -DZMQ_STATIC
-ZMQ_LIBS = -lzmq
+ZMQ_CFLAGS = 
+ZMQ_LIBS = 
 abs_builddir = /mnt/c/git/repo/placeh/src
 abs_srcdir = /mnt/c/git/repo/placeh/src
 abs_top_builddir = /mnt/c/git/repo/placeh
 abs_top_srcdir = /mnt/c/git/repo/placeh
-ac_ct_AR = 
-ac_ct_CC = 
-ac_ct_CXX = 
+ac_ct_AR = ar
+ac_ct_CC = gcc
+ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
 ac_ct_OBJCXX = 
 am__include = include
@@ -1754,11 +1754,11 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = x86_64-w64-mingw32
-host_alias = x86_64-w64-mingw32
+host = x86_64-pc-linux-gnu
+host_alias = 
 host_cpu = x86_64
-host_os = mingw32
-host_vendor = w64
+host_os = linux-gnu
+host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
@@ -1771,7 +1771,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /
+prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -1809,7 +1809,7 @@ LIBPLACEH_UTIL = libplaceh_util.a
 LIBPLACEH_CRYPTO = crypto/libplaceh_crypto.a
 LIBPLACEHQT = qt/libplacehqt.a
 LIBSECP256K1 = secp256k1/libsecp256k1.la
-LIBPLACEH_ZMQ = libplaceh_zmq.a
+#LIBPLACEH_ZMQ = libplaceh_zmq.a
 LIBPLACEHCONSENSUS = libplacehconsensus.la
 LIBPLACEH_WALLET = libplaceh_wallet.a
 lib_LTLIBRARIES = $(LIBPLACEHCONSENSUS)
@@ -1955,12 +1955,12 @@ libplaceh_server_a_SOURCES = \
   versionbits.cpp \
   $(PLACEH_CORE_H)
 
-libplaceh_zmq_a_CPPFLAGS = $(PLACEH_INCLUDES) $(ZMQ_CFLAGS)
-libplaceh_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libplaceh_zmq_a_SOURCES = \
-  zmq/zmqabstractnotifier.cpp \
-  zmq/zmqnotificationinterface.cpp \
-  zmq/zmqpublishnotifier.cpp
+#libplaceh_zmq_a_CPPFLAGS = $(PLACEH_INCLUDES) $(ZMQ_CFLAGS)
+#libplaceh_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+#libplaceh_zmq_a_SOURCES = \
+#  zmq/zmqabstractnotifier.cpp \
+#  zmq/zmqnotificationinterface.cpp \
+#  zmq/zmqpublishnotifier.cpp
 
 
 # wallet: shared between placehd and placeh-qt, but only linked
@@ -2374,452 +2374,452 @@ bench_bench_placeh_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 CLEAN_PLACEH_BENCH = bench/*.gcda bench/*.gcno $(GENERATED_TEST_FILES)
 
 # placeh qt core #
-QT_TS = \
-  qt/locale/placeh_af.ts \
-  qt/locale/placeh_af_ZA.ts \
-  qt/locale/placeh_ar.ts \
-  qt/locale/placeh_be_BY.ts \
-  qt/locale/placeh_bg_BG.ts \
-  qt/locale/placeh_bg.ts \
-  qt/locale/placeh_bn.ts \
-  qt/locale/placeh_bs.ts \
-  qt/locale/placeh_ca_ES.ts \
-  qt/locale/placeh_ca.ts \
-  qt/locale/placeh_ca@valencia.ts \
-  qt/locale/placeh_cs.ts \
-  qt/locale/placeh_cy.ts \
-  qt/locale/placeh_da.ts \
-  qt/locale/placeh_de_DE.ts \
-  qt/locale/placeh_de.ts \
-  qt/locale/placeh_el_GR.ts \
-  qt/locale/placeh_el.ts \
-  qt/locale/placeh_en_AU.ts \
-  qt/locale/placeh_en_GB.ts \
-  qt/locale/placeh_en.ts \
-  qt/locale/placeh_en_US.ts \
-  qt/locale/placeh_eo.ts \
-  qt/locale/placeh_es_419.ts \
-  qt/locale/placeh_es_AR.ts \
-  qt/locale/placeh_es_CL.ts \
-  qt/locale/placeh_es_CO.ts \
-  qt/locale/placeh_es_DO.ts \
-  qt/locale/placeh_es_ES.ts \
-  qt/locale/placeh_es_MX.ts \
-  qt/locale/placeh_es.ts \
-  qt/locale/placeh_es_UY.ts \
-  qt/locale/placeh_es_VE.ts \
-  qt/locale/placeh_et_EE.ts \
-  qt/locale/placeh_et.ts \
-  qt/locale/placeh_eu_ES.ts \
-  qt/locale/placeh_fa_IR.ts \
-  qt/locale/placeh_fa.ts \
-  qt/locale/placeh_fi.ts \
-  qt/locale/placeh_fr_CA.ts \
-  qt/locale/placeh_fr_FR.ts \
-  qt/locale/placeh_fr.ts \
-  qt/locale/placeh_gl.ts \
-  qt/locale/placeh_he_IL.ts \
-  qt/locale/placeh_he.ts \
-  qt/locale/placeh_hi_IN.ts \
-  qt/locale/placeh_hr.ts \
-  qt/locale/placeh_hu.ts \
-  qt/locale/placeh_id_ID.ts \
-  qt/locale/placeh_id.ts \
-  qt/locale/placeh_it_IT.ts \
-  qt/locale/placeh_it.ts \
-  qt/locale/placeh_ja_JP.ts \
-  qt/locale/placeh_ja.ts \
-  qt/locale/placeh_ka.ts \
-  qt/locale/placeh_kk_KZ.ts \
-  qt/locale/placeh_ko_KR.ts \
-  qt/locale/placeh_ku_IQ.ts \
-  qt/locale/placeh_ky.ts \
-  qt/locale/placeh_la.ts \
-  qt/locale/placeh_lt.ts \
-  qt/locale/placeh_lv_LV.ts \
-  qt/locale/placeh_mk_MK.ts \
-  qt/locale/placeh_mn.ts \
-  qt/locale/placeh_ms_MY.ts \
-  qt/locale/placeh_my.ts \
-  qt/locale/placeh_nb_NO.ts \
-  qt/locale/placeh_nb.ts \
-  qt/locale/placeh_ne.ts \
-  qt/locale/placeh_nl_NL.ts \
-  qt/locale/placeh_nl.ts \
-  qt/locale/placeh_pam.ts \
-  qt/locale/placeh_pl.ts \
-  qt/locale/placeh_pt_BR.ts \
-  qt/locale/placeh_pt_PT.ts \
-  qt/locale/placeh_ro_RO.ts \
-  qt/locale/placeh_ro.ts \
-  qt/locale/placeh_ru_RU.ts \
-  qt/locale/placeh_ru.ts \
-  qt/locale/placeh_si.ts \
-  qt/locale/placeh_sk.ts \
-  qt/locale/placeh_sl_SI.ts \
-  qt/locale/placeh_sq.ts \
-  qt/locale/placeh_sr@latin.ts \
-  qt/locale/placeh_sr.ts \
-  qt/locale/placeh_sv.ts \
-  qt/locale/placeh_ta.ts \
-  qt/locale/placeh_te.ts \
-  qt/locale/placeh_th_TH.ts \
-  qt/locale/placeh_th.ts \
-  qt/locale/placeh_tr_TR.ts \
-  qt/locale/placeh_tr.ts \
-  qt/locale/placeh_uk.ts \
-  qt/locale/placeh_ur_PK.ts \
-  qt/locale/placeh_uz@Cyrl.ts \
-  qt/locale/placeh_vi.ts \
-  qt/locale/placeh_vi_VN.ts \
-  qt/locale/placeh_zh_CN.ts \
-  qt/locale/placeh_zh_HK.ts \
-  qt/locale/placeh_zh.ts \
-  qt/locale/placeh_zh_TW.ts
+#QT_TS = \
+#  qt/locale/placeh_af.ts \
+#  qt/locale/placeh_af_ZA.ts \
+#  qt/locale/placeh_ar.ts \
+#  qt/locale/placeh_be_BY.ts \
+#  qt/locale/placeh_bg_BG.ts \
+#  qt/locale/placeh_bg.ts \
+#  qt/locale/placeh_bn.ts \
+#  qt/locale/placeh_bs.ts \
+#  qt/locale/placeh_ca_ES.ts \
+#  qt/locale/placeh_ca.ts \
+#  qt/locale/placeh_ca@valencia.ts \
+#  qt/locale/placeh_cs.ts \
+#  qt/locale/placeh_cy.ts \
+#  qt/locale/placeh_da.ts \
+#  qt/locale/placeh_de_DE.ts \
+#  qt/locale/placeh_de.ts \
+#  qt/locale/placeh_el_GR.ts \
+#  qt/locale/placeh_el.ts \
+#  qt/locale/placeh_en_AU.ts \
+#  qt/locale/placeh_en_GB.ts \
+#  qt/locale/placeh_en.ts \
+#  qt/locale/placeh_en_US.ts \
+#  qt/locale/placeh_eo.ts \
+#  qt/locale/placeh_es_419.ts \
+#  qt/locale/placeh_es_AR.ts \
+#  qt/locale/placeh_es_CL.ts \
+#  qt/locale/placeh_es_CO.ts \
+#  qt/locale/placeh_es_DO.ts \
+#  qt/locale/placeh_es_ES.ts \
+#  qt/locale/placeh_es_MX.ts \
+#  qt/locale/placeh_es.ts \
+#  qt/locale/placeh_es_UY.ts \
+#  qt/locale/placeh_es_VE.ts \
+#  qt/locale/placeh_et_EE.ts \
+#  qt/locale/placeh_et.ts \
+#  qt/locale/placeh_eu_ES.ts \
+#  qt/locale/placeh_fa_IR.ts \
+#  qt/locale/placeh_fa.ts \
+#  qt/locale/placeh_fi.ts \
+#  qt/locale/placeh_fr_CA.ts \
+#  qt/locale/placeh_fr_FR.ts \
+#  qt/locale/placeh_fr.ts \
+#  qt/locale/placeh_gl.ts \
+#  qt/locale/placeh_he_IL.ts \
+#  qt/locale/placeh_he.ts \
+#  qt/locale/placeh_hi_IN.ts \
+#  qt/locale/placeh_hr.ts \
+#  qt/locale/placeh_hu.ts \
+#  qt/locale/placeh_id_ID.ts \
+#  qt/locale/placeh_id.ts \
+#  qt/locale/placeh_it_IT.ts \
+#  qt/locale/placeh_it.ts \
+#  qt/locale/placeh_ja_JP.ts \
+#  qt/locale/placeh_ja.ts \
+#  qt/locale/placeh_ka.ts \
+#  qt/locale/placeh_kk_KZ.ts \
+#  qt/locale/placeh_ko_KR.ts \
+#  qt/locale/placeh_ku_IQ.ts \
+#  qt/locale/placeh_ky.ts \
+#  qt/locale/placeh_la.ts \
+#  qt/locale/placeh_lt.ts \
+#  qt/locale/placeh_lv_LV.ts \
+#  qt/locale/placeh_mk_MK.ts \
+#  qt/locale/placeh_mn.ts \
+#  qt/locale/placeh_ms_MY.ts \
+#  qt/locale/placeh_my.ts \
+#  qt/locale/placeh_nb_NO.ts \
+#  qt/locale/placeh_nb.ts \
+#  qt/locale/placeh_ne.ts \
+#  qt/locale/placeh_nl_NL.ts \
+#  qt/locale/placeh_nl.ts \
+#  qt/locale/placeh_pam.ts \
+#  qt/locale/placeh_pl.ts \
+#  qt/locale/placeh_pt_BR.ts \
+#  qt/locale/placeh_pt_PT.ts \
+#  qt/locale/placeh_ro_RO.ts \
+#  qt/locale/placeh_ro.ts \
+#  qt/locale/placeh_ru_RU.ts \
+#  qt/locale/placeh_ru.ts \
+#  qt/locale/placeh_si.ts \
+#  qt/locale/placeh_sk.ts \
+#  qt/locale/placeh_sl_SI.ts \
+#  qt/locale/placeh_sq.ts \
+#  qt/locale/placeh_sr@latin.ts \
+#  qt/locale/placeh_sr.ts \
+#  qt/locale/placeh_sv.ts \
+#  qt/locale/placeh_ta.ts \
+#  qt/locale/placeh_te.ts \
+#  qt/locale/placeh_th_TH.ts \
+#  qt/locale/placeh_th.ts \
+#  qt/locale/placeh_tr_TR.ts \
+#  qt/locale/placeh_tr.ts \
+#  qt/locale/placeh_uk.ts \
+#  qt/locale/placeh_ur_PK.ts \
+#  qt/locale/placeh_uz@Cyrl.ts \
+#  qt/locale/placeh_vi.ts \
+#  qt/locale/placeh_vi_VN.ts \
+#  qt/locale/placeh_zh_CN.ts \
+#  qt/locale/placeh_zh_HK.ts \
+#  qt/locale/placeh_zh.ts \
+#  qt/locale/placeh_zh_TW.ts
 
-QT_FORMS_UI = \
-  qt/forms/addressbookpage.ui \
-  qt/forms/askpassphrasedialog.ui \
-  qt/forms/coincontroldialog.ui \
-  qt/forms/editaddressdialog.ui \
-  qt/forms/helpmessagedialog.ui \
-  qt/forms/intro.ui \
-  qt/forms/modaloverlay.ui \
-  qt/forms/openuridialog.ui \
-  qt/forms/optionsdialog.ui \
-  qt/forms/overviewpage.ui \
-  qt/forms/receivecoinsdialog.ui \
-  qt/forms/receiverequestdialog.ui \
-  qt/forms/debugwindow.ui \
-  qt/forms/sendcoinsdialog.ui \
-  qt/forms/sendcoinsentry.ui \
-  qt/forms/signverifymessagedialog.ui \
-  qt/forms/transactiondescdialog.ui
+#QT_FORMS_UI = \
+#  qt/forms/addressbookpage.ui \
+#  qt/forms/askpassphrasedialog.ui \
+#  qt/forms/coincontroldialog.ui \
+#  qt/forms/editaddressdialog.ui \
+#  qt/forms/helpmessagedialog.ui \
+#  qt/forms/intro.ui \
+#  qt/forms/modaloverlay.ui \
+#  qt/forms/openuridialog.ui \
+#  qt/forms/optionsdialog.ui \
+#  qt/forms/overviewpage.ui \
+#  qt/forms/receivecoinsdialog.ui \
+#  qt/forms/receiverequestdialog.ui \
+#  qt/forms/debugwindow.ui \
+#  qt/forms/sendcoinsdialog.ui \
+#  qt/forms/sendcoinsentry.ui \
+#  qt/forms/signverifymessagedialog.ui \
+#  qt/forms/transactiondescdialog.ui
 
-QT_MOC_CPP = \
-  qt/moc_addressbookpage.cpp \
-  qt/moc_addresstablemodel.cpp \
-  qt/moc_askpassphrasedialog.cpp \
-  qt/moc_bantablemodel.cpp \
-  qt/moc_placehaddressvalidator.cpp \
-  qt/moc_placehamountfield.cpp \
-  qt/moc_placehgui.cpp \
-  qt/moc_placehunits.cpp \
-  qt/moc_callback.cpp \
-  qt/moc_clientmodel.cpp \
-  qt/moc_coincontroldialog.cpp \
-  qt/moc_coincontroltreewidget.cpp \
-  qt/moc_csvmodelwriter.cpp \
-  qt/moc_editaddressdialog.cpp \
-  qt/moc_guiutil.cpp \
-  qt/moc_intro.cpp \
-  qt/moc_macdockiconhandler.cpp \
-  qt/moc_macnotificationhandler.cpp \
-  qt/moc_modaloverlay.cpp \
-  qt/moc_notificator.cpp \
-  qt/moc_openuridialog.cpp \
-  qt/moc_optionsdialog.cpp \
-  qt/moc_optionsmodel.cpp \
-  qt/moc_overviewpage.cpp \
-  qt/moc_peertablemodel.cpp \
-  qt/moc_paymentserver.cpp \
-  qt/moc_qvalidatedlineedit.cpp \
-  qt/moc_qvaluecombobox.cpp \
-  qt/moc_receivecoinsdialog.cpp \
-  qt/moc_receiverequestdialog.cpp \
-  qt/moc_recentrequeststablemodel.cpp \
-  qt/moc_rpcconsole.cpp \
-  qt/moc_sendcoinsdialog.cpp \
-  qt/moc_sendcoinsentry.cpp \
-  qt/moc_signverifymessagedialog.cpp \
-  qt/moc_splashscreen.cpp \
-  qt/moc_trafficgraphwidget.cpp \
-  qt/moc_transactiondesc.cpp \
-  qt/moc_transactiondescdialog.cpp \
-  qt/moc_transactionfilterproxy.cpp \
-  qt/moc_transactiontablemodel.cpp \
-  qt/moc_transactionview.cpp \
-  qt/moc_utilitydialog.cpp \
-  qt/moc_walletframe.cpp \
-  qt/moc_walletmodel.cpp \
-  qt/moc_walletview.cpp
+#QT_MOC_CPP = \
+#  qt/moc_addressbookpage.cpp \
+#  qt/moc_addresstablemodel.cpp \
+#  qt/moc_askpassphrasedialog.cpp \
+#  qt/moc_bantablemodel.cpp \
+#  qt/moc_placehaddressvalidator.cpp \
+#  qt/moc_placehamountfield.cpp \
+#  qt/moc_placehgui.cpp \
+#  qt/moc_placehunits.cpp \
+#  qt/moc_callback.cpp \
+#  qt/moc_clientmodel.cpp \
+#  qt/moc_coincontroldialog.cpp \
+#  qt/moc_coincontroltreewidget.cpp \
+#  qt/moc_csvmodelwriter.cpp \
+#  qt/moc_editaddressdialog.cpp \
+#  qt/moc_guiutil.cpp \
+#  qt/moc_intro.cpp \
+#  qt/moc_macdockiconhandler.cpp \
+#  qt/moc_macnotificationhandler.cpp \
+#  qt/moc_modaloverlay.cpp \
+#  qt/moc_notificator.cpp \
+#  qt/moc_openuridialog.cpp \
+#  qt/moc_optionsdialog.cpp \
+#  qt/moc_optionsmodel.cpp \
+#  qt/moc_overviewpage.cpp \
+#  qt/moc_peertablemodel.cpp \
+#  qt/moc_paymentserver.cpp \
+#  qt/moc_qvalidatedlineedit.cpp \
+#  qt/moc_qvaluecombobox.cpp \
+#  qt/moc_receivecoinsdialog.cpp \
+#  qt/moc_receiverequestdialog.cpp \
+#  qt/moc_recentrequeststablemodel.cpp \
+#  qt/moc_rpcconsole.cpp \
+#  qt/moc_sendcoinsdialog.cpp \
+#  qt/moc_sendcoinsentry.cpp \
+#  qt/moc_signverifymessagedialog.cpp \
+#  qt/moc_splashscreen.cpp \
+#  qt/moc_trafficgraphwidget.cpp \
+#  qt/moc_transactiondesc.cpp \
+#  qt/moc_transactiondescdialog.cpp \
+#  qt/moc_transactionfilterproxy.cpp \
+#  qt/moc_transactiontablemodel.cpp \
+#  qt/moc_transactionview.cpp \
+#  qt/moc_utilitydialog.cpp \
+#  qt/moc_walletframe.cpp \
+#  qt/moc_walletmodel.cpp \
+#  qt/moc_walletview.cpp
 
-PLACEH_MM = \
-  qt/macdockiconhandler.mm \
-  qt/macnotificationhandler.mm
+#PLACEH_MM = \
+#  qt/macdockiconhandler.mm \
+#  qt/macnotificationhandler.mm
 
-QT_MOC = \
-  qt/placeh.moc \
-  qt/placehamountfield.moc \
-  qt/callback.moc \
-  qt/intro.moc \
-  qt/overviewpage.moc \
-  qt/rpcconsole.moc
+#QT_MOC = \
+#  qt/placeh.moc \
+#  qt/placehamountfield.moc \
+#  qt/callback.moc \
+#  qt/intro.moc \
+#  qt/overviewpage.moc \
+#  qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_placeh.cpp
-QT_QRC = qt/placeh.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_placeh_locale.cpp
-QT_QRC_LOCALE = qt/placeh_locale.qrc
-PROTOBUF_CC = qt/paymentrequest.pb.cc
-PROTOBUF_H = qt/paymentrequest.pb.h
-PROTOBUF_PROTO = qt/paymentrequest.proto
-PLACEH_QT_H = \
-  qt/addressbookpage.h \
-  qt/addresstablemodel.h \
-  qt/askpassphrasedialog.h \
-  qt/bantablemodel.h \
-  qt/placehaddressvalidator.h \
-  qt/placehamountfield.h \
-  qt/placehgui.h \
-  qt/placehunits.h \
-  qt/callback.h \
-  qt/clientmodel.h \
-  qt/coincontroldialog.h \
-  qt/coincontroltreewidget.h \
-  qt/csvmodelwriter.h \
-  qt/editaddressdialog.h \
-  qt/guiconstants.h \
-  qt/guiutil.h \
-  qt/intro.h \
-  qt/macdockiconhandler.h \
-  qt/macnotificationhandler.h \
-  qt/modaloverlay.h \
-  qt/networkstyle.h \
-  qt/notificator.h \
-  qt/openuridialog.h \
-  qt/optionsdialog.h \
-  qt/optionsmodel.h \
-  qt/overviewpage.h \
-  qt/paymentrequestplus.h \
-  qt/paymentserver.h \
-  qt/peertablemodel.h \
-  qt/platformstyle.h \
-  qt/qvalidatedlineedit.h \
-  qt/qvaluecombobox.h \
-  qt/receivecoinsdialog.h \
-  qt/receiverequestdialog.h \
-  qt/recentrequeststablemodel.h \
-  qt/rpcconsole.h \
-  qt/sendcoinsdialog.h \
-  qt/sendcoinsentry.h \
-  qt/signverifymessagedialog.h \
-  qt/splashscreen.h \
-  qt/trafficgraphwidget.h \
-  qt/transactiondesc.h \
-  qt/transactiondescdialog.h \
-  qt/transactionfilterproxy.h \
-  qt/transactionrecord.h \
-  qt/transactiontablemodel.h \
-  qt/transactionview.h \
-  qt/utilitydialog.h \
-  qt/walletframe.h \
-  qt/walletmodel.h \
-  qt/walletmodeltransaction.h \
-  qt/walletview.h \
-  qt/winshutdownmonitor.h
+#QT_QRC_CPP = qt/qrc_placeh.cpp
+#QT_QRC = qt/placeh.qrc
+#QT_QRC_LOCALE_CPP = qt/qrc_placeh_locale.cpp
+#QT_QRC_LOCALE = qt/placeh_locale.qrc
+#PROTOBUF_CC = qt/paymentrequest.pb.cc
+#PROTOBUF_H = qt/paymentrequest.pb.h
+#PROTOBUF_PROTO = qt/paymentrequest.proto
+#PLACEH_QT_H = \
+#  qt/addressbookpage.h \
+#  qt/addresstablemodel.h \
+#  qt/askpassphrasedialog.h \
+#  qt/bantablemodel.h \
+#  qt/placehaddressvalidator.h \
+#  qt/placehamountfield.h \
+#  qt/placehgui.h \
+#  qt/placehunits.h \
+#  qt/callback.h \
+#  qt/clientmodel.h \
+#  qt/coincontroldialog.h \
+#  qt/coincontroltreewidget.h \
+#  qt/csvmodelwriter.h \
+#  qt/editaddressdialog.h \
+#  qt/guiconstants.h \
+#  qt/guiutil.h \
+#  qt/intro.h \
+#  qt/macdockiconhandler.h \
+#  qt/macnotificationhandler.h \
+#  qt/modaloverlay.h \
+#  qt/networkstyle.h \
+#  qt/notificator.h \
+#  qt/openuridialog.h \
+#  qt/optionsdialog.h \
+#  qt/optionsmodel.h \
+#  qt/overviewpage.h \
+#  qt/paymentrequestplus.h \
+#  qt/paymentserver.h \
+#  qt/peertablemodel.h \
+#  qt/platformstyle.h \
+#  qt/qvalidatedlineedit.h \
+#  qt/qvaluecombobox.h \
+#  qt/receivecoinsdialog.h \
+#  qt/receiverequestdialog.h \
+#  qt/recentrequeststablemodel.h \
+#  qt/rpcconsole.h \
+#  qt/sendcoinsdialog.h \
+#  qt/sendcoinsentry.h \
+#  qt/signverifymessagedialog.h \
+#  qt/splashscreen.h \
+#  qt/trafficgraphwidget.h \
+#  qt/transactiondesc.h \
+#  qt/transactiondescdialog.h \
+#  qt/transactionfilterproxy.h \
+#  qt/transactionrecord.h \
+#  qt/transactiontablemodel.h \
+#  qt/transactionview.h \
+#  qt/utilitydialog.h \
+#  qt/walletframe.h \
+#  qt/walletmodel.h \
+#  qt/walletmodeltransaction.h \
+#  qt/walletview.h \
+#  qt/winshutdownmonitor.h
 
-RES_ICONS = \
-  qt/res/icons/add.png \
-  qt/res/icons/address-book.png \
-  qt/res/icons/about.png \
-  qt/res/icons/about_qt.png \
-  qt/res/icons/placeh.ico \
-  qt/res/icons/placeh_testnet.ico \
-  qt/res/icons/placeh.png \
-  qt/res/icons/chevron.png \
-  qt/res/icons/clock1.png \
-  qt/res/icons/clock2.png \
-  qt/res/icons/clock3.png \
-  qt/res/icons/clock4.png \
-  qt/res/icons/clock5.png \
-  qt/res/icons/configure.png \
-  qt/res/icons/connect0.png \
-  qt/res/icons/connect1.png \
-  qt/res/icons/connect2.png \
-  qt/res/icons/connect3.png \
-  qt/res/icons/connect4.png \
-  qt/res/icons/debugwindow.png \
-  qt/res/icons/edit.png \
-  qt/res/icons/editcopy.png \
-  qt/res/icons/editpaste.png \
-  qt/res/icons/export.png \
-  qt/res/icons/eye.png \
-  qt/res/icons/eye_minus.png \
-  qt/res/icons/eye_plus.png \
-  qt/res/icons/filesave.png \
-  qt/res/icons/fontbigger.png \
-  qt/res/icons/fontsmaller.png \
-  qt/res/icons/hd_disabled.png \
-  qt/res/icons/hd_enabled.png \
-  qt/res/icons/history.png \
-  qt/res/icons/info.png \
-  qt/res/icons/key.png \
-  qt/res/icons/lock_closed.png \
-  qt/res/icons/lock_open.png \
-  qt/res/icons/network_disabled.png \
-  qt/res/icons/open.png \
-  qt/res/icons/overview.png \
-  qt/res/icons/quit.png \
-  qt/res/icons/receive.png \
-  qt/res/icons/remove.png \
-  qt/res/icons/send.png \
-  qt/res/icons/synced.png \
-  qt/res/icons/transaction0.png \
-  qt/res/icons/transaction2.png \
-  qt/res/icons/transaction_abandoned.png \
-  qt/res/icons/transaction_conflicted.png \
-  qt/res/icons/tx_inout.png \
-  qt/res/icons/tx_input.png \
-  qt/res/icons/tx_output.png \
-  qt/res/icons/tx_mined.png \
-  qt/res/icons/warning.png \
-  qt/res/icons/verify.png
+#RES_ICONS = \
+#  qt/res/icons/add.png \
+#  qt/res/icons/address-book.png \
+#  qt/res/icons/about.png \
+#  qt/res/icons/about_qt.png \
+#  qt/res/icons/placeh.ico \
+#  qt/res/icons/placeh_testnet.ico \
+#  qt/res/icons/placeh.png \
+#  qt/res/icons/chevron.png \
+#  qt/res/icons/clock1.png \
+#  qt/res/icons/clock2.png \
+#  qt/res/icons/clock3.png \
+#  qt/res/icons/clock4.png \
+#  qt/res/icons/clock5.png \
+#  qt/res/icons/configure.png \
+#  qt/res/icons/connect0.png \
+#  qt/res/icons/connect1.png \
+#  qt/res/icons/connect2.png \
+#  qt/res/icons/connect3.png \
+#  qt/res/icons/connect4.png \
+#  qt/res/icons/debugwindow.png \
+#  qt/res/icons/edit.png \
+#  qt/res/icons/editcopy.png \
+#  qt/res/icons/editpaste.png \
+#  qt/res/icons/export.png \
+#  qt/res/icons/eye.png \
+#  qt/res/icons/eye_minus.png \
+#  qt/res/icons/eye_plus.png \
+#  qt/res/icons/filesave.png \
+#  qt/res/icons/fontbigger.png \
+#  qt/res/icons/fontsmaller.png \
+#  qt/res/icons/hd_disabled.png \
+#  qt/res/icons/hd_enabled.png \
+#  qt/res/icons/history.png \
+#  qt/res/icons/info.png \
+#  qt/res/icons/key.png \
+#  qt/res/icons/lock_closed.png \
+#  qt/res/icons/lock_open.png \
+#  qt/res/icons/network_disabled.png \
+#  qt/res/icons/open.png \
+#  qt/res/icons/overview.png \
+#  qt/res/icons/quit.png \
+#  qt/res/icons/receive.png \
+#  qt/res/icons/remove.png \
+#  qt/res/icons/send.png \
+#  qt/res/icons/synced.png \
+#  qt/res/icons/transaction0.png \
+#  qt/res/icons/transaction2.png \
+#  qt/res/icons/transaction_abandoned.png \
+#  qt/res/icons/transaction_conflicted.png \
+#  qt/res/icons/tx_inout.png \
+#  qt/res/icons/tx_input.png \
+#  qt/res/icons/tx_output.png \
+#  qt/res/icons/tx_mined.png \
+#  qt/res/icons/warning.png \
+#  qt/res/icons/verify.png
 
-PLACEH_QT_BASE_CPP = \
-  qt/bantablemodel.cpp \
-  qt/placehaddressvalidator.cpp \
-  qt/placehamountfield.cpp \
-  qt/placehgui.cpp \
-  qt/placehunits.cpp \
-  qt/clientmodel.cpp \
-  qt/csvmodelwriter.cpp \
-  qt/guiutil.cpp \
-  qt/intro.cpp \
-  qt/modaloverlay.cpp \
-  qt/networkstyle.cpp \
-  qt/notificator.cpp \
-  qt/optionsdialog.cpp \
-  qt/optionsmodel.cpp \
-  qt/peertablemodel.cpp \
-  qt/platformstyle.cpp \
-  qt/qvalidatedlineedit.cpp \
-  qt/qvaluecombobox.cpp \
-  qt/rpcconsole.cpp \
-  qt/splashscreen.cpp \
-  qt/trafficgraphwidget.cpp \
-  qt/utilitydialog.cpp
+#PLACEH_QT_BASE_CPP = \
+#  qt/bantablemodel.cpp \
+#  qt/placehaddressvalidator.cpp \
+#  qt/placehamountfield.cpp \
+#  qt/placehgui.cpp \
+#  qt/placehunits.cpp \
+#  qt/clientmodel.cpp \
+#  qt/csvmodelwriter.cpp \
+#  qt/guiutil.cpp \
+#  qt/intro.cpp \
+#  qt/modaloverlay.cpp \
+#  qt/networkstyle.cpp \
+#  qt/notificator.cpp \
+#  qt/optionsdialog.cpp \
+#  qt/optionsmodel.cpp \
+#  qt/peertablemodel.cpp \
+#  qt/platformstyle.cpp \
+#  qt/qvalidatedlineedit.cpp \
+#  qt/qvaluecombobox.cpp \
+#  qt/rpcconsole.cpp \
+#  qt/splashscreen.cpp \
+#  qt/trafficgraphwidget.cpp \
+#  qt/utilitydialog.cpp
 
-PLACEH_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
-PLACEH_QT_WALLET_CPP = \
-  qt/addressbookpage.cpp \
-  qt/addresstablemodel.cpp \
-  qt/askpassphrasedialog.cpp \
-  qt/coincontroldialog.cpp \
-  qt/coincontroltreewidget.cpp \
-  qt/editaddressdialog.cpp \
-  qt/openuridialog.cpp \
-  qt/overviewpage.cpp \
-  qt/paymentrequestplus.cpp \
-  qt/paymentserver.cpp \
-  qt/receivecoinsdialog.cpp \
-  qt/receiverequestdialog.cpp \
-  qt/recentrequeststablemodel.cpp \
-  qt/sendcoinsdialog.cpp \
-  qt/sendcoinsentry.cpp \
-  qt/signverifymessagedialog.cpp \
-  qt/transactiondesc.cpp \
-  qt/transactiondescdialog.cpp \
-  qt/transactionfilterproxy.cpp \
-  qt/transactionrecord.cpp \
-  qt/transactiontablemodel.cpp \
-  qt/transactionview.cpp \
-  qt/walletframe.cpp \
-  qt/walletmodel.cpp \
-  qt/walletmodeltransaction.cpp \
-  qt/walletview.cpp
+#PLACEH_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+#PLACEH_QT_WALLET_CPP = \
+#  qt/addressbookpage.cpp \
+#  qt/addresstablemodel.cpp \
+#  qt/askpassphrasedialog.cpp \
+#  qt/coincontroldialog.cpp \
+#  qt/coincontroltreewidget.cpp \
+#  qt/editaddressdialog.cpp \
+#  qt/openuridialog.cpp \
+#  qt/overviewpage.cpp \
+#  qt/paymentrequestplus.cpp \
+#  qt/paymentserver.cpp \
+#  qt/receivecoinsdialog.cpp \
+#  qt/receiverequestdialog.cpp \
+#  qt/recentrequeststablemodel.cpp \
+#  qt/sendcoinsdialog.cpp \
+#  qt/sendcoinsentry.cpp \
+#  qt/signverifymessagedialog.cpp \
+#  qt/transactiondesc.cpp \
+#  qt/transactiondescdialog.cpp \
+#  qt/transactionfilterproxy.cpp \
+#  qt/transactionrecord.cpp \
+#  qt/transactiontablemodel.cpp \
+#  qt/transactionview.cpp \
+#  qt/walletframe.cpp \
+#  qt/walletmodel.cpp \
+#  qt/walletmodeltransaction.cpp \
+#  qt/walletview.cpp
 
-PLACEH_QT_CPP = $(PLACEH_QT_BASE_CPP) $(am__append_33) \
-	$(am__append_34)
-RES_IMAGES = 
-RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
-PLACEH_RC = qt/res/placeh-qt-res.rc
-PLACEH_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
-  -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
+#PLACEH_QT_CPP = $(PLACEH_QT_BASE_CPP) $(am__append_33) \
+#	$(am__append_34)
+#RES_IMAGES = 
+#RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
+#PLACEH_RC = qt/res/placeh-qt-res.rc
+#PLACEH_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
+#  -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
 
-qt_libplacehqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(PLACEH_INCLUDES) $(PLACEH_QT_INCLUDES) \
-  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+#qt_libplacehqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(PLACEH_INCLUDES) $(PLACEH_QT_INCLUDES) \
+#  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_libplacehqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_libplacehqt_a_SOURCES = $(PLACEH_QT_CPP) $(PLACEH_QT_H) $(QT_FORMS_UI) \
-  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
+#qt_libplacehqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+#qt_libplacehqt_a_SOURCES = $(PLACEH_QT_CPP) $(PLACEH_QT_H) $(QT_FORMS_UI) \
+#  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 
-nodist_qt_libplacehqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
-  $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
+#nodist_qt_libplacehqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+#  $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
 
 
 # forms/foo.h -> forms/ui_foo.h
-QT_FORMS_H = $(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
+#QT_FORMS_H = $(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
 
 # placeh-qt binary #
-qt_placeh_qt_CPPFLAGS = $(AM_CPPFLAGS) $(PLACEH_INCLUDES) $(PLACEH_QT_INCLUDES) \
-  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+#qt_placeh_qt_CPPFLAGS = $(AM_CPPFLAGS) $(PLACEH_INCLUDES) $(PLACEH_QT_INCLUDES) \
+#  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_placeh_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_placeh_qt_SOURCES = qt/placeh.cpp $(am__append_35) \
-	$(am__append_36)
-qt_placeh_qt_LDADD = qt/libplacehqt.a \
-	$(LIBPLACEH_SERVER) $(am__append_37) \
-	$(am__append_38) $(LIBPLACEH_CLI) \
-	$(LIBPLACEH_COMMON) $(LIBPLACEH_UTIL) \
-	$(LIBPLACEH_CONSENSUS) $(LIBPLACEH_CRYPTO) \
-	$(LIBUNIVALUE) $(LIBLEVELDB) \
-	$(LIBLEVELDB_SSE42) $(LIBMEMENV) $(BOOST_LIBS) \
-	$(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) \
-	$(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) \
-	$(CRYPTO_LIBS) $(MINIUPNPC_LIBS) \
-	$(LIBSECP256K1) $(EVENT_PTHREADS_LIBS) \
-	$(EVENT_LIBS)
-qt_placeh_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_placeh_qt_LIBTOOLFLAGS = --tag CXX
+#qt_placeh_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+#qt_placeh_qt_SOURCES = qt/placeh.cpp $(am__append_35) \
+#	$(am__append_36)
+#qt_placeh_qt_LDADD = qt/libplacehqt.a \
+#	$(LIBPLACEH_SERVER) $(am__append_37) \
+#	$(am__append_38) $(LIBPLACEH_CLI) \
+#	$(LIBPLACEH_COMMON) $(LIBPLACEH_UTIL) \
+#	$(LIBPLACEH_CONSENSUS) $(LIBPLACEH_CRYPTO) \
+#	$(LIBUNIVALUE) $(LIBLEVELDB) \
+#	$(LIBLEVELDB_SSE42) $(LIBMEMENV) $(BOOST_LIBS) \
+#	$(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) \
+#	$(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) \
+#	$(CRYPTO_LIBS) $(MINIUPNPC_LIBS) \
+#	$(LIBSECP256K1) $(EVENT_PTHREADS_LIBS) \
+#	$(EVENT_LIBS)
+#qt_placeh_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+#qt_placeh_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
-QT_QM = $(QT_TS:.ts=.qm)
-CLEAN_QT = $(nodist_qt_libplacehqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
-TEST_QT_MOC_CPP = qt/test/moc_compattests.cpp \
-	qt/test/moc_rpcnestedtests.cpp \
-	qt/test/moc_uritests.cpp \
-	$(am__append_42)
-TEST_QT_H = \
-  qt/test/compattests.h \
-  qt/test/rpcnestedtests.h \
-  qt/test/uritests.h \
-  qt/test/paymentrequestdata.h \
-  qt/test/paymentservertests.h \
-  qt/test/wallettests.h
+#QT_QM = $(QT_TS:.ts=.qm)
+#CLEAN_QT = $(nodist_qt_libplacehqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
+#TEST_QT_MOC_CPP = qt/test/moc_compattests.cpp \
+#	qt/test/moc_rpcnestedtests.cpp \
+#	qt/test/moc_uritests.cpp \
+#	$(am__append_42)
+#TEST_QT_H = \
+#  qt/test/compattests.h \
+#  qt/test/rpcnestedtests.h \
+#  qt/test/uritests.h \
+#  qt/test/paymentrequestdata.h \
+#  qt/test/paymentservertests.h \
+#  qt/test/wallettests.h
 
-TEST_PLACEH_CPP = \
-  test/test_placeh.cpp
+#TEST_PLACEH_CPP = \
+#  test/test_placeh.cpp
 
-TEST_PLACEH_H = \
-  test/test_placeh.h
+#TEST_PLACEH_H = \
+#  test/test_placeh.h
 
-qt_test_test_placeh_qt_CPPFLAGS = $(AM_CPPFLAGS) $(PLACEH_INCLUDES) $(PLACEH_QT_INCLUDES) \
-  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
+#qt_test_test_placeh_qt_CPPFLAGS = $(AM_CPPFLAGS) $(PLACEH_INCLUDES) $(PLACEH_QT_INCLUDES) \
+#  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
 
-qt_test_test_placeh_qt_SOURCES =  \
-	qt/test/compattests.cpp \
-	qt/test/rpcnestedtests.cpp \
-	qt/test/test_main.cpp \
-	qt/test/uritests.cpp $(TEST_QT_H) \
-	$(TEST_PLACEH_CPP) $(TEST_PLACEH_H) \
-	$(am__append_43)
-nodist_qt_test_test_placeh_qt_SOURCES = $(TEST_QT_MOC_CPP)
-qt_test_test_placeh_qt_LDADD = $(LIBPLACEHQT) \
-	$(LIBPLACEH_SERVER) $(am__append_44) \
-	$(am__append_45) $(LIBPLACEH_CLI) \
-	$(LIBPLACEH_COMMON) $(LIBPLACEH_UTIL) \
-	$(LIBPLACEH_CONSENSUS) \
-	$(LIBPLACEH_CRYPTO) $(LIBUNIVALUE) \
-	$(LIBLEVELDB) $(LIBLEVELDB_SSE42) \
-	$(LIBMEMENV) $(BOOST_LIBS) \
-	$(QT_DBUS_LIBS) $(QT_TEST_LIBS) \
-	$(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
-	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
-	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
-	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_test_test_placeh_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_test_test_placeh_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-CLEAN_PLACEH_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
+#qt_test_test_placeh_qt_SOURCES =  \
+#	qt/test/compattests.cpp \
+#	qt/test/rpcnestedtests.cpp \
+#	qt/test/test_main.cpp \
+#	qt/test/uritests.cpp $(TEST_QT_H) \
+#	$(TEST_PLACEH_CPP) $(TEST_PLACEH_H) \
+#	$(am__append_43)
+#nodist_qt_test_test_placeh_qt_SOURCES = $(TEST_QT_MOC_CPP)
+#qt_test_test_placeh_qt_LDADD = $(LIBPLACEHQT) \
+#	$(LIBPLACEH_SERVER) $(am__append_44) \
+#	$(am__append_45) $(LIBPLACEH_CLI) \
+#	$(LIBPLACEH_COMMON) $(LIBPLACEH_UTIL) \
+#	$(LIBPLACEH_CONSENSUS) \
+#	$(LIBPLACEH_CRYPTO) $(LIBUNIVALUE) \
+#	$(LIBLEVELDB) $(LIBLEVELDB_SSE42) \
+#	$(LIBMEMENV) $(BOOST_LIBS) \
+#	$(QT_DBUS_LIBS) $(QT_TEST_LIBS) \
+#	$(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
+#	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
+#	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+#	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+#qt_test_test_placeh_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+#qt_test_test_placeh_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+#CLEAN_PLACEH_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 all: all-recursive
 
 .SUFFIXES:
@@ -9524,13 +9524,13 @@ qt/test/test_placeh-qt.log: qt/test/test_placeh-qt$(EXEEXT)
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
 	"$$tst" $(AM_TESTS_FD_REDIRECT)
-.test$(EXEEXT).log:
-	@p='$<'; \
-	$(am__set_b); \
-	$(am__check_pre) $(TEST_LOG_DRIVER) --test-name "$$f" \
-	--log-file $$b.log --trs-file $$b.trs \
-	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
-	"$$tst" $(AM_TESTS_FD_REDIRECT)
+#.test$(EXEEXT).log:
+#	@p='$<'; \
+#	$(am__set_b); \
+#	$(am__check_pre) $(TEST_LOG_DRIVER) --test-name "$$f" \
+#	--log-file $$b.log --trs-file $$b.trs \
+#	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
+#	"$$tst" $(AM_TESTS_FD_REDIRECT)
 
 distdir: $(DISTFILES)
 	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
@@ -9868,66 +9868,66 @@ placeh_bench_clean : FORCE
 
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
-$(QT_MOC): $(QT_FORMS_H)
-$(qt_libplacehqt_a_OBJECTS) $(qt_placeh_qt_OBJECTS) : | $(QT_MOC)
+#$(QT_MOC): $(QT_FORMS_H)
+#$(qt_libplacehqt_a_OBJECTS) $(qt_placeh_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
-$(QT_MOC): $(PROTOBUF_H)
-$(QT_MOC_CPP): $(PROTOBUF_H)
+#$(QT_MOC): $(PROTOBUF_H)
+#$(QT_MOC_CPP): $(PROTOBUF_H)
 
-SECONDARY: $(QT_QM)
+#SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/placehstrings.cpp: $(libplaceh_server_a_SOURCES) $(libplaceh_wallet_a_SOURCES) $(libplaceh_common_a_SOURCES) $(libplaceh_zmq_a_SOURCES) $(libplaceh_consensus_a_SOURCES) $(libplaceh_util_a_SOURCES)
-	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
-	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" COPYRIGHT_HOLDERS="$(COPYRIGHT_HOLDERS)" COPYRIGHT_HOLDERS_SUBSTITUTION="$(COPYRIGHT_HOLDERS_SUBSTITUTION)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
+#$(srcdir)/qt/placehstrings.cpp: $(libplaceh_server_a_SOURCES) $(libplaceh_wallet_a_SOURCES) $(libplaceh_common_a_SOURCES) $(libplaceh_zmq_a_SOURCES) $(libplaceh_consensus_a_SOURCES) $(libplaceh_util_a_SOURCES)
+#	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
+#	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" COPYRIGHT_HOLDERS="$(COPYRIGHT_HOLDERS)" COPYRIGHT_HOLDERS_SUBSTITUTION="$(COPYRIGHT_HOLDERS_SUBSTITUTION)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/placehstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(PLACEH_QT_BASE_CPP) qt/placeh.cpp $(PLACEH_QT_WINDOWS_CPP) $(PLACEH_QT_WALLET_CPP) $(PLACEH_QT_H) $(PLACEH_MM)
-	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/placeh_en.ts
+#translate: $(srcdir)/qt/placehstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(PLACEH_QT_BASE_CPP) qt/placeh.cpp $(PLACEH_QT_WINDOWS_CPP) $(PLACEH_QT_WALLET_CPP) $(PLACEH_QT_H) $(PLACEH_MM)
+#	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/placeh_en.ts
 
-$(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
-	@test -f $(RCC)
-	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name placeh_locale $(@D)/temp_$(<F) | \
-	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
-	@rm $(@D)/temp_$(<F)
+#$(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
+#	@test -f $(RCC)
+#	@cp -f $< $(@D)/temp_$(<F)
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name placeh_locale $(@D)/temp_$(<F) | \
+#	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+#	@rm $(@D)/temp_$(<F)
 
-$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
-	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name placeh $< | \
-	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+#$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
+#	@test -f $(RCC)
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name placeh $< | \
+#	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-placeh_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libplacehqt_a_OBJECTS) $(qt_placeh_qt_OBJECTS) qt/placeh-qt$(EXEEXT) $(LIBPLACEHQT)
+#placeh_qt_clean: FORCE
+#	rm -f $(CLEAN_QT) $(qt_libplacehqt_a_OBJECTS) $(qt_placeh_qt_OBJECTS) qt/placeh-qt$(EXEEXT) $(LIBPLACEHQT)
 
-placeh_qt : qt/placeh-qt$(EXEEXT)
+#placeh_qt : qt/placeh-qt$(EXEEXT)
 
-ui_%.h: %.ui
-	@test -f $(UIC)
-	@$(MKDIR_P) $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(UIC) -o $@ $< || (echo "Error creating $@"; false)
+#ui_%.h: %.ui
+#	@test -f $(UIC)
+#	@$(MKDIR_P) $(@D)
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(UIC) -o $@ $< || (echo "Error creating $@"; false)
 
-%.moc: %.cpp
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
-	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+#%.moc: %.cpp
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+#	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-moc_%.cpp: %.h
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
-	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+#moc_%.cpp: %.h
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+#	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-%.qm: %.ts
-	@test -f $(LRELEASE)
-	@$(MKDIR_P) $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
+#%.qm: %.ts
+#	@test -f $(LRELEASE)
+#	@$(MKDIR_P) $(@D)
+#	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
 
-test_placeh_qt : qt/test/test_placeh-qt$(EXEEXT)
+#test_placeh_qt : qt/test/test_placeh-qt$(EXEEXT)
 
-test_placeh_qt_check : qt/test/test_placeh-qt$(EXEEXT) FORCE
-	$(MAKE) check-TESTS TESTS=$^
+#test_placeh_qt_check : qt/test/test_placeh-qt$(EXEEXT) FORCE
+#	$(MAKE) check-TESTS TESTS=$^
 
-test_placeh_qt_clean: FORCE
-	rm -f $(CLEAN_PLACEH_QT_TEST) $(qt_test_test_placeh_qt_OBJECTS)
+#test_placeh_qt_clean: FORCE
+#	rm -f $(CLEAN_PLACEH_QT_TEST) $(qt_test_test_placeh_qt_OBJECTS)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

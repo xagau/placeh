@@ -4,7 +4,7 @@ libdir=${prefix}/lib
 includedir=${prefix}/include
 
 host_bins=${prefix}/native/bin
-qt_config=minimal-config small-config medium-config large-config full-config release_tools c++11 accessibility static qpa clock-gettime clock-monotonic getaddrinfo poll_select jpeg png no-gif doubleconversion no-freetype harfbuzz system-zlib dbus openssl-linked concurrent no-qml-debug release
+qt_config=minimal-config small-config medium-config large-config full-config release_tools c++11 accessibility static qpa getaddrinfo poll_select jpeg png no-gif doubleconversion no-freetype harfbuzz system-zlib dbus openssl-linked concurrent no-qml-debug release
 
 Name: Qt5 Core
 Description: Qt Core module

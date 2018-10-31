@@ -18,6 +18,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params&);
 
 /** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
-bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&, uint256* best = nullptr);
+bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&);
+//bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params);
 
 #endif // PLACEH_POW_H

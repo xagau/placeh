@@ -1,11 +1,11 @@
-Name "placeh core (64-bit)"
+Name "placeh core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 2.0.25
+!define VERSION 2.0.26
 !define COMPANY "placeh core project"
 !define URL https://placeh.io/
 
@@ -20,7 +20,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "placeh core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\placeh-qt.exe
+!define MUI_FINISHPAGE_RUN $INSTDIR\placeh-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "/mnt/c/git/repo/placeh/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -28,7 +28,7 @@ SetCompressor /SOLID lzma
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "64" == "64"
+!if "" == "64"
 !include x64.nsh
 !endif
 
@@ -48,8 +48,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /mnt/c/git/repo/placeh/placeh-${VERSION}-win64-setup.exe
-!if "64" == "64"
+OutFile /mnt/c/git/repo/placeh/placeh-${VERSION}-win-setup.exe
+!if "" == "64"
 InstallDir $PROGRAMFILES64\placeh
 !else
 InstallDir $PROGRAMFILES\placeh
@@ -73,12 +73,12 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /mnt/c/git/repo/placeh/release/placeh-qt.exe
+    File /mnt/c/git/repo/placeh/release/placeh-qt
     File /oname=COPYING.txt /mnt/c/git/repo/placeh/COPYING
     File /oname=readme.txt /mnt/c/git/repo/placeh/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /mnt/c/git/repo/placeh/release/placehd.exe
-    File /mnt/c/git/repo/placeh/release/placeh-cli.exe
+    File /mnt/c/git/repo/placeh/release/placehd
+    File /mnt/c/git/repo/placeh/release/placeh-cli
     SetOutPath $INSTDIR\doc
     File /r /mnt/c/git/repo/placeh/doc\*.*
     SetOutPath $INSTDIR
@@ -91,8 +91,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\placeh-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\placeh core (testnet, 64-bit).lnk" "$INSTDIR\placeh-qt.exe" "-testnet" "$INSTDIR\placeh-qt.exe" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\placeh-qt
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\placeh core (testnet, -bit).lnk" "$INSTDIR\placeh-qt" "-testnet" "$INSTDIR\placeh-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -105,8 +105,8 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "placeh" "URL Protocol" ""
     WriteRegStr HKCR "placeh" "" "URL:placeh"
-    WriteRegStr HKCR "placeh\DefaultIcon" "" $INSTDIR\placeh-qt.exe
-    WriteRegStr HKCR "placeh\shell\open\command" "" '"$INSTDIR\placeh-qt.exe" "%1"'
+    WriteRegStr HKCR "placeh\DefaultIcon" "" $INSTDIR\placeh-qt
+    WriteRegStr HKCR "placeh\shell\open\command" "" '"$INSTDIR\placeh-qt" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -124,7 +124,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\placeh-qt.exe
+    Delete /REBOOTOK $INSTDIR\placeh-qt
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -136,7 +136,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\placeh core (testnet, 64-bit).lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\placeh core (testnet, -bit).lnk"
     Delete /REBOOTOK "$SMSTARTUP\placeh.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
@@ -158,7 +158,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "64" == "64"
+!if "" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64

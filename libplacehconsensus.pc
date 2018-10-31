@@ -1,11 +1,11 @@
-prefix=/
+prefix=/usr/local
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
 Name: placeh core consensus library
 Description: Library for the placeh consensus protocol.
-Version: 2.0.25
+Version: 2.0.26
 Libs: -L${libdir} -lplacehconsensus
 Cflags: -I${includedir}
 Requires.private: libcrypto
