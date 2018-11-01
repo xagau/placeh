@@ -80,6 +80,9 @@ sudo update-alternatives --config x86_64-w64-mingw32-gcc
 
 ## Building for 64-bit Windows
 
+* At present, getting placeh to build on windows 64 running WSL has not been accomplished.
+If you run into difficulty, try to build for windows 32 bit.
+
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
@@ -105,6 +108,7 @@ Then build (if you are using WSL you must be using from ROOT) using:
     PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
     cd depends
     make HOST=i686-w64-mingw32 V=1 AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
+    # if it stops, try building again with 
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
