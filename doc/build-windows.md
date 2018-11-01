@@ -92,7 +92,7 @@ Then build using:
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
-    make
+    make HOST=x86_64-w64-mingw32
 
 ## Building for 32-bit Windows
 
@@ -104,11 +104,13 @@ Then build (if you are using WSL you must be using from ROOT) using:
 
     PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
     cd depends
-    make HOST=x86_64-w64-mingw32 V=1 AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
+    make HOST=i686-w64-mingw32 V=1 AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
-    make
+    make HOST=i686-w64-mingw32 V=1
+
+Sometimes, depending on how you have setup WSL you may need to either remove or add "AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:" according to your system.
 
 ## Depends system
 
