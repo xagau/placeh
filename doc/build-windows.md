@@ -108,9 +108,11 @@ Then build (if you are using WSL you must be using from ROOT) using:
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
-    make HOST=i686-w64-mingw32 V=1
+    make -j8 -k V=1
 
 Sometimes, depending on how you have setup WSL you may need to either remove or add "AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:" according to your system.
+
+You may need to 
 
 ## Depends system
 
