@@ -148,12 +148,21 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
+        // SEEDS FOR GENESIS BLOCK
         vSeeds.emplace_back("seed.placeh.sipa.be", true); // Pieter Wuille, only supports x1, x5, x9, and xd
         vSeeds.emplace_back("dnsseed.bluematt.me", true); // Matt Corallo, only supports x9
         vSeeds.emplace_back("dnsseed.placeh.dashjr.org", false); // Luke Dashjr
         vSeeds.emplace_back("seed.placehstats.com", true); // Christian Decker, supports x1 - xf
         vSeeds.emplace_back("seed.placeh.jonasschnelli.ch", true); // Jonas Schnelli, only supports x1, x5, x9, and xd
         vSeeds.emplace_back("seed.btc.petertodd.org", true); // Peter Todd, only supports x1, x5, x9, and xd
+        
+        // SEEDS FOR PLACEH
+        vSeeds.emplace_back("68.169.61.69", true); // placeh.io
+        vSeeds.emplace_back("206.223.171.38", false); // explorer 1
+        vSeeds.emplace_back("104.248.177.232", false); // brewhaus
+        vSeeds.emplace_back("144.202.16.105", false); // ???
+        vSeeds.emplace_back("45.32.153.21", false); // ???
+	vSeeds.emplace_back("198.13.56.178",false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,35);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,38);

@@ -7,7 +7,7 @@ Most developers use cross-compilation from Ubuntu to build executables for
 Windows. Cross-compilation is also used to build the release binaries.
 
 Currently only building on Ubuntu Trusty 14.04 or Ubuntu Zesty 17.04 or later is supported.
-Building on Ubuntu Xenial 16.04 is known to be broken, see extensive discussion in issue [8732](https://github.com/xagau/placeh/issues/8732).
+Building on Ubuntu Xenial 16.04 is known to be broken, see extensive discussion in issue [8732](https://github.com/bitcoin/bitcoin/issues/8732).
 While it may be possible to do so with work arounds, it's potentially dangerous and not recommended.
 
 While there are potentially a number of ways to build on Windows (for example using msys / mingw-w64),
@@ -80,6 +80,9 @@ sudo update-alternatives --config x86_64-w64-mingw32-gcc
 
 ## Building for 64-bit Windows
 
+* At present, getting placeh to build on windows 64 running WSL has not been accomplished.
+If you run into difficulty, try to build for windows 32 bit.
+
 To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
@@ -92,7 +95,7 @@ Then build using:
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
-    make
+    make HOST=x86_64-w64-mingw32
 
 ## Building for 32-bit Windows
 
@@ -104,11 +107,16 @@ Then build (if you are using WSL you must be using from ROOT) using:
 
     PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
     cd depends
-    make HOST=x86_64-w64-mingw32 V=1 AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
+    make HOST=i686-w64-mingw32 V=1 AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:
+    # if it stops, try building again with 
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/i686-w64-mingw32/share/config.site ./configure --prefix=/
-    make
+    make -j8 -k V=1
+
+Sometimes, depending on how you have setup WSL you may need to either remove or add "AUTOCONF=: AUTOHEADER=: AUTOMAKE=: ACLOCAL=:" according to your system.
+
+You may need to 
 
 ## Depends system
 
