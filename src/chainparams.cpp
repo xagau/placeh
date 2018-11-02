@@ -162,7 +162,7 @@ public:
         vSeeds.emplace_back("104.248.177.232", false); // brewhaus
         vSeeds.emplace_back("144.202.16.105", false); // ???
         vSeeds.emplace_back("45.32.153.21", false); // ???
-		vSeeds.emplace_back("198.13.56.178:",false);
+	vSeeds.emplace_back("198.13.56.178",false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,35);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,38);
