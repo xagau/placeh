@@ -17,7 +17,7 @@ old_library='libsecp256k1.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=''
+dependency_libs=' -L/mnt/c/git/repo/placeh/depends/i686-w64-mingw32/share/../lib -L/db-4.8.30.NC/lib/'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
