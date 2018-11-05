@@ -17,11 +17,21 @@ the usage of the absolute path.
 On Centos 7
 ---------------------
 You may experience a problem linking to Boost library.
+More specifically:
+```
+./placehd: error while loading shared libraries: libboost_system.so.1.58.0: cannot open shared object file: No such file or directory
+```
+
 If this is the case, you can try to ./configure with the following command line option
+
+```
+export LD_LIBRARY_PATH=/usr/local/lib
+```
 
 ```
 ./configure --with-boost-libdir=/usr/local/lib
 ```
+
 
 To Build
 ---------------------
