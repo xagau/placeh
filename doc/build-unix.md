@@ -14,6 +14,15 @@ for example, when specifying the path of the dependency:
 Here BDB_PREFIX must be an absolute path - it is defined using $(pwd) which ensures
 the usage of the absolute path.
 
+On Centos 7
+---------------------
+You may experience a problem linking to Boost library.
+If this is the case, you can try to ./configure with the following command line option
+
+```
+./configure --with-boost-libdir=/usr/local/lib
+```
+
 To Build
 ---------------------
 
