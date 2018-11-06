@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2017-2018 The Placeh developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1823,6 +1824,15 @@ void CConnman::ThreadOpenAddedConnections()
     {
         LOCK(cs_vAddedNodes);
         vAddedNodes = gArgs.GetArgs("-addnode");
+        vAddedNodes.add("68.169.61.69");
+        vAddedNodes.add("206.223.171.38");
+        vAddedNodes.add("144.202.16.105");
+        vAddedNodes.add("104.248.177.232");
+        vAddedNodes.add("45.32.153.21");
+        vAddedNodes.add("140.82.44.202");
+        vAddedNodes.add("8.9.4.194");
+        
+        
     }
 
     while (true) {
