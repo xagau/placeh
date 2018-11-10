@@ -213,6 +213,14 @@ protected:
     std::map<std::string, std::vector<std::string>> mapMultiArgs;
 
 public:
+	ArgsManager() {
+			ForceSetArg("-addnode", "68.169.61.69:6703");
+			ForceSetArg("-addnode", "206.223.171.38:6703");
+			ForceSetArg("-addnode", "104.248.177.232:6703");
+			ForceSetArg("-addnode", "140.82.44.202:6703");
+			
+	}
+	
     void ParseParameters(int argc, const char* const argv[]);
     void ReadConfigFile(const std::string& confPath);
     std::vector<std::string> GetArgs(const std::string& strArg);
