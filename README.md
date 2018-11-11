@@ -29,7 +29,7 @@ Download
 -------
 
 placeh core is may be downloaded from the placeh.io website 
-http://www.placeh.io/files/placeh-rc2.01b.zip
+https://www.placeh.io/files/setup-placeh-rc2.0.26.1.exe
 
 or directly from the executables under /src/ on the github repo.
 Alternatively you can build the applicaiton from source.
@@ -42,10 +42,6 @@ completely stable. [Tags](https://github.com/xagau/placeh/tags) are created
 regularly to indicate new official, stable release versions of placeh core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-The developer [mailing list](https://lists.linuxfoundation.org/mailman/listinfo/placeh-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
 
 Developer Discord can be found on #placeh.
 
