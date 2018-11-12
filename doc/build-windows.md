@@ -135,3 +135,28 @@ as they appear in the release `.zip` archive. This can be done in the following
 way. This will install to `c:\workspace\placeh`, for example:
 
     make install DESTDIR=/mnt/c/workspace/placeh
+    
+    
+Xagau's Build Notes for WSL
+--------------
+If you have problems with the above, please try build from a clean WSL installation with this script
+
+```
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
+sudo apt-get install libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev
+
+sudo apt install software-properties-common
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu zesty universe"
+sudo apt update
+sudo apt install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git
+sudo apt install g++-mingw-w64-i686 mingw-w64-i686-dev
+git clone https://github.com/xagau/placeh.git
+cd placeh/
+cd depends/
+make HOST=i686-w64-mingw32 V=1
+cd ..
+./autogen.sh
+./configure --prefix=`pwd`/depends/i686-w64-mingw32 --enable-static --disable-shared --with-qt
+make V=1
+```
+

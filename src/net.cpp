@@ -1824,7 +1824,10 @@ void CConnman::ThreadOpenAddedConnections()
     {
         LOCK(cs_vAddedNodes);
         vAddedNodes = gArgs.GetArgs("-addnode");
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 53b84cf61067001d0415785cef987218a317869e
         vAddedNodes.emplace_back("68.169.61.69:6703");
         vAddedNodes.emplace_back("206.223.171.38:6703");
         vAddedNodes.emplace_back("144.202.16.105:6703");
@@ -1832,7 +1835,12 @@ void CConnman::ThreadOpenAddedConnections()
         vAddedNodes.emplace_back("45.32.153.21:6703");
         vAddedNodes.emplace_back("140.82.44.202:6703");
         vAddedNodes.emplace_back("8.9.4.194:6703");
+<<<<<<< HEAD
                
+=======
+        
+        
+>>>>>>> 53b84cf61067001d0415785cef987218a317869e
     }
 
     while (true) {
