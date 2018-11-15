@@ -22,6 +22,15 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const CBlockH
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
     int64_t nPastBlocks = 180; // ~3hr
+	
+	int64_t nTargetTimespan = nPastBlocks * params.nPowTargetSpacing;
+	int64_t nPowTargetSpacing = params.nPowTargetSpacing;
+
+	
+	if( IsPIP88Active(pindexLast->nHeight)) { 
+		nTargetTimespan = nPastBlocks * 60;
+		nPowTargetSpacing = 60;
+	}
 
     // make sure we have at least (nPastBlocks + 1) blocks, otherwise just return powLimit
     if (!pindexLast || pindexLast->nHeight < nPastBlocks) {
@@ -32,7 +41,7 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const CBlockH
         // Special difficulty rule:
         // If the new block's timestamp is more than 2 * 1 minutes
         // then allow mining of a min-difficulty block.
-        if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing * 2)
+        if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + nPowTargetSpacing * 2)
             return nProofOfWorkLimit;
         else {
             // Return the last non-special-min-difficulty-rules-block
@@ -66,7 +75,9 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const CBlockH
 
     int64_t nActualTimespan = pindexLast->GetBlockTime() - pindex->GetBlockTime();
     // NOTE: is this accurate? nActualTimespan counts it for (nPastBlocks - 1) blocks only...
-    int64_t nTargetTimespan = nPastBlocks * params.nPowTargetSpacing;
+    //int64_t nTargetTimespan = nPastBlocks * params.nPowTargetSpacing;
+	
+
 
     if (nActualTimespan < nTargetTimespan/3)
         nActualTimespan = nTargetTimespan/3;
@@ -125,6 +136,10 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     int dgw = DarkGravityWave(pindexLast, pblock, params);
     int btc = GetNextWorkRequiredBTC(pindexLast, pblock, params);
     int64_t nPrevBlockTime = (pindexLast->pprev ? pindexLast->pprev->GetBlockTime() : pindexLast->GetBlockTime());
+	
+	//if(IsPIP88Active(pindexLast->nHeight +1)) { 
+		//params.nPowTargetSpacing = 1 * 60;//10 * 60;
+	//}
 
     if (IsDGWActive(pindexLast->nHeight + 1)) {
         //printf("Block %s - version: %s: found next work required using DGW: [%s] (BTC would have been [%s]\t(%+d)\t(%0.3f%%)\t(%s sec))\n",
@@ -144,8 +159,13 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     if (params.fPowNoRetargeting)
         return pindexLast->nBits;
 
+		
+		
+	
     // Limit adjustment step
     int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;
+	
+	
     if (nActualTimespan < params.nPowTargetTimespan/4)
         nActualTimespan = params.nPowTargetTimespan/4;
     if (nActualTimespan > params.nPowTargetTimespan*4)
@@ -156,8 +176,10 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     arith_uint256 bnNew;
     bnNew.SetCompact(pindexLast->nBits);
     bnNew *= nActualTimespan;
-    bnNew /= params.nPowTargetTimespan;
-
+	
+	bnNew /= params.nPowTargetTimespan;
+	
+	
     if (bnNew > bnPowLimit)
         bnNew = bnPowLimit;
 

@@ -1427,8 +1427,17 @@ UniValue getchaintxstats(const JSONRPCRequest& request)
             HelpExampleCli("getchaintxstats", "") + HelpExampleRpc("getchaintxstats", "2016"));
 
     const CBlockIndex* pindex;
-    int blockcount = 30 * 24 * 60 * 60 / Params().GetConsensus().nPowTargetSpacing; // By default: 1 month
-
+    int blockcount;
+		
+	if( IsPIP88Active(pindex->nHeight) ) { 
+		blockcount = 30 * 24 * 60 * 60 / 60; // By default: 1 month
+	}
+	else {
+		blockcount = 30 * 24 * 60 * 60 / Params().GetConsensus().nPowTargetSpacing; // By default: 1 month
+		
+	}
+	
+	
     if (request.params.size() > 0 && !request.params[0].isNull()) {
         blockcount = request.params[0].get_int();
     }

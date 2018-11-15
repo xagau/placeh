@@ -21,7 +21,7 @@
 #define CLIENT_VERSION_MINOR 0
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 26
+#define CLIENT_VERSION_REVISION 27
 
 /* Copyright holder(s) before %s replacement */
 #define COPYRIGHT_HOLDERS "The %s developers"
@@ -239,7 +239,7 @@
 #define HAVE_LIBSHLWAPI 1
 
 /* Define to 1 if you have the `ssp' library (-lssp). */
-/* #undef HAVE_LIBSSP */
+#define HAVE_LIBSSP 1
 
 /* Define to 1 if you have the `user32' library (-luser32). */
 #define HAVE_LIBUSER32 1
@@ -353,7 +353,7 @@
 #define PACKAGE_NAME "placeh core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "placeh core 2.0.26"
+#define PACKAGE_STRING "placeh core 2.0.27"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "placeh"
@@ -362,7 +362,7 @@
 #define PACKAGE_URL "https://placeh.io/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "2.0.26"
+#define PACKAGE_VERSION "2.0.27"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */

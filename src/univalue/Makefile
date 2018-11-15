@@ -443,14 +443,14 @@ AM_DEFAULT_VERBOSITY = 0
 AR = i686-w64-mingw32-ar
 AUTOCONF = ${SHELL} /mnt/c/git/repo/placeh/src/univalue/build-aux/missing autoconf
 AUTOHEADER = ${SHELL} /mnt/c/git/repo/placeh/src/univalue/build-aux/missing autoheader
-AUTOMAKE = automake-1.15
+AUTOMAKE = ${SHELL} /mnt/c/git/repo/placeh/src/univalue/build-aux/missing automake-1.15
 AWK = gawk
 BUILD_EXEEXT = 
 CC = i686-w64-mingw32-gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
 CPP = i686-w64-mingw32-gcc -E
-CPPFLAGS = -I/mnt/c/git/repo/placeh/depends/i686-w64-mingw32/share/../include/ -I/db-4.8.30.NC/include/
+CPPFLAGS = -I/mnt/c/git/repo/placeh/depends/i686-w64-mingw32/share/../include/ 
 CXX = i686-w64-mingw32-g++
 CXXCPP = i686-w64-mingw32-g++ -E
 CXXDEPMODE = depmode=gcc3
@@ -474,7 +474,7 @@ INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/i686-w64-mingw32-ld
-LDFLAGS = -L/mnt/c/git/repo/placeh/depends/i686-w64-mingw32/share/../lib -L/db-4.8.30.NC/lib/
+LDFLAGS = -L/mnt/c/git/repo/placeh/depends/i686-w64-mingw32/share/../lib 
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool

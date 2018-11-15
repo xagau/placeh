@@ -349,6 +349,11 @@ bool CheckSequenceLocks(const CTransaction& tx, int flags, LockPoints* lp = null
 
 bool IsDGWActive(unsigned int nBlockNumber);
 
+
+/* Check to see if PIP88 is active */
+
+bool IsPIP88Active(unsigned int nBlockNumber);
+
 /**
  * Closure representing one script verification
  * Note that this stores references to the spending transaction 
