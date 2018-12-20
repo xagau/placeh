@@ -1,6 +1,9 @@
 placeh core integration/staging tree
 =====================================
 
+THIS REPO IS NOW DEPRECATED - PLEASE USE 
+
+https://www.github.com/xagau/Placeholders-X16R
 
 https://placeh.io
 
