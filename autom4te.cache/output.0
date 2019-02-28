@@ -245,6 +245,7 @@ fi; }
 IFS=$as_save_IFS
 
 
+
       if test "x$CONFIG_SHELL" != x; then :
   export CONFIG_SHELL
              # We cannot yet assume a decent shell, so we have to provide a
